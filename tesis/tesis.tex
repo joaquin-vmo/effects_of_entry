@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[spanish]{babel}
+\usepackage{caption} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}   
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, calc, babel}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage[hyperfootnotes=false]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+\usepackage{cleveref}
+
+\usepackage[
+    margin=2.5cm,
+    headsep=10mm,
+    footskip=12mm
+]{geometry}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{parskip}
+
+\usepackage{microtype}
+
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{bibliografia.bib}
+
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\title{\textbf{Efectos competitivos de la entrada y dispersión de precios en mercados locales}\textsuperscript{*}}
+\author{Joaquín Martínez\textsuperscript{\dag}}
+\date{Borrador: 13 de septiembre, 2026}
+
+\begin{document}
+
+\maketitle
+
+\blfootnote{\textsuperscript{*}Agradezco a Paola Bordón por su guía, apoyo y paciencia en este proceso. También quisiera agradecer a Alejandro Micco, Pablo Muñoz y Joaquín Hidalgo por la provechosa discusión alrededor de esta investigación. Cualquier error es mi responsabilidad. En la elaboración de esta tesis se utilizaron herramientas de inteligencia artificial generativa, específicamente Claude Opus 5.0. Estas fueron empleadas en la generación y optimización de los códigos además de la revisión, actualización y coherencia del texto con los resultados más recientes. Todo el contenido fue revisado y validado por el autor, quien asume plena responsabilidad sobre el trabajo presentado.}
+
+\blfootnote{\textsuperscript{\dag}Universidad de Chile, Facultad de Economía y Negocios. Correo: \href{mailto:joamartine@fen.uchile.cl}{\texttt{joamartine@fen.uchile.cl}}}
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+\begin{abstract}
+\noindent
+de ejemplo, parrafo de ejemplo. parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplode ejemplo, parrafo de ejemplo. parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplode ejemplo, parrafo de ejemplo. parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo parrafo de ejemplo
+\end{abstract}
+
+\vspace{0.5cm}
+\noindent \textbf{Códigos JEL:} L13, L81, L11, D83. 
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+\newpage
+
+\input{tesis/tex/01_introduccion}
+
+\section{Revisión de literatura}
+
+\end{document}
