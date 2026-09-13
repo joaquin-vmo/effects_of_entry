@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+code/data/input/*
+code/data/procesado/*
+!code/data/input/.gitkeep
+!code/data/procesado/.gitkeep

@@ -1,2 +1,1 @@
-# effects_of_entry
-Tesis MAE
+Códigos de replicación de mi tesis. Todos los datos son de acceso público por lo que la tesis es 100% replicable. 
