@@ -3,7 +3,7 @@
 .RData
 .Ruserdata
 
-code/data/input/*
-code/data/procesado/*
-!code/data/input/.gitkeep
-!code/data/procesado/.gitkeep
+replicacion/data/input/*
+replicacion/data/procesado/*
+!replicacion/data/input/.gitkeep
+!replicacion/data/procesado/.gitkeep
