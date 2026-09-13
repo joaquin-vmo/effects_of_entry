@@ -1,5 +1,124 @@
 \section{Contexto Institucional}
 
-\subsection{Industria de combustible en Chile}
+\subsection{La industria de combustibles líquidos}
+
+La industria de los combustibles líquidos tiene cuatro etapas en su cadena de valor, extracción, refinación, distribución mayorista y distribución minorista. Si bien las grandes compañías mayoristas pueden abastecerse de las refinerías de ENAP o importar directamente, las empresas de menor tamaño se abastecen únicamente de ENAP \parencite{FNE2025informe}.\footnote{El $12\%$ de la oferta nacional de gasolinas y el $73\%$ del diésel son importados.} La consecuencia relevante para este trabajo es que el costo de adquisición de las EDS está anclado, para la generalidad del mercado, a una referencia única.\footnote{En términos de producto, las gasolinas de 93, 95 y 97 octanos tienen una participación de aproximadamente $16\%$, $10\%$ y $3\%$ de la ventas totales de combustibles líquidos, teniendo el diésel un $52\%$ dado su mayor uso en industria \parencite{FNE2025informe}.}
+
+La Ley N.º 20.765 de 2014 creó el Mecanismo de Estabilización de Precios de los Combustibles (MEPCO), que atenúa la transmisión de las variaciones internacionales al precio que enfrenta el consumidor \parencite{LEY20765}.\footnote{El mecanismo opera a través de un componente variable que se suma o se resta al componente base del impuesto específico. Su regla de cálculo es explícita: se proyecta un ``precio base'' como el precio que ENAP informará la semana siguiente suponiendo un componente variable nulo, incluidos IVA e impuesto específico base, y se lo compara con el precio efectivamente informado la semana anterior. Cuando la diferencia excede un umbral, el componente variable se ajusta para absorber el exceso. El umbral ha sido modificado en varias ocasiones desde la creación del mecanismo, desde enero de 2023 es de un $2{,}4\%$ del promedio de las dos últimas semanas del precio base, referido al de la gasolina de 93 octanos para todos los combustibles con excepción del diésel, que pasó a tener el suyo propio \parencite{LEY21537}.} Tres rasgos del MEPCO son importantes para la estrategia empírica. Primero, es una referencia nacional, el precio de paridad se fija una vez por semana, entra en vigencia el jueves siguiente y no admite diferenciación geográfica. Segundo, es una referencia fijada por regla y publicada, no negociada bilateralmente. Tercero, la propia ley precisa que los precios de referencia y de paridad no consituyen precios mínimos ni máximos de venta, siendo estos fijados por el distirbuidor final.
+
+La distribución minorista está dominada por tres compañías integradas verticalmente. En 2023, Copec concentraba el $39\%$ de las EDS del país, Petrobras el $21\%$ y Shell el $16\%$, el $24\%$ restante corresponde a distribuidoras de bandera blanca, esto es, estaciones que operan bajo marca propia o sin marca, con redes reducidas, menores costos operativos y menores estándares de servicio \parencite{FNE2025informe}. Es importante mencionar que la integración vertical de estas empresas no siempre implica propiedad de la EDS. Las mayoristas participan en el mercado minorista mediante redes de EDS propias o de terceros, y la relación contractual admite dos formas, consignación y concseión.\footnote{Bajo el modelo de consignación, el combustible sigue siendo propiedad de la mayorista, que determina el precio de venta al público, y la administradora de la EDS recibe como remuneración un margen por litro vendido. Bajo el modelo de concesión, en cambio, la administradora compra previamente el combustible y es ella quien fija el precio al público. La coexistencia de ambos regímenes implica que una fracción relevante de las decisiones de precio observadas en los datos se toma a nivel de cadena y no de estación, lo que motiva incorporar efectos fijos de distribuidor interactuados con el tiempo en las especificaciones empíricas.}
+
+Tanto la FNE como el Tribunal de Defensa de la Libre Competencia han constatado en repetidas ocasiones la existencia de barreras a la entrada en este mercado. Estas se refieren principalmente a la escasez de terrenos aptos para la instalación o arriendo de estaciones de servicio, dadas las exigencias de los planos reguladores en las zonas urbanas más saturadas, que son al mismo tiempo las de mayor atractivo comercial \parencite{FNE2021informe}. A ello se suman la regulación sectorial a lo largo de toda la cadena productiva, que involucra a distintas autoridades, y la inversión en infraestructura que requiere un potencial entrante \parencite{FNE2025informe}.
 
 \subsection{Datos}
+
+La base de datos principal de esta investigación es el registro de precios históricos de la plataforma de bencinaenlinea.cl. Dicha base contiene, para cada día desde 2012 a 2026, las actualizaciones de precios en los combustibles ofrecidos por las EDS. Adicionalmente se tienen datos de su ubicación en latitud y longitud además de su distribuidor de combustibel. Dado que las estaciones están obligadas por ley a reportar sus precios esta base es representativa de todas las EDS de Chile.  Una segunda base de datos que complementa el análisis es la serie de costo mayorista con MEPCO que publica el Ministerio de Hacienda. La serie está disponible para gasolina 93, 97 y diésel, más no para la gasolina 95.
+
+Junto estas dos bases se arma un panel semanal de EDS y combustible, el precio de cada observación es el último dentro de un período de jueves a miércoles. Esto dado que el MEPCO se anuncia los miércoles y empiezan a regir los jueves. Este panel se puede colapsar a uno mensual tomando el precio de la última semana.
+
+El panel semanal nos permite graficar una serie de precios promedio por combustible para todos los años de la base. La Figura \ref{fig:serie_precios} muestra la evolución del precio de los cuatro tipos de combustibles desde 2012 a 2026. La Figura \ref{fig:serie_margen} muestra la evolución del margen de venta de cada combustible desde que el MEPCO entró en vigencia en 2014 hasta la fecha. En ambos gráficos se puede observar que post-2023 las serie es menos suave, esto debe a que el MEPCO pasó de actualizarse cada semana a cada tres semanas, lo cual sugiere que con ellos las estaciones cambian menos sus precios.\footnote{Estudiar si este factor tiene alguna incidencia en el modo de competencia en un mismo mercado podría ser interesante para otra investigación.} 
+
+\begin{figure}[h]
+    \centering
+    \caption{Pesos por litro para gasolinas y diésel desde 2012 a 2026 en Chile} \label{fig:serie_precios}
+    \includegraphics[width = \textwidth]{output/graficos/serie_precios.pdf}
+    \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Promedio simple semanal entre estaciones, precios nominales.}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \caption{Margen de venta por litro para gasolinas y diésel desde 2012 a 2026 en Chile} \label{fig:serie_margen}
+    \includegraphics[width = \textwidth]{output/graficos/serie_margen.pdf}
+    \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl y costos mayosristas con MEPCO. Margen = (precio $-$ precio mayorista con MEPCO) / precio. Promedio simple semanal entre estaciones. Gasolina 95 no se incluye pues el Ministerio de Hacienda no los dispone}
+\end{figure}
+
+Se define la entrada como la primera aparición de una estación de servicio en el panel, mientras que una estación incumbente es cualquiera que ya estaba en el panel en una determinada fecha hacia atrás. Por lo tanto cada ventana que se mire requiere de un año base, que contiene las estaciones incumbentes, y una fecha desde la cual las nuevas estaciones que aparezcan definen cohortes de entrada. Se proponen tres ventanas para este cometido.
+\begin{enumerate}
+    \item La ventana más grande toma información de 2012 hasta junio de 2026. Las estaciones presentes en 2012 son las incumbentes, y toda estación que aparece desde 2013 se considera entrante, pero solo las entradas desde 2014 definen cohortes de tratamiento. Las de 2013 se mantienen como eventos que pueden afectar a las estaciones cercanas. \textcite{LUCO2019} documenta que todas las EDS estaban integradas en la plataforma finalizado 2012, y por tanto sabemos que las entradas que se encuentran en 2013 son reales y no integraciones administrativas de EDS antiguas a la base. Sin embargo, como el método de identificación considera rezagos, se opta por excluir las cohortes de 2013, de modo que todas las tratadas tengan al menos doce meses previos a la entrada con el registro ya completo.\footnote{Al incluir las cohortes de 2013 los efectos estimados son muy similares.}
+    \item La segunda toma las estaciones presentes a más tardar en 2014 como incumbentes y las que aparecen entre 2015 y 2019 como entrantes. Esta ventana se definió considerando dos cosas: (i) El MEPCO se implementó en agosto de 2014 y parece ser fundamental a la hora de definir costos y por tanto competir por precios, por lo que incluir cohortes de entrada anteriores al MEPCO llevaría a comparar cohortes donde la competencia se lleva de otra manera. (ii) Considerar años de pandemia podría distorsionar tanto las dinámicas de competencia como de entrada, por lo que incluir competencia en plena pandemia podría también llevarnos a comparar cohortes fundamentalmente distintas.
+    \item La última considera las estaciones presentes a más tardar en 2021 como incumbentes y las que aparecen desde 2022 como entrantes, hasta febrero de 2026, puesto que a fines de marzo de este año ocurrió una fuerta alza en el costo mayorista al incluir la estabilización del MEPCO. Esto para poder evaluar si es que la entrada empezó a tener un efecto distinto post pandemia.
+\end{enumerate}
+
+La Figura \ref{fig:entradas} muestra la cantidad de entradas que ocurren cada año. Quitando el aumento de estaciones ocurrido en 2013, la entrada de bencineras se mantienen relativamente estable durante el tiempo.
+
+\begin{figure}[h]
+    \centering
+    \caption{Aperturas de nuevas estaciones de bencina desde 2013 a 2026} \label{fig:entradas}
+    \includegraphics[width = \textwidth]{output/graficos/entradas_anio.pdf}
+    \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. El año 2012 no se considera al ser el año en que paulatinamente se pobló de manera administrativa las base.}
+\end{figure}
+
+
+Cada entrante genera una cohorte de tratamiento, siguiendo la línea de \textcite{FISCHER2025}, las estaciones incumbentes que están a un radio de 2 kilómetros o menos de una entrante de otra marca se definen como tratadas desde el mes de esa entrada. Mientras que las estaciones cuya entrada competidora más cercana ocurrió entre 2 y 3 kilómetros no se consideran como tratadas ni como control en el método de identificación pues al estar parcialmente tratadas no son un buen control. El grupo control se conforma por las estaciones incumbentes que nunca han recibido la entrada de una nueva competidora a 3 kilómetros o menos (control amplio) o a 5 kilómetros o menos (control estricto). El grupo de control estricto es el preferido al ser considerado el más limpio (con menor o nulo efecto spillover), sin embargo los resultados son similares considerando el control amplio. Un punto relevante a considerar es que una estación que recibe una entrada a 2 kilómetros o menos se considera tratada durante toda la ventana, por lo que nunca cuenta como control, y sus observaciones se cortan en el mes de la segunda entrada, de modo que no puede considerarse como tratada para siguientes cohortes de tratamiento. La Tabla \ref{tab:composicion} muestra la composición de la muestra en la ventana más grande.
+
+\begin{table}[h]
+    \centering
+    \caption{Composición de la muestra, ventana 2012 a 2026} \label{tab:composicion}
+    \input{output/tablas/composicion_muestra.tex}
+    \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl.}
+\end{table}
+
+La Tabla \ref{tab:dispersion} describe la dispersión de precios dentro de los mercados locales. Un mercado local es el círculo del radio indicado en torno a cada estación, incluida ella misma, las medidas se calculan solo para los mercado-mes con al menos dos estaciones activas. Dentro de dos kilómetros el rango de precios promedio es de 16,3 pesos por litro y el ahorro esperado de comparar precios de 8,2, cifras que se reducen a la mitad al estrechar el mercado a un kilómetro. La asimetría ya es visible en el descriptivo, la estación más barata del mercado cobra en promedio 8,2 pesos bajo la media y la más cara 8,2 por sobre ella. La dispersión no es entonces un residuo despreciable, y de ahí se sigue que el efecto de la entrada no se agote en el precio promedio, ya que consumidores con distinto acceso a la información se benefician de cambios en puntos distintos de la distribución como se sugiere en \textcite{LUCO2019, SOLIS2025}. \textcite{FISCHER2025} encuentra que la entrada de una competidora reduce los precios en las estaciones ex-ante más baratas, dejando iguales a las estaciones relativamente más caras, dado los datos dipsonibles se puede testear esto para Chile. 
+
+\begin{table}[h]
+    \centering
+    \caption{Precios y dispersión de precios a nivel de mercado local, gasolina 93, 2025} \label{tab:dispersion}
+    \resizebox{\textwidth}{!}{\input{output/tablas/dispersion_p93.tex}}
+    \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Precios en \$/L. Mercado = estación focal y todas las estaciones con precio a 1 (2) km o menos en el mes, solo mercado-mes con al menos dos estaciones con precio. Ahorro esperado de buscar = precio medio $-$ precio mínimo. Percentiles, media y desviación estándar de cada medida entre mercado-mes.}
+\end{table}
+
+\subsection{Modelo teórico}
+
+A partir del trabajo seminal de \textcite{HOTELLING1929} se ha desarrollado una amplia literatura de competencia espacial, cuyo modelo más conocido es el modelo circular de \textcite{SALOP1979}. \textcite{CLEMENZGUGLER2006} utilizan este modelo para el mercado minorista de gasolina en Austria. Un rasgo central de la competencia espacial pura es que cada consumidor compra en la estación donde su costo total, compuesto por el precio más los costos de transporte en que incurre, es menor. En consecuencia, cada estación tiene un ``monopolio local'' cuyo tamaño geográfico depende de los precios que cobran sus competidoras más cercanas y de los costos de transporte de los consumidores, de modo que el precio que una estación puede cobrar es creciente en la distancia a sus competidoras más cercanas y en los costos de transporte.
+
+Denotando por $D$ la densidad de población, $V$ el número de automóviles per cápita, $T$ los costos de transporte de los consumidores, $C$ alguna medida de concentración de mercado, $S$ la densidad de estaciones y $c$ el costo marginal, \textcite{CLEMENZGUGLER2006} resumen los determinantes de la densidad de estaciones y del precio de equilibrio en
+\begin{align}
+    S &= S(D, V, T, C, \ldots), & \frac{\partial S}{\partial D} &> 0,\; \frac{\partial^2 S}{\partial D^2} < 0,\; \frac{\partial S}{\partial V} > 0,\; \frac{\partial^2 S}{\partial V^2} < 0,\; \frac{\partial S}{\partial T} > 0,\; \frac{\partial S}{\partial C} = \,? \label{eq:cg_densidad} \\
+    P &= P(S, T, c, C, \ldots), & \frac{\partial P}{\partial S} &< 0,\; \frac{\partial P}{\partial T} > 0,\; \frac{\partial P}{\partial c} > 0,\; \frac{\partial P}{\partial C} = \,? \label{eq:cg_precio}
+\end{align}
+donde se asume que las decisiones de entrada preceden a la competencia en precios, es decir, la densidad de estaciones está predeterminada respecto del precio.
+
+Para ilustrar las ecuaciones \eqref{eq:cg_densidad} y \eqref{eq:cg_precio}, \textcite{CLEMENZGUGLER2006} utilizan el modelo de competencia espacial de \textcite{SALOP1979}. Supóngase un continuo de consumidores de medida $N$, distribuidos uniformemente en un círculo de circunferencia $L$, con densidad $N/L$. Cada consumidor compra una unidad del bien en la estación donde su costo total es menor. Sea $Z_j$ la ubicación del consumidor $j$ y $z_i$ la ubicación de la estación $i$. Los costos de transporte están dados por
+\begin{equation}
+    T_{ji} = \tau \left| Z_j - z_i \right|^{\beta},
+    \label{eq:salop_transporte}
+\end{equation}
+donde $\left| Z_j - z_i \right|$ es la longitud del arco más corto que une $Z_j$ y $z_i$ en el círculo, y $\tau$ y $\beta$ son parámetros estrictamente positivos, con $\beta \geq 1$. Supóngase ahora que hay $n$ estaciones idénticas, equidistantes en el círculo, de modo que la distancia entre dos estaciones sucesivas es $L/n$, y que el costo marginal de cada estación es $c$. En un equilibrio simétrico el precio está dado por
+\begin{equation}
+    P^{*} = c + \beta\, 2^{1-\beta}\, \tau\, (n/L)^{-\beta}.
+    \label{eq:salop_precio}
+\end{equation}
+Nótese que $n/L$ corresponde a $S$, la densidad de estaciones, por lo que \eqref{eq:salop_precio} es un caso especial de \eqref{eq:cg_precio}. Denotando por $K$ el costo fijo de entrada, el beneficio de equilibrio $\pi^{*}$ puede escribirse como función del número de firmas:
+\begin{equation}
+    \pi^{*}(n) = N \beta\, 2^{1-\beta}\, \tau\, L^{\beta}\, n^{-\beta-1} - K.
+    \label{eq:salop_beneficio}
+\end{equation}
+En el modelo completo las decisiones de entrada ocurren en una primera etapa y la competencia en precios en una segunda. Se asume que relocalizar una estación no tiene costo, y puede mostrarse que en equilibrio las estaciones quedan equidistantes, como se supuso arriba. La entrada ocurre mientras \eqref{eq:salop_beneficio} siga siendo no negativo al entrar una firma adicional. El número de equilibrio de firmas por unidad de distancia es
+\begin{equation}
+    n^{e}/L = \left( \frac{\beta\, 2^{1-\beta}\, \tau}{K} \frac{N}{L} \right)^{\frac{1}{1+\beta}}.
+    \label{eq:salop_entrada}
+\end{equation}
+Nuevamente, $N/L$ corresponde a la densidad de población $D$, por lo que \eqref{eq:salop_entrada} puede considerarse un caso especial de \eqref{eq:cg_densidad}.
+
+\subsubsection*{Hipótesis Falseables}
+
+Las tres hipótesis que este trabajo somete a prueba surgen de los rasgos del mercado descritos más arriba y de afirmaciones que la autoridad de competencia ha sostenido. La forma de plantearlas responde al factor de competencia espacial modelado en \textcite{HOTELLING1929, SALOP1979} y que \textcite{CLEMENZGUGLER2006} contextualiza para el mercado de combustibles.
+
+\textbf{Hipótesis 1} (Efecto disciplinador). La entrada de un competidor reduce el margen de
+las incumbentes del mercado local.
+
+De \eqref{eq:salop_precio}, el margen de equilibrio $P^{*} - c = \beta\, 2^{1-\beta}\, \tau\, (n/L)^{-\beta}$ es decreciente en el número de estaciones:
+\begin{equation*}
+    \frac{\partial (P^{*} - c)}{\partial n} = -\beta^{2}\, 2^{1-\beta}\, \tau\, L^{\beta}\, n^{-\beta-1} < 0.
+\end{equation*}
+Para un mercado de tamaño $L$ dado, la entrada de una estación aumenta la densidad $n/L$ y reduce el margen de las incumbentes, lo que corresponde a $\partial P / \partial S < 0$ en \eqref{eq:cg_precio}.
+
+\textbf{Hipótesis 2} (Atenuación espacial). El efecto decrece en magnitud con la distancia entre
+la entrante y la incumbente, y se anula a partir de un umbral.
+
+En el modelo, el monopolio local de cada estación está delimitado por sus competidoras más cercanas, y el precio que puede cobrar es creciente en la distancia a ellas. Una entrada cercana reduce esa distancia y con ello el precio de la incumbente, mientras que una entrada lejana, que no pasa a ser una de sus competidoras más cercanas, no altera su monopolio local. Por lo tanto, el efecto debiera decrecer con la distancia y anularse a partir de algún umbral.
+
+\textbf{Hipótesis 2} (Asimetría distributiva). La entrada desplaza la distribución de precios del
+mercado local y ese desplazamiento se concentra en la parte baja de la distribución.
+
+Si bien los modelos de competencia espacial no entregan una explicación clara de la dispersión de precios, \textcite{CLEMENZGUGLER2006} argumentan que es plausible que una mayor densidad de estaciones, al aumentar la competencia, reduzca la dispersión promedio de precios dentro de un mercado, y encuentran que la dispersión es significativamente menor en las zonas con mayor densidad de estaciones. Ahora bien, en el caso de Chile \textcite{LUCO2019} muestra que tras la publicación de precios en línea los márgenes aumentaron en promedio, y que la dispersión de precios se redujo en los mercados donde los consumidores buscan poco, pero aumentó donde buscan más. Adicionalmente, \textcite{FISCHER2025} encuentran para Alemania que la entrada aumenta la dispersión de precios, no la reduce, ya que el precio mínimo del mercado cae más que el precio promedio. 

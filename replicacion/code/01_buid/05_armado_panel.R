@@ -1,4 +1,9 @@
-# toma la base de precios, los costos mayoristas con mepco y genera un panel semanal, un panel mensual y una base con las entradas
+# 05_armado_panel.R
+#
+# identidad de estaciones, panel semanal y mensual con margen MEPCO, y asignacion de
+# tratamiento por ventana de PANELES.
+# data/procesado/{base,costo_mayorista_mepco}.csv -> identidad_estaciones.csv y, por
+# ventana, panel_semanal.csv.gz, panel_mensual.csv y entradas.csv
 
 library(dplyr)
 library(tidyr)
@@ -22,7 +27,7 @@ db <- read_csv(
 
 mepco <- read_csv(here("data", "procesado", "costo_mayorista_mepco.csv"), show_col_types = FALSE)
 
-# corrección para identificar mismas estaciones
+# ---- identidad: codigos distintos del mismo local ----
 
 idinfo <- db |>
   summarise(first_date = min(date), last_date = max(date),
@@ -30,8 +35,7 @@ idinfo <- db |>
             .by = id) |>
   arrange(first_date, id)
 
-# sucesion, la estacion madre de i es el codigo ya apagado mas cercano que empezo antes
-
+# sucesion: el padre de i es el codigo ya apagado mas cercano que empezo antes
 cand <- idinfo |> filter(!is.na(lat))
 D_link <- dist_propia(cand$lat, cand$lon) * 1000
 padre_sucesion <- rep(NA_character_, nrow(cand))
@@ -43,7 +47,7 @@ for (i in seq_len(nrow(cand))) {
   if (D_link[i, j] < LINK_M) padre_sucesion[i] <- cand$id[j]
 }
 
-# duplicacion: codigos con letra final cuyo codigo base existe
+# duplicacion: codigo con letra final cuyo codigo base existe
 duplicados <- idinfo |>
   filter(grepl("[0-9][a-z]$", id)) |>
   transmute(id, base_codigo = sub("[a-z]$", "", id), lat, lon) |>
@@ -61,10 +65,8 @@ idinfo <- idinfo |>
     padre = if_else(regla %in% "duplicacion", base_codigo, padre_sucesion)
   )
 
-# se sigue la cadena de padres hasta la raiz. El tope evita colgarse si alguna
-# regla futura creara un ciclo
 padres <- setNames(idinfo$padre, idinfo$id)
-raiz <- function(x) {
+raiz <- function(x) {   # sigue la cadena de padres; el tope corta un ciclo
   for (k in 1:100) {
     if (is.na(padres[[x]])) return(x)
     x <- padres[[x]]
@@ -79,7 +81,7 @@ write_csv(idinfo |> select(id, station_key, regla, padre, padre_sucesion,
 
 db <- db |> left_join(idinfo |> select(id, station_key), by = "id")
 
-# panel semanal, toda la historia, último precio de cada jueves y calculo del margen con el MEPCO
+# ---- panel semanal: ultimo precio de cada semana y margen MEPCO ----
 
 semana <- function(d) as.integer(d - WEEK0) %/% 7L
 
@@ -95,16 +97,14 @@ mepco_w <- mepco |>
   pivot_longer(-date, names_to = "fuel", values_to = "cost") |>
   mutate(wi = semana(date), .keep = "unused")
 
-# atributos de estacion: el valor mas frecuente entre sus codigos y lecturas
-sattr <- db |>
+sattr <- db |>   # atributos de estacion: el valor mas frecuente
   group_by(station_key) |>
   summarise(id = modal(id), distribuidor = modal(distribuidor),
             comuna = modal(comuna), region = modal(region),
             lat = median(latitud, na.rm = TRUE), lon = median(longitud, na.rm = TRUE),
             is_franchise = as.logical(modal(as.character(is_franchise))))
 
-# la ultima semana y el ultimo mes del registro estan incompletos: se recortan
-ULT_DIA <- max(db$date)
+ULT_DIA <- max(db$date)   # la ultima semana y el ultimo mes incompletos se recortan
 
 panel_w <- obs_w |>
   mutate(obs_wi = wi) |>
@@ -130,7 +130,7 @@ panel_w <- obs_w |>
 if (max(mepco_w$wi) < max(panel_w$wi))
   warning("la serie MEPCO termina antes que el panel: el margen de las ultimas semanas queda NA")
 
-# el panel mensual se construye a partir del panel semanal
+# ---- panel mensual: ultima semana de cada mes ----
 
 last_m <- panel_w |>
   group_by(station_key, fuel, ym) |>
@@ -151,32 +151,28 @@ panel_m <- list(
   arrange(station_key, ym) |>
   filter(mi2date(miym + 1L) - 1L <= ULT_DIA)  # mes completo
 
-# primera aparicion de cada estacion en toda la historia
 primera <- panel_m |> summarise(primera_ym = min(ym), .by = station_key)
 
-
-# adaptaciones para el diseño de eventos según ventana
+# ---- tratamiento por ventana ----
 
 asignar_tratamiento <- function(sloc, entradas) {
   D_ev <- dist_km(sloc$slat, sloc$slon, entradas$elat, entradas$elon)
   g_ev <- mi(entradas$g)
-  
-  # un par estacion-entrada no cuenta si es su propia entrada, si la entrada
-  # ocurre antes de que la estacion exista o despues de que se apague, o si
-  # comparten marca
+
+  # no cuenta: su propia entrada, una entrada fuera de la vida de la estacion o de su marca
   D_ev[cbind(match(entradas$station_key, sloc$station_key), seq_len(nrow(entradas)))] <- Inf
   D_ev[!(outer(mi(sloc$entry_ym), g_ev, "<") & outer(mi(sloc$last_ym), g_ev, ">="))] <- Inf
   if (SOLO_COMPETIDORAS) {
     misma_marca <- outer(sloc$distribuidor, entradas$edist, "==")
     D_ev[!is.na(misma_marca) & misma_marca] <- Inf
   }
-  
+
   map(seq_len(nrow(sloc)), \(i) {
     d <- D_ev[i, ]
     meses <- sort(unique(g_ev[d <= RTREAT]))
     g <- if (length(meses)) meses[1] else NA_integer_
-    # anillos: la entrada mas temprana, y entre las del mismo mes la mas cercana
-    w5 <- which(d <= RCTRL)
+    # anillos: la entrada mas temprana y, en el mismo mes, la mas cercana
+    w5 <- which(d <= RCTRL_B)
     w5 <- w5[order(g_ev[w5], d[w5])]
     meses5 <- unique(g_ev[w5])
     mindist <- round(min(d), 3)
@@ -189,7 +185,6 @@ asignar_tratamiento <- function(sloc, entradas) {
                               mindist <= RCTRL_A ~ "buffer",
                               mindist <= RCTRL_B ~ "ctrl_a",
                               TRUE               ~ "ctrl_b"),
-      # distancia a la entrante de su propia cohorte
       dist_entry  = if (is.na(g)) NA_real_ else round(min(d[d <= RTREAT & g_ev == g]), 3),
       g5_entry    = mi2date(if (length(w5)) meses5[1] else NA_integer_),
       g2_5_entry  = mi2date(if (length(meses5) >= 2) meses5[2] else NA_integer_),
@@ -206,40 +201,40 @@ asignar_tratamiento <- function(sloc, entradas) {
 construir_panel <- function(nombre, p) {
   inicio <- as.Date(sprintf("%d-01-01", p$desde))
   fin    <- as.Date(p$hasta)
-  
+
   pm <- panel_m |> filter(ym >= inicio, ym <= fin)
   pw <- panel_w |> filter(wk >= inicio, wk <= fin)
-  
-  # base: ya existia en el primer anio de la ventana, segun toda la historia
+
+  # base: su primera aparicion en toda la historia es a mas tardar el anio `desde`
   st_span <- pm |>
     summarise(entry_ym = min(ym), last_ym = max(ym), .by = station_key) |>
     inner_join(sattr, by = "station_key") |>
     left_join(primera, by = "station_key") |>
     mutate(base = as.integer(format(primera_ym, "%Y")) <= p$desde)
-  
+
   entradas <- st_span |>
     filter(!base, !is.na(lat)) |>
     transmute(station_key, g = entry_ym, elat = lat, elon = lon,
               eregion = region, edist = distribuidor, efranchise = is_franchise) |>
     arrange(g, station_key) |>
     mutate(event_id = paste0("EN", row_number()))
-  
+
   sloc <- st_span |>
     filter(!is.na(lat)) |>
     select(station_key, slat = lat, slon = lon, distribuidor, entry_ym, last_ym)
-  
+
   asg <- asignar_tratamiento(sloc, entradas)
   agregar_diseno <- function(d) {
     d |>
       left_join(asg, by = "station_key") |>
       left_join(st_span |> select(station_key, base), by = "station_key")
   }
-  
+
   dir.create(p$dir, recursive = TRUE, showWarnings = FALSE)
   write_csv(agregar_diseno(pw), file.path(p$dir, "panel_semanal.csv.gz"), na = "")
   write_csv(agregar_diseno(pm), file.path(p$dir, "panel_mensual.csv"), na = "")
   write_csv(entradas, file.path(p$dir, "entradas.csv"), na = "")
-  
+
   message(sprintf(
     "  panel %s: %d estaciones (%d de base), %d entradas (%d focales desde %d) -> %s",
     nombre, nrow(st_span), sum(st_span$base), nrow(entradas),

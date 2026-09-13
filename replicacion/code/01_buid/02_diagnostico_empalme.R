@@ -1,4 +1,7 @@
-# información respecto a las decisiones tomadas en 01_limpiar_precios.R
+# 02_diagnostico_empalme.R
+#
+# cifras que respaldan las decisiones de 01_limpiar_precios.R (autoservicio, ubicacion
+# y empalme de regimenes). solo imprime. data/procesado/precios_regimenes.rds -> consola
 
 library(dplyr)
 library(here)
@@ -6,8 +9,6 @@ library(here)
 CORTE_REGIMEN <- as.Date("2023-01-01")  # igual que en 01_limpiar_precios.R
 
 r <- readRDS(here("data", "procesado", "precios_regimenes.rds"))
-
-# autoservicio
 
 por_estacion <- r$modalidad |>
   summarise(solo_autoservicio = !any(asistido), .by = id) |>
@@ -22,7 +23,6 @@ cat("estaciones sin precio asistido, con historia en el regimen antiguo:",
 cat("estaciones sin precio asistido, sin historia previa:",
     sort(por_estacion$id[!por_estacion$en_antiguo]), "\n")
 
-# ubicacion
 n_distintas <- r$legacy |>
   distinct(id, latitud, longitud, municipality, region) |>
   inner_join(r$ubicacion, by = "id", suffix = c("", "_actual")) |>
@@ -35,9 +35,7 @@ cat("\n=== 2. UBICACION ===\n")
 cat("estaciones del regimen antiguo cuya ubicacion se reemplaza por la del actual:",
     n_distintas, "\n")
 
-
-# el archivo 2023 contiene información de años pasados por lo que podemos comparar si hay cambios entre ambos regímenes con respecto al período anterior
-
+# el archivo 2023 trae tambien fechas anteriores al corte: se comparan con el antiguo
 solape <- full_join(
   r$legacy  |> filter(date < CORTE_REGIMEN) |> distinct(id, date, fuel, .keep_all = TRUE) |>
     select(id, date, fuel, p_ant = price),
@@ -59,8 +57,6 @@ solape |>
   ) |>
   tidyr::pivot_longer(everything()) |>
   print()
-
-# lo que se encuentra es que las estaciones que dejarond e reportar entre 2012 a 2022 no aparecen en 2023 en sus filas del pasado, por lo que es importante usar ambos regímenes
 
 cat("ultima aparicion en el regimen antiguo, segun figuren o no en el actual:\n")
 r$legacy |>

@@ -1,4 +1,7 @@
-# arma la base juntando bencina en linea y considera las banderas de cada estación
+# 04_armado_base.R
+#
+# una fila por estacion-fecha-combustible (ultima lectura del dia) y marca de cadena.
+# data/procesado/precios.csv -> data/procesado/base.csv
 
 library(dplyr)
 library(readr)
@@ -19,7 +22,6 @@ base <- precios |>
   # cadena: con bandera y mas de una estacion
   mutate(is_franchise = distributor != "sin bandera" & n_distinct(id) > 1,
          .by = distributor) |>
-  # una fila por estacion-fecha-combustible: la ultima lectura del dia
   arrange(id, date, fuel, time) |>
   slice_tail(n = 1, by = c(id, date, fuel)) |>
   select(-time)

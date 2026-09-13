@@ -1,10 +1,7 @@
-# 01_limpiar_precios
-
-# objetivo: unir todos los años de los precios históricos de bencina en linea. se arma una base con una fila por precio, el último de cada día. 
-
-# toma los data/input/bencina_en_linea y produce data/procesado/precios
-
-# librerias
+# 01_limpiar_precios.R
+#
+# une y limpia los precios de bencina en linea de ambos regimenes de reporte.
+# data/input/bencina_en_linea/*.csv -> data/procesado/precios.csv, precios_regimenes.rds
 
 library(dplyr)
 library(here)
@@ -12,23 +9,20 @@ library(readr)
 library(purrr)
 library(stringr)
 
-# parámetros
-
 ANIOS <- 2012:2026
-CORTE_REGIMEN <- as.Date("2023-01-01")
+CORTE_REGIMEN <- as.Date("2023-01-01")   # inicio del regimen actual
 
 SENTINELAS <- c(0, 99999999)
 PRECIO_MIN <- 200
 PRECIO_MAX <- 5000
-
-TOL_MEDIANA <- 0.35
+TOL_MEDIANA <- 0.35   # tolerancia al corregir precios con decimales corridos
 
 COMBUSTIBLE <- c("Gasolina 93" = "93", "Gasolina 95" = "95",
                  "Gasolina 97" = "97", "Petroleo Diesel" = "di",
                  "93" = "93", "95" = "95", "97" = "97", "DI" = "di")
 
 DISTRIBUIDOR <- c("vigu ltda." = "vigu", "ruta 45" = "ruta v45",
-                  "go abastible" = "abastible", 
+                  "go abastible" = "abastible",
                   "gasco autogas" = "autogasco",
                   "hola" = "hola!", "esa" = "sesa",
                   "petrobras" = "aramco_petrobras",
@@ -57,13 +51,9 @@ REGION <- c(
   "tarapacá" = "tarapaca",
   "arica y parinacota" = "arica")
 
-# funciones 
-
-# renombrar
 recodificar <- function(x, dic) replace_values(x, from = names(dic), to = unname(dic))
 
-# imprime las filas que quedan tras cada paso para hacer seguimiento de com va quedando la base
-informar <- function(d, paso) {
+informar <- function(d, paso) {   # filas tras cada paso
   message(sprintf(" %-50s %s filas",
                   paso,
                   format(nrow(d), big.mark = ".", decimal.mark = ","))
@@ -71,7 +61,6 @@ informar <- function(d, paso) {
   d
 }
 
-# ahora hay que leer las bases considerandoe el cambio de régimen
 leer_regimen <- function(anios, delim, columnas) {
   map(anios, \(a) {
     f <-  here("data", "input", "bencina_en_linea", paste0(a, ".csv"))
@@ -93,13 +82,12 @@ normalizar_lugar <- function(x) {
 
 limpiar_campos <- function(d) {
   d |>
-    filter(!id %in% c("prueba", "CNE 01")) |> # hay registros de prueba en la base
+    filter(!id %in% c("prueba", "CNE 01")) |>   # registros de prueba
     mutate(
       id = tolower(trimws(replace_values(id, "co730401 co730401" ~ "co730401"))),
       distributor = recodificar(tolower(trimws(distributor)), DISTRIBUIDOR),
       municipality = normalizar_lugar(recodificar(tolower(trimws(municipality)), COMUNA)),
-      # caracter de formato invisible
-      region = tolower(trimws(str_remove_all(region, "\\p{Cf}"))), 
+      region = tolower(trimws(str_remove_all(region, "\\p{Cf}"))),   # caracter invisible
       region = if_else(str_detect(region, "libertador"), "ohiggins", region),
       region = recodificar(region, REGION),
       date = as.Date(date),
@@ -112,11 +100,12 @@ limpiar_campos <- function(d) {
     filter(!is.na(latitud), !is.na(longitud))
 }
 
+# precios fuera de rango que son x10 o x100 de la mediana del combustible-anio se corrigen
 limpiar_precios <- function(d) {
   d |>
     filter(fuel %in% names(COMBUSTIBLE)) |>
     mutate(fuel = unname(COMBUSTIBLE[fuel]),
-           price = suppressWarnings(as.numeric(price)), 
+           price = suppressWarnings(as.numeric(price)),
            price = if_else(price %in% SENTINELAS, NA, price),
            anio = format(date, "%Y")) |>
     group_by(fuel, anio) |>
@@ -124,7 +113,7 @@ limpiar_precios <- function(d) {
       med = median(price[between(price, PRECIO_MIN, PRECIO_MAX)], na.rm = TRUE),
       price = case_when(
         is.na(med) | price <= 2 * med ~ price,
-        abs(price / 10 - med) / med <=TOL_MEDIANA ~ price / 10,
+        abs(price / 10 - med) / med <= TOL_MEDIANA ~ price / 10,
         abs(price / 100 - med) / med <= TOL_MEDIANA ~ price / 100
       )
     ) |>
@@ -133,10 +122,10 @@ limpiar_precios <- function(d) {
     select(-anio, -med)
 }
 
-# ahora aplicamos todas estas funciones
+anio_corte <- as.integer(format(CORTE_REGIMEN, "%Y"))
 
-message(" regimen antiguo (2012-2022)")
-legacy <- leer_regimen(ANIOS[ANIOS < 2023], delim = ";", columnas = c(
+message(" regimen antiguo")
+legacy <- leer_regimen(ANIOS[ANIOS < anio_corte], delim = ";", columnas = c(
   "id", "legal_name", "distributor", "address_street", "address_number",
   "municipality", "region", "price", "date", "fuel", "latitud", "longitud")) |>
   select(-legal_name, -address_street, -address_number) |>
@@ -146,8 +135,8 @@ legacy <- leer_regimen(ANIOS[ANIOS < 2023], delim = ";", columnas = c(
   limpiar_precios() |>
   informar("combustibles del analisis con precio valido")
 
-message("regimen actual (2023-2026)")
-current <- leer_regimen(ANIOS[ANIOS >= 2023], delim = ",", columnas = c(
+message("regimen actual")
+current <- leer_regimen(ANIOS[ANIOS >= anio_corte], delim = ",", columnas = c(
   "id", "legal_name", "distributor", "address", "latitud", "longitud",
   "municipality", "region", "fuel", "price", "pricing_unit", "service_type",
   "date", "time", "ev_station", "gas_station")) |>
@@ -156,13 +145,13 @@ current <- leer_regimen(ANIOS[ANIOS >= 2023], delim = ",", columnas = c(
   limpiar_campos() |>
   informar("sin registros de prueba y con coordenadas validas") |>
   mutate(time = hms::as_hms(time)) |>
-  # una coordenada por estacion: la mas frecuente (README 3.5)
+  # una coordenada por estacion: la mas frecuente
   mutate(n = n(), .by = c(id, latitud, longitud)) |>
   mutate(latitud  = latitud[which.max(n)],
          longitud = longitud[which.max(n)], .by = id) |>
   select(-n)
 
-# lecturas por modalidad, para 02_diagnostico_empalme.R
+# lecturas por modalidad (asistido / autoservicio), para 02_diagnostico_empalme.R
 modalidad <- current |>
   filter(date >= CORTE_REGIMEN,
          fuel %in% c("93", "95", "97", "DI", "A93", "A95", "A97", "ADI")) |>
@@ -172,10 +161,7 @@ current <- current |>
   limpiar_precios() |>
   informar("combustibles asistidos con precio valido")
 
-# hay un tema importante con las ubicaciones
-# estaciones que se teletransportan al cambio de régimen
-# se hace el supuesto que las ubicaciones del nuevo régmine son más exactas
-
+# la ubicacion del regimen actual reemplaza a la del antiguo
 ubicacion <- current |>
   count(id, latitud, longitud, municipality, region) |>
   slice_max(n, n = 1, with_ties = FALSE, by = id) |>
@@ -187,19 +173,17 @@ saveRDS(list(legacy = legacy, current = filter(current, date < CORTE_REGIMEN),
 
 legacy <- legacy |> rows_update(ubicacion, by = "id", unmatched = "ignore")
 
-# empalme para la base final
-
 precios <- bind_rows(
   filter(legacy,  date <  CORTE_REGIMEN),
   filter(current, date >= CORTE_REGIMEN)
 ) |>
   informar("empalme") |>
-  distinct() |>  # el mismo registro leido dos veces
+  distinct() |>
   informar("sin filas duplicadas") |>
   arrange(id, date, fuel, time)
 
 write_csv(precios, here("data", "procesado", "precios.csv"), na = "")
 
-message(sprintf("01_clean_prices.R: %s estaciones, %s a %s -> %s",
+message(sprintf("01_limpiar_precios.R: %s estaciones, %s a %s -> %s",
                 n_distinct(precios$id), min(precios$date), max(precios$date),
                 here("data", "procesado", "precios.csv")))

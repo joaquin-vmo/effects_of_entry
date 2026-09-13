@@ -3071,6 +3071,102 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">ECKERT2013</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">HAUCAP2017</bcf:citekey>
+    <bcf:citekey order="1" intorder="3">KIHM2016</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">LEWIS2008</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">SOLIS2025</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">CHANDRA2011</bcf:citekey>
+    <bcf:citekey order="3" intorder="3">BYRNE2017</bcf:citekey>
+    <bcf:citekey order="3" intorder="4">LUCO2019</bcf:citekey>
+    <bcf:citekey order="3" intorder="5">STIGLER1961</bcf:citekey>
+    <bcf:citekey order="3" intorder="6">BORENSTEIN1991</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">SOLIS2025</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">SOLIS2025</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">VANMEERBEECK2003</bcf:citekey>
+    <bcf:citekey order="8" intorder="2">SEN2003</bcf:citekey>
+    <bcf:citekey order="8" intorder="3">BERGANTINO2020</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">CASTILLO2018</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">CASTILLO2018</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">DAVIS2025</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">KOH2022</bcf:citekey>
+    <bcf:citekey order="11" intorder="4">TAYLORMUEHLEGGER2026</bcf:citekey>
+    <bcf:citekey order="11" intorder="5">BERNARDO2018</bcf:citekey>
+    <bcf:citekey order="11" intorder="6">CARDOSO2022</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">BERNARDO2018</bcf:citekey>
+    <bcf:citekey order="12" intorder="2">CARDOSO2022</bcf:citekey>
+    <bcf:citekey order="12" intorder="3">DAVIS2025</bcf:citekey>
+    <bcf:citekey order="12" intorder="4">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="12" intorder="5">KOH2022</bcf:citekey>
+    <bcf:citekey order="12" intorder="6">TAYLORMUEHLEGGER2026</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">ARCIDIACONO2020</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">ARCIDIACONO2020</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="15" intorder="2">TAYLORMUEHLEGGER2026</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">TAYLORMUEHLEGGER2026</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">HOUDE2005</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">CALLAWAYSANTANNA2021</bcf:citekey>
+    <bcf:citekey order="18" intorder="2">SUNABRAHAM2021</bcf:citekey>
+    <bcf:citekey order="18" intorder="3">DECHAISEMARTIN2020</bcf:citekey>
+    <bcf:citekey order="18" intorder="4">BORUSYAK2024</bcf:citekey>
+    <bcf:citekey order="18" intorder="5">GARDNER2024</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">SALOP1979</bcf:citekey>
+    <bcf:citekey order="19" intorder="2">HOTELLING1929</bcf:citekey>
+    <bcf:citekey order="19" intorder="3">BRESNAHAN1991</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">BRESNAHAN1991</bcf:citekey>
+    <bcf:citekey order="20" intorder="2">HOTELLING1929</bcf:citekey>
+    <bcf:citekey order="20" intorder="3">SALOP1979</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">HOUDE2012</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">HOUDE2012</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="23" intorder="2">GENAKOS2022</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="24" intorder="2">GENAKOS2022</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">FNE2025informe</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">FNE2025informe</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">LEY20765</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">LEY21537</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">FNE2025informe</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">FNE2021informe</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">FNE2025informe</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="36" intorder="2">SOLIS2025</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="37" intorder="2">SOLIS2025</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">HOTELLING1929</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">HOTELLING1929</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">SALOP1979</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">SALOP1979</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">SALOP1979</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">SALOP1979</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">HOTELLING1929</bcf:citekey>
+    <bcf:citekey order="52" intorder="2">SALOP1979</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">HOTELLING1929</bcf:citekey>
+    <bcf:citekey order="53" intorder="2">SALOP1979</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">CLEMENZGUGLER2006</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">LUCO2019</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">FISCHER2025</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">FISCHER2025</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
@@ -3121,6 +3217,16 @@
                 type="entry"
                 sortingtemplatename="apa"
                 sortingnamekeytemplatename="apasortcite"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="0"
+                name="apa/global//global/global/global"
+                type="entry"
+                sortingtemplatename="apa"
+                sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
                 labelalphanametemplatename="global"

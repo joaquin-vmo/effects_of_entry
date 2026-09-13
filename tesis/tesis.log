@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 SEP 2026 11:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 SEP 2026 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -546,8 +546,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks45
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
 \MT@toks=\toks46
@@ -921,7 +919,6 @@ Package hyperref Info: Link coloring ON on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Couldn't patch \deferred@thm@head!
 LaTeX Info: Redefining \microtypecontext on input line 53.
 Package microtype Info: Applying patch `item' on input line 53.
 Package microtype Info: Applying patch `toc' on input line 53.
@@ -962,18 +959,53 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `tesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'tesis.bbl' not found.
-
-No file tesis.bbl.
+Package biblatex Info: ... file 'tesis.bbl' found.
+ (./tesis.bbl)
 Package biblatex Info: Reference section=0 on input line 53.
 Package biblatex Info: Reference segment=0 on input line 53.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[1
+ [1
 
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./tex/01_introduccion.tex) (./tex/02_literatura.tex) (./tex/03_mercado.tex) [2] (./tesis.aux
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./tex/01_introduccion.tex) (./tex/02_literatura.tex) [2] (./tex/03_mercado.tex [3]
+<output/graficos/serie_precios.pdf, id=145, 650.43pt x 361.35pt>
+File: output/graficos/serie_precios.pdf Graphic file (type pdf)
+<use output/graficos/serie_precios.pdf>
+Package pdftex.def Info: output/graficos/serie_precios.pdf  used on input line 24.
+(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<output/graficos/serie_margen.pdf, id=146, 650.43pt x 361.35pt>
+File: output/graficos/serie_margen.pdf Graphic file (type pdf)
+<use output/graficos/serie_margen.pdf>
+Package pdftex.def Info: output/graficos/serie_margen.pdf  used on input line 31.
+(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5 <./output/graficos/serie_precios.pdf>]
+<output/graficos/entradas_anio.pdf, id=167, 650.43pt x 361.35pt>
+File: output/graficos/entradas_anio.pdf Graphic file (type pdf)
+<use output/graficos/entradas_anio.pdf>
+Package pdftex.def Info: output/graficos/entradas_anio.pdf  used on input line 47.
+(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./output/graficos/serie_margen.pdf>] (./output/tablas/composicion_muestra.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./output/graficos/entradas_anio.pdf>] (./output/tablas/dispersion_p93.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8] [9] [10]) [11] [12] [13] [14] (./tesis.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -983,24 +1015,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: A92A073E06A37E8F7F2E95EEE39C7D35;740.
+(rerunfilecheck)             Checksum: 53BDF4A880E9759FA37234648FCEDB69;896.
 Package logreq Info: Writing requests to 'tesis.run.xml'.
 \openout1 = `tesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35465 strings out of 467525
- 678885 string characters out of 5418982
- 1627244 words of memory out of 5000000
- 63821 multiletter control sequences out of 15000+600000
- 644511 words of font info for 114 fonts, out of 8000000 for 9000
+ 36283 strings out of 467525
+ 697613 string characters out of 5418982
+ 1645266 words of memory out of 5000000
+ 64406 multiletter control sequences out of 15000+600000
+ 654197 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,94p,1048b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesis.pdf (2 pages, 175135 bytes).
+ 84i,10n,94p,1716b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesis.pdf (14 pages, 441081 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 41525 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 439 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 53836 words of extra memory for PDF output out of 61914 (max. 10000000)
 
