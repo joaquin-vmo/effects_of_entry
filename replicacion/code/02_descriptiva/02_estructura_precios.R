@@ -4,10 +4,11 @@
 # archivo de la CNE. data/input/estructura_precios_combustibles.xlsx ->
 # output/graficos/estructura_precios.pdf
 
-library(data.table)
 library(ggplot2)
 library(readxl)
 library(here)
+
+source(here("code", "00_utilidades.R"))
 
 HOJAS <- c(GASOLINA_93 = "Gasolina 93", DIESEL = "Diésel")
 # orden de la barra, de abajo hacia arriba
@@ -42,6 +43,5 @@ pl <- pl[comp %in% pl[pct != 0, comp]]   # fuera los componentes que no aplican
 fig <- ggplot(pl, aes(combustible, pct, fill = comp)) +
   geom_col(position = position_stack(reverse = TRUE), width = 0.6) +
   guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
-  labs(x = NULL, y = "Porcentaje del precio a público", fill = NULL) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "estructura_precios.pdf"), fig, width = 6, height = 4.5)
+  labs(x = NULL, y = "Porcentaje del precio a público", fill = NULL)
+guardar(fig, "estructura_precios.pdf", alto = 3.3, ancho = 4)

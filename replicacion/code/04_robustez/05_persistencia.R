@@ -15,16 +15,13 @@ p <- PANELES[["2012_2026"]]
 panel <- leer_panel(p)
 
 # vecinas a <= RTREAT km presentes en el panel cada mes
-sloc <- coords_estacion(panel)
-ix <- which(dist_propia(sloc$lat, sloc$lon) <= RTREAT, arr.ind = TRUE)
-edges <- data.table(station_key = sloc$station_key[ix[, 1]], vecina = sloc$station_key[ix[, 2]])
-edges <- merge(edges, panel[, .(ini = min(miym)), by = .(vecina = station_key)], by = "vecina")
+edges <- merge(vecinas(coords_estacion(panel), RTREAT), panel[, .(ini = min(miym)), by = .(vecina = station_key)], by = "vecina")
 ev <- merge(edges, unique(panel[, .(vecina = station_key, miym)]), by = "vecina", allow.cartesian = TRUE)
 ev <- merge(ev, unique(panel[role_entry == "treated", .(station_key, g = mi(g_entry))]),
             by = "station_key", all.x = TRUE)
 conteo <- ev[, .(ncomp = .N, ninc = sum(is.na(g) | ini < g)), by = .(station_key, miym)]   # ninc: sin la entrante
 
-SERIES   <- c(ncomp = "Incluye a la entrante", ninc = "Excluye a la entrante")
+CONTEOS  <- c(ncomp = "Incluye a la entrante", ninc = "Excluye a la entrante")
 MUESTRAS <- c("Con corte en la segunda entrada", "Sin corte")
 
 res <- rbindlist(lapply(MUESTRAS, \(mu) {
@@ -33,21 +30,14 @@ res <- rbindlist(lapply(MUESTRAS, \(mu) {
   d <- muestra_estacion(x, CTRL_ESTRICTO, p$focal)
   d <- merge(d, conteo, by = c("station_key", "miym"), all.x = TRUE)
   d[is.na(ncomp), `:=`(ncomp = 0L, ninc = 0L)]
-  rbindlist(lapply(names(SERIES), \(v)
+  rbindlist(lapply(names(CONTEOS), \(v)
     tidy_es(feols(as.formula(sprintf("%s ~ i(rel, treated, ref = -1) | %s", v, FE_PRINCIPAL)),
-                  data = d, cluster = ~comuna))[, `:=`(serie = SERIES[[v]], muestra = mu)]))
+                  data = d, cluster = ~comuna))[, `:=`(serie = CONTEOS[[v]], muestra = mu)]))
 }))
-res[, `:=`(serie = factor(serie, levels = SERIES), muestra = factor(muestra, levels = MUESTRAS))]
+res[, `:=`(serie = factor(serie, levels = CONTEOS), muestra = factor(muestra, levels = MUESTRAS))]
 print(dcast(res, serie + event_time ~ muestra, value.var = "estimate"), digits = 2)
 
-fig <- ggplot(res, aes(event_time, estimate, colour = muestra)) +
-  geom_hline(yintercept = 0) +
-  geom_hline(yintercept = 1, linetype = "dashed", colour = "grey50") +
-  geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se),
-                  position = position_dodge(width = 0.4)) +
-  facet_wrap(~serie) +
-  scale_x_continuous(breaks = -NBIN:NBIN) +
-  labs(x = "Semestres desde la entrada", y = sprintf("Cambio en el número de estaciones a %d km", RTREAT),
-       colour = NULL) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "persistencia.pdf"), fig, width = 9, height = 4.5)
+fig <- grafico_es(res, "muestra", facetas = ~serie, escalas = "fixed",
+                  y = sprintf("Cambio en el número de estaciones a %d km", RTREAT)) +
+  geom_hline(yintercept = 1, linetype = "dashed", colour = "grey50")
+guardar(fig, "persistencia.pdf", alto = 2.4)

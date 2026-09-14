@@ -15,20 +15,14 @@ p <- PANELES[["2012_2026"]]
 panel <- leer_panel(p)
 entrantes <- unique(fread(file.path(p$dir, "entradas.csv"))$station_key)
 
-d <- muestra_estacion(panel, CTRL_ESTRICTO, p$focal)
-COH_NUNCA <- 99999L   # cohorte fuera del rango de meses: sunab() la trata como nunca tratada
-d[, cohorte := fifelse(treated == 1L, mi(g_entry), COH_NUNCA)]
-d[, per := fifelse(treated == 1L, cohorte + rel, miym)]   # per - cohorte = bin
-
-estimar <- function(z, y, rhs) feols(as.formula(sprintf("log(%s) * 100 ~ %s | %s", y, rhs, FE_PRINCIPAL)),
-                                     data = z, cluster = ~comuna)
+d <- cohortes_sunab(muestra_estacion(panel, CTRL_ESTRICTO, p$focal))
 
 res <- lapply(names(PRECIOS), \(fv) {
   z <- mercado_local(panel, d, entrantes, fv, CUANTILES, MIN_COMP)
   ys <- paste0(names(SERIES), "_con")
-  att <- lapply(ys, estimar, z = z, rhs = "sunab(cohorte, per, att = TRUE)")
+  att <- lapply(ys, estimar_es, data = z, rhs = "sunab(cohorte, per, att = TRUE)")
   es <- rbindlist(lapply(seq_along(ys), \(j)
-    tidy_es(estimar(z, ys[j], "sunab(cohorte, per)"), "per")[, serie := SERIES[[j]]]))
+    tidy_es(estimar_es(z, ys[j], "sunab(cohorte, per)"), "per")[, serie := SERIES[[j]]]))
   message(sprintf("%s: %d mercados (%d tratados)", fv, uniqueN(z$station_key),
                   uniqueN(z[treated == 1L, station_key])))
   list(att = rbindlist(lapply(seq_along(ys), \(j)
@@ -40,26 +34,16 @@ res <- lapply(names(PRECIOS), \(fv) {
 # tabla: filas = cuantil, columnas = combustible
 cuerpo <- unlist(lapply(unname(SERIES), \(s) {
   r <- rbindlist(lapply(res, \(x) x$att[serie == s]))
-  c(fila(s, sprintf("%.3f%s", r$Estimate, estrellas(r$`Pr(>|t|)`))),
-    fila("", sprintf("(%.3f)", r$`Std. Error`)))
+  filas_coef(s, r$Estimate, r$`Std. Error`, r$`Pr(>|t|)`)
 }))
 n <- sapply(res, `[[`, "n")
-writeLines(c("\\begin{tabular}{lcccc}", "\\toprule",
-             fila("", unname(PRECIOS)), "\\midrule",
-             cuerpo, "\\midrule",
-             fila("Tratadas", n[1, ]), fila("Controles", n[2, ]),
-             fila("Observaciones", format(n[3, ], big.mark = ",")),
-             "\\bottomrule", "\\end{tabular}"),
-           here("output", "tablas", "mercado.tex"))
+escribir_tabla("lcccc",
+               c(fila("", unname(PRECIOS)), "\\midrule", cuerpo, "\\midrule",
+                 fila("Tratadas", n[1, ]), fila("Controles", n[2, ]),
+                 fila("Observaciones", format(n[3, ], big.mark = ","))),
+               "mercado.tex")
 
 es <- rbindlist(lapply(res, `[[`, "es"))
 es[, `:=`(serie = factor(serie, levels = SERIES), combustible = factor(combustible, levels = PRECIOS))]
-fig <- ggplot(es, aes(event_time, estimate, colour = serie)) +
-  geom_hline(yintercept = 0) +
-  geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se),
-                  position = position_dodge(width = 0.5)) +
-  facet_wrap(~combustible, scales = "free_y") +
-  scale_x_continuous(breaks = -NBIN:NBIN) +
-  labs(x = "Semestres desde la entrada", y = "Efecto sobre el precio del mercado (%)", colour = NULL) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "mercado.pdf"), fig, width = 9, height = 6)
+guardar(grafico_es(es, "serie", dodge = 0.5, y = "Efecto sobre el precio del mercado (%)"),
+        "mercado.pdf", alto = 3.2)

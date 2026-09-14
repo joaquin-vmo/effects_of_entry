@@ -19,11 +19,9 @@ panel <- fread(file.path(PANELES[["2012_2026"]]$dir, "panel_mensual.csv"),
                select = c("station_key", "ym", "miym", names(PRECIOS), "lat", "lon"))
 panel <- panel[year(as.IDate(ym)) == ANIO]
 sloc <- coords_estacion(panel)
-D <- dist_km(sloc$lat, sloc$lon)   # diagonal 0: el mercado incluye a la focal
 
 mercados <- function(fv, r) {
-  ix <- which(D <= r, arr.ind = TRUE)
-  ed <- data.table(foco = sloc$station_key[ix[, 1]], miembro = sloc$station_key[ix[, 2]])
+  ed <- setnames(vecinas(sloc, r, incluye_propia = TRUE), c("foco", "miembro"))
   px <- panel[!is.na(get(fv)), .(miembro = station_key, miym, p = get(fv))]
   mk <- merge(ed, px, by = "miembro", allow.cartesian = TRUE)
   mk <- mk[, if (any(miembro == foco)) .SD, by = .(foco, miym)]   # la focal con precio
@@ -35,7 +33,7 @@ mercados <- function(fv, r) {
 num <- \(x, dig = 1) sprintf("%.*f", dig, x)   # sin modo matematico: babel pondria coma decimal
 miles <- \(x) format(x, big.mark = ",")
 
-for (fv in names(PRECIOS)) {
+for (fv in setdiff(names(PRECIOS), "p95")) {   # la tesis no usa la tabla de la 95
   cuerpo <- unlist(lapply(seq_along(RADIOS), \(i) {
     m <- mercados(fv, RADIOS[i])
     filas <- vapply(names(MEDIDAS), \(v) {
@@ -50,8 +48,7 @@ for (fv in names(PRECIOS)) {
       sprintf("\\multicolumn{8}{l}{\\footnotesize %s mercados, %s mercado-mes} \\\\",
               miles(uniqueN(m$foco)), miles(nrow(m))))
   }))
-  writeLines(c("\\begin{tabular}{lccccccc}", "\\toprule",
-               fila("", "P10", "P25", "Mediana", "Media", "P75", "P90", "D.E."), "\\midrule",
-               cuerpo, "\\bottomrule", "\\end{tabular}"),
-             here("output", "tablas", sprintf("dispersion_%s.tex", fv)))
+  escribir_tabla("lccccccc",
+                 c(fila("", "P10", "P25", "Mediana", "Media", "P75", "P90", "D.E."), "\\midrule", cuerpo),
+                 sprintf("dispersion_%s.tex", fv))
 }

@@ -9,26 +9,28 @@ La Figura \ref{fig:placebo_adelanto} adelanta la fecha de entrada de cada tratad
 \begin{figure}[htbp]
     \centering
     \caption{Estudio de eventos con la entrada fechada seis meses antes de la registrada} \label{fig:placebo_adelanto}
-    \includegraphics[width = \textwidth]{output/graficos/placebo_adelanto.pdf}
+    \includegraphics{output/graficos/placebo_adelanto.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Log del precio $\times$ 100. La fecha de entrada se adelanta un período (seis meses). Tiempo en meses desde la entrada registrada, en los cuatro bins a cada lado de ella, con extremos agrupados en $\pm 24$; la línea punteada marca la entrada adelantada (mes $-6$) y la discontinua la registrada (mes 0). Referencia en el mes previo a la entrada adelantada ($-7$). Misma muestra, efectos fijos (estación, mes, región $\times$ año y marca $\times$ año) y control que la especificación principal. Intervalos al 95\% con errores estándar agrupados por comuna.}
 \end{figure}
 
 La Tabla \ref{tab:placebo_controles} asigna fechas de entrada falsas a estaciones del grupo de control, con la misma proporción de tratadas y la misma distribución de cohortes que la muestra real, y estima el efecto 500 veces sobre todo el grupo y sobre su mitad más densa. El efecto placebo promedio está entre 0,00\% y 0,02\%, frente a efectos reales de 0,24\% a 0,59\%, por lo que el diseño no genera efectos donde no hay entrada. Los errores agrupados por comuna son similares a la dispersión efectiva de los placebos en todo el grupo y cerca de 10\% menores en la mitad densa, con tasas de rechazo al 5\% de entre 4\% y 7\% y de hasta 8\%, respectivamente. El valor $p$ por aleatorización del efecto real es de 0,002 o menos en las gasolinas 93 y 95 y el diésel, y en la gasolina 97 de 0,03 en todo el grupo y 0,07 en la mitad densa.
 
-Las Figuras \ref{fig:ventana_2014_2019} y \ref{fig:ventana_2021_2026} repiten el estudio de eventos principal con TWFE y \textcite{SUNABRAHAM2021} en las ventanas antes y después de la pandemia, y las Tablas \ref{tab:ventana_2014_2019} y \ref{tab:ventana_2021_2026} reportan los coeficientes. Antes de la pandemia el efecto es mayor que en la ventana completa: el precio cae entre 0,43\% (gasolina 93) y 0,62\% (diésel) en el primer semestre y hasta 0,84\% en el diésel, con ambos estimadores prácticamente iguales. Los bins previos son positivos en los cuatro combustibles, entre 0,09\% y 0,31\% con TWFE y no significativos salvo el bin $-3$ de la gasolina 97 al 10\%, pero con \textcite{SUNABRAHAM2021} son significativos en las gasolinas 95 y 97, por lo que en esta ventana los precios ya venían cayendo antes de la entrada y parte del efecto podría reflejar esa tendencia. Aun así, los bins previos son menores que los efectos posteriores en todos los combustibles.
-
 \begin{figure}[htbp]
     \centering
     \caption{Efecto de la entrada sobre el precio de las incumbentes, ventana 2014 a 2019} \label{fig:ventana_2014_2019}
-    \includegraphics[width = \textwidth]{output/graficos/ventana_2014_2019.pdf}
+    \includegraphics{output/graficos/ventana_2014_2019.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Incumbentes presentes en 2014 y cohortes de entrada de 2015 a 2019. Log del precio $\times$ 100. Eje horizontal en semestres: bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. \textcite{SUNABRAHAM2021} con cohortes mensuales y las nunca tratadas como referencia. Intervalos al 95\% con errores estándar agrupados por comuna. Control: estaciones sin entradas a menos de 5 km. Entre 418 y 459 tratadas y entre 557 y 697 controles según el combustible.}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \caption{Efecto de la entrada sobre el precio de las incumbentes, ventana 2021 a 2026} \label{fig:ventana_2021_2026}
-    \includegraphics[width = \textwidth]{output/graficos/ventana_2021_2026.pdf}
+    \includegraphics{output/graficos/ventana_2021_2026.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Incumbentes presentes en 2021 y cohortes de entrada de 2022 a febrero de 2026. Log del precio $\times$ 100. Eje horizontal en semestres: bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. \textcite{SUNABRAHAM2021} con cohortes mensuales y las nunca tratadas como referencia. Intervalos al 95\% con errores estándar agrupados por comuna. Control: estaciones sin entradas a menos de 5 km. Entre 180 y 199 tratadas y entre 1.025 y 1.194 controles según el combustible.}
 \end{figure}
+
+Las Figuras \ref{fig:ventana_2014_2019} y \ref{fig:ventana_2021_2026} repiten el estudio de eventos principal con TWFE y \textcite{SUNABRAHAM2021} en las ventanas antes y después de la pandemia, y las Tablas \ref{tab:ventana_2014_2019} y \ref{tab:ventana_2021_2026} reportan los coeficientes. Antes de la pandemia el efecto es mayor que en la ventana completa: el precio cae entre 0,43\% (gasolina 93) y 0,62\% (diésel) en el primer semestre y hasta 0,84\% en el diésel, con ambos estimadores prácticamente iguales. Los bins previos son positivos en los cuatro combustibles, entre 0,09\% y 0,31\% con TWFE y no significativos salvo el bin $-3$ de la gasolina 97 al 10\%, pero con \textcite{SUNABRAHAM2021} son significativos en las gasolinas 95 y 97, por lo que en esta ventana los precios ya venían cayendo antes de la entrada y parte del efecto podría reflejar esa tendencia. Aun así, los bins previos son menores que los efectos posteriores en todos los combustibles.
+
+
 
 Después de la pandemia el efecto es menor y dura menos. En las gasolinas 93 y 95 el precio cae entre 0,11\% y 0,24\% en los tres primeros semestres con \textcite{SUNABRAHAM2021} y deja de ser distinguible de cero desde el cuarto, en el diésel la caída es de 0,22\% solo en el segundo semestre, y en la gasolina 97 no hay un efecto negativo persistente y los bins 3 y $\geq 4$ son positivos. Con TWFE los puntos estimados son parecidos pero casi ningún coeficiente es significativo, dado que la ventana tiene menos de 200 tratadas, y los intervalos de \textcite{SUNABRAHAM2021} son más angostos. Los bins previos son cercanos a cero salvo el bin $-4$ de las gasolinas 95 y 97, por lo que la debilidad del efecto no se explica por tendencias previas.

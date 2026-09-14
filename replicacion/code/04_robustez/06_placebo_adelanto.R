@@ -21,8 +21,7 @@ d <- muestra_estacion(leer_panel(p), CTRL_ESTRICTO, p$focal)
 d[, relp := fifelse(treated == 1L, pmax(-NB_M, pmin(NB_M, miym - mi(g_entry))) + DELTA, -1L)]
 
 res <- rbindlist(lapply(names(PRECIOS), \(fv)
-  tidy_es(feols(as.formula(sprintf("log(%s) * 100 ~ i(relp, treated, ref = -1) | %s", fv, FE_PRINCIPAL)),
-                data = d[!is.na(get(fv))], cluster = ~comuna), "relp")[, combustible := PRECIOS[[fv]]]))
+  tidy_es(estimar_es(d[!is.na(get(fv))], fv, "i(relp, treated, ref = -1)"), "relp")[, combustible := PRECIOS[[fv]]]))
 res[, `:=`(mes = event_time - DELTA, combustible = factor(combustible, levels = PRECIOS))]
 
 ENTRADAS <- data.table(x = c(-DELTA, 0), tipo = c("Entrada adelantada (placebo)", "Entrada registrada"))
@@ -33,9 +32,8 @@ fig <- ggplot(res, aes(mes, estimate)) +
   facet_wrap(~combustible, scales = "free_y") +
   scale_x_continuous(breaks = seq(-NB_M, NB_M, BIN_M)) +
   scale_linetype_manual(values = c("dotted", "dashed")) +
-  labs(x = "Meses desde la entrada registrada", y = "Efecto sobre el precio (%)", linetype = NULL) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "placebo_adelanto.pdf"), fig, width = 9, height = 6.5)
+  labs(x = "Meses desde la entrada registrada", y = "Efecto sobre el precio (%)", linetype = NULL)
+guardar(fig, "placebo_adelanto.pdf", alto = 3.4)
 
 print(dcast(res[mes %between% c(-8, 2), .(combustible, mes, v = sprintf("%.2f [%.2f, %.2f]", estimate,
             estimate - 1.96 * se, estimate + 1.96 * se))], mes ~ combustible, value.var = "v"))

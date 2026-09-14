@@ -1,21 +1,23 @@
 \documentclass[12pt,a4paper,oneside]{article}
 
 \usepackage[spanish]{babel}
-\usepackage{caption} 
-
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+\usepackage{caption}
+\captionsetup[table]{font=normalsize}
+% tablas en letra del tamanio de las notas; las figuras van a su tamanio natural (el ancho se fija en R)
+\AddToHook{env/table/begin}{\footnotesize}
+% reduce una tabla solo si es mas ancha que el texto
+\newcommand{\ajustar}[1]{\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{#1}}
+
 \usepackage{csquotes}
-\usepackage{xcolor}
 \usepackage{graphicx}
-\usepackage{booktabs}   
+\usepackage{booktabs}
 
 \usepackage{tikz}
 \usetikzlibrary{positioning, arrows.meta, calc, babel}
 
 \usepackage{amsmath}
-\usepackage{amsthm}
 
 \usepackage[hyperfootnotes=false]{hyperref}
 \hypersetup{
@@ -36,8 +38,6 @@
 
 \usepackage{setspace}
 \onehalfspacing
-
-% \usepackage{parskip}
 
 \usepackage{microtype}
 
@@ -70,9 +70,6 @@ Este trabajo estima el efecto disciplinador sobre los precios que induce la aper
 
 \vspace{0.5cm}
 \noindent \textbf{Códigos JEL:} L13, L81, L11, D83. 
-
-\renewcommand{\thefootnote}{\arabic{footnote}}
-\setcounter{footnote}{0}
 
 \newpage
 

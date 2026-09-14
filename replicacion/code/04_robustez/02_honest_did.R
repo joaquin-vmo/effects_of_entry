@@ -23,8 +23,7 @@ d <- muestra_estacion(panel, CTRL_ESTRICTO, p$focal)
 
 # estudio de eventos sobre log(y) x 100 y Mbar de quiebre de cada horizonte
 sensibilidad <- function(z, y) {
-  m <- feols(as.formula(sprintf("log(%s) * 100 ~ i(rel, treated, ref = -1) | %s", y, FE_PRINCIPAL)),
-             data = z, cluster = ~comuna)
+  m <- estimar_es(z, y)
   nm <- grep("^rel::", names(coef(m)), value = TRUE)   # -4..-2 y 0..4, ya ordenados
   b <- unname(coef(m)[nm])
   V <- matrix(as.numeric(vcov(m)[nm, nm]), length(nm))   # HonestDiD no lee fixest_vcov
@@ -69,11 +68,10 @@ cuerpo <- unlist(lapply(names(HORIZONTES), \(h) {
     fila("\\quad $\\bar{M}$ de quiebre", fmt_q(r$quiebre)))
 }))
 r1 <- principal[horizonte == "impacto"][match(names(PRECIOS), y)]
-writeLines(c("\\begin{tabular}{lcccc}", "\\toprule", fila("", unname(PRECIOS)), "\\midrule",
-             cuerpo, "\\midrule",
-             fila("Tratadas", r1$tratadas), fila("Controles", r1$controles),
-             "\\bottomrule", "\\end{tabular}"),
-           here("output", "tablas", "honest_principal.tex"))
+escribir_tabla("lcccc",
+               c(fila("", unname(PRECIOS)), "\\midrule", cuerpo, "\\midrule",
+                 fila("Tratadas", r1$tratadas), fila("Controles", r1$controles)),
+               "honest_principal.tex")
 
 # ---- cuantiles del mercado ----
 cols <- as.vector(outer(names(SERIES), names(VERSIONES), paste, sep = "_"))   # p90_con, ...
@@ -90,9 +88,8 @@ cuerpo <- unlist(lapply(names(PRECIOS), \(fv) {
       fila(sprintf("\\quad %s", HORIZ_LBL[[h]]), fmt_q(r$quiebre))
     }, character(1)))
 }))
-writeLines(c("\\begin{tabular}{lcccccc}", "\\toprule",
-             " & \\multicolumn{3}{c}{Con entrante} & \\multicolumn{3}{c}{Sin entrante} \\\\",
-             "\\cmidrule(lr){2-4} \\cmidrule(lr){5-7}",
-             fila("", rep(unname(SERIES), 2)), "\\midrule",
-             cuerpo, "\\bottomrule", "\\end{tabular}"),
-           here("output", "tablas", "honest_mercado.tex"))
+escribir_tabla("lcccccc",
+               c(" & \\multicolumn{3}{c}{Con entrante} & \\multicolumn{3}{c}{Sin entrante} \\\\",
+                 "\\cmidrule(lr){2-4} \\cmidrule(lr){5-7}",
+                 fila("", rep(unname(SERIES), 2)), "\\midrule", cuerpo),
+               "honest_mercado.tex")

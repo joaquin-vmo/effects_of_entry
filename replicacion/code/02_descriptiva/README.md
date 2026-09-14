@@ -8,7 +8,7 @@ Figuras y tablas descriptivas. Todos los scripts leen el panel completo (`data/p
 | `02_estructura_precios.R` | `data/input/estructura_precios_combustibles.xlsx` | `output/graficos/estructura_precios.pdf` |
 | `03_mapa_calor.R` | `panel_mensual.csv`, `data/input/mapas/{comunas,red_vial}` | `output/graficos/mapa_calor.pdf` |
 | `04_autopistas.R` | `panel_mensual.csv`, `data/input/mapas/{comunas,red_vial}` | `output/graficos/autopistas.pdf` |
-| `05_dispersion_precios.R` | `panel_mensual.csv` | `output/tablas/dispersion_{p93,p95,p97,pdi}.tex` |
+| `05_dispersion_precios.R` | `panel_mensual.csv` | `output/tablas/dispersion_{p93,p97,pdi}.tex` (la 95 no se usa en la tesis) |
 | `06_entradas_anio.R` | `entradas.csv` (ventana `2012_2026`) | `output/graficos/entradas_anio.pdf` |
 | `07_composicion_muestra.R` | `panel_mensual.csv`, `entradas.csv` (ventana `2012_2026`) | `output/tablas/composicion_muestra.tex` |
 | `08_caso_entrada.R` | `panel_mensual.csv`, `entradas.csv`, `data/input/mapas/comunas` | `output/graficos/caso_entrada.pdf` |

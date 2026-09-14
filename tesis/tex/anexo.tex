@@ -36,26 +36,26 @@ Nuevamente, $N/L$ corresponde a la densidad de población $D$, por lo que \eqref
 \clearpage
 \section{Figuras} \label{sec:anexo_figuras}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \caption{Estructura del precio a público de la gasolina 93 y el diésel en 2021} \label{fig:estructura_precios}
-    \includegraphics[width = 0.7\textwidth]{output/graficos/estructura_precios.pdf}
+    \includegraphics{output/graficos/estructura_precios.pdf}
     \caption*{\footnotesize Fuente: CNE. Promedio de los desgloses mensuales de 2021 para la Región Metropolitana. En 2021 el FEPP no aplica a la 93 ni al diésel (rige el MEPCO), y el impuesto específico incluye su componente variable.}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \caption{Margen de venta por litro para gasolinas y diésel desde 2012 a 2026 en Chile} \label{fig:serie_margen}
-    \includegraphics[width = \textwidth]{output/graficos/serie_margen.pdf}
+    \includegraphics{output/graficos/serie_margen.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl y costos mayosristas con MEPCO. Margen = (precio $-$ precio mayorista con MEPCO) / precio. Promedio simple semanal entre estaciones. Gasolina 95 no se incluye pues el Ministerio de Hacienda no los dispone}
 \end{figure}
 
 La Figura \ref{fig:conley} reporta la especificación principal en la ventana 2012 a 2026 con tres estimaciones de la varianza: errores agrupados por comuna, y errores de \textcite{CONLEY1991} con corte de 2 y 5 kilómetros. Los coeficientes son idénticos entre las tres, solo cambian los intervalos de confianza.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \caption{Estudio de eventos con errores agrupados por comuna y de Conley} \label{fig:conley}
-    \includegraphics[width = \textwidth]{output/graficos/conley_2012_2026.pdf}
+    \includegraphics{output/graficos/conley_2012_2026.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Log del precio $\times$ 100. Intervalos al 95\% con errores agrupados por comuna y de \textcite{CONLEY1991} con kernel uniforme y corte de 2 y 5 km. Bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Control: estaciones sin entradas a menos de 5 km.}
 \end{figure}
 
@@ -64,21 +64,21 @@ La Figura \ref{fig:fischer_semanal} repite el estudio de eventos principal con e
 \begin{figure}[htbp]
     \centering
     \caption{Estudio de eventos en panel mensual y semanal} \label{fig:fischer_semanal}
-    \includegraphics[width = \textwidth]{output/graficos/fischer_semanal.pdf}
+    \includegraphics{output/graficos/fischer_semanal.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Log del precio $\times$ 100. Mensual: especificación principal. Semanal: semana de la entrada, bins de 26 semanas, efecto fijo de semana y, en \textcite{SUNABRAHAM2021}, cohortes trimestrales, en gasolina 95 se excluye de este estimador una cohorte de dos estaciones cuyos coeficientes no están identificados. Extremos agrupados, referencia en $-1$. Efectos fijos de estación, región $\times$ año y marca $\times$ año. Intervalos al 95\% con errores estándar agrupados por comuna. Control: estaciones sin entradas a menos de 5 km.}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \caption{Estudio de eventos en estaciones de autopista y en el resto} \label{fig:het_autopista}
-    \includegraphics[width = \textwidth]{output/graficos/het_autopista.pdf}
+    \includegraphics{output/graficos/het_autopista.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl y red vial del MOP. Log del precio $\times$ 100. Tiempo desde la entrada interactuado con cada grupo en una sola regresión. Eje horizontal en semestres: bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Mismas definiciones, muestra y efectos fijos que la Tabla \ref{tab:het_autopista}. Intervalos al 95\% con errores estándar agrupados por comuna.}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \caption{Efecto de la entrada sobre el número de estaciones del mercado local} \label{fig:persistencia}
-    \includegraphics[width = \textwidth]{output/graficos/persistencia.pdf}
+    \includegraphics{output/graficos/persistencia.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Estudio de eventos sobre el número de estaciones con registro a 2 km o menos de la incumbente, incluyendo y excluyendo a la entrante, con y sin el corte de la muestra en la segunda entrada. Eje horizontal en semestres: bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. La línea discontinua marca una estación adicional. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. Intervalos al 95\% con errores estándar agrupados por comuna. Control: estaciones sin entradas a menos de 5 km.}
 \end{figure}
 
@@ -87,42 +87,42 @@ La Figura \ref{fig:fischer_semanal} repite el estudio de eventos principal con e
 \clearpage
 \section{Tablas} \label{sec:anexo_tablas}
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Composición de la muestra, ventana 2012 a 2026} \label{tab:composicion}
     \input{output/tablas/composicion_muestra.tex}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl.}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Estudio de eventos por grupo de control, gasolina 93} \label{tab:controles_p93}
     \input{output/tablas/es_controles_p93.tex}
     \notacontroles
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Estudio de eventos por grupo de control, gasolina 97} \label{tab:controles_p97}
     \input{output/tablas/es_controles_p97.tex}
     \notacontroles
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Estudio de eventos por grupo de control, diésel} \label{tab:controles_pdi}
     \input{output/tablas/es_controles_pdi.tex}
     \notacontroles
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Estudio de eventos por especificación de efectos fijos, gasolina 97} \label{tab:es_p97}
     \input{output/tablas/es_2012_2026_p97.tex}
     \notaes
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Estudio de eventos por especificación de efectos fijos, diésel} \label{tab:es_pdi}
     \input{output/tablas/es_2012_2026_pdi.tex}
@@ -148,7 +148,7 @@ La Tabla \ref{tab:validacion_margen} compara el margen de este trabajo, precio d
 \begin{table}[htbp]
     \centering
     \caption{Margen de este trabajo y margen contable de la FNE en torno a la ex estación Sesa} \label{tab:validacion_margen}
-    \resizebox{\textwidth}{!}{\input{output/tablas/validacion_margen.tex}}
+    \ajustar{\input{output/tablas/validacion_margen.tex}}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl, costo mayorista con MEPCO y \textcite{FNE2021informe}, Tabla N.º 4. Margen porcentual sobre el precio de venta y, entre paréntesis, en pesos por litro, agosto de 2018 a julio de 2019. Este trabajo: precio menos costo mayorista con MEPCO, promedio simple de estación-mes de las gasolinas 93 y 97 y el diésel ponderadas por su participación nacional en volumen. FNE: ingresos menos costo de adquisición (precio de ENAP, impuesto específico, almacenamiento y transporte) sobre ingresos de las ventas minoristas de los cuatro combustibles, reportado en rangos. -- indica que no hay estaciones de la marca en el anillo.}
 \end{table}
 
@@ -162,28 +162,28 @@ La Tabla \ref{tab:validacion_margen} compara el margen de este trabajo, precio d
 \begin{table}[htbp]
     \centering
     \caption{Sensibilidad del estudio de eventos sobre los precios del mercado local, \textcite{RAMBACHAN2023}} \label{tab:honest_mercado}
-    \resizebox{\textwidth}{!}{\input{output/tablas/honest_mercado.tex}}
+    \ajustar{\input{output/tablas/honest_mercado.tex}}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. $\bar{M}$ de quiebre de \textcite{RAMBACHAN2023}, restricción de magnitudes relativas, sobre el estudio de eventos TWFE del log del percentil 90, la mediana y el percentil 10 de los precios del mercado local. Con entrante incluye a la estación que abre, sin entrante la excluye. Mayor $\bar{M}$ de la grilla de 0,25 a 3 con el que el intervalo robusto al 95\% excluye el cero. Mercados de 2 km con al menos una competidora antes de la entrada. Control: estaciones sin entradas a menos de 5 km. Errores estándar agrupados por comuna.}
 \end{table}
 
 \begin{table}[htbp]
     \centering
     \caption{Placebo con fechas de entrada falsas asignadas al grupo de control} \label{tab:placebo_controles}
-    \resizebox{\textwidth}{!}{\input{output/tablas/placebo_controles.tex}}
+    \ajustar{\input{output/tablas/placebo_controles.tex}}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. 500 réplicas por grupo. En cada una se sortea como falsamente tratada la misma proporción de estaciones que en la muestra real, con cohortes y desfases a la segunda entrada sacados de sus distribuciones reales, y se estima el efecto estático de la especificación principal (log del precio $\times$ 100). Grupo de control: estaciones sin entradas a menos de 5 km, mitad más densa: estaciones con número de competidoras a 2 km o menos sobre la mediana del grupo. Error estándar agrupado medio: promedio del error agrupado por comuna entre réplicas, desviación estándar: dispersión de los 500 estimadores. Tasa de rechazo: proporción de réplicas con p $<$ 0,05. Valor $p$ por aleatorización: proporción de réplicas cuyo efecto iguala o supera en magnitud al efecto real. * p$<$0,10 ** p$<$0,05 *** p$<$0,01.}
 \end{table}
 
 \begin{table}[htbp]
     \centering
     \caption{Estudio de eventos con TWFE y Sun y Abraham, ventana 2014 a 2019} \label{tab:ventana_2014_2019}
-    \resizebox{\textwidth}{!}{\input{output/tablas/ventana_2014_2019.tex}}
+    \ajustar{\input{output/tablas/ventana_2014_2019.tex}}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Incumbentes presentes en 2014 y cohortes de entrada de 2015 a 2019. Log del precio $\times$ 100. SA: \textcite{SUNABRAHAM2021} con cohortes mensuales y las nunca tratadas como referencia. Bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. Control: estaciones sin entradas a menos de 5 km. Errores estándar agrupados por comuna entre paréntesis. * p$<$0,10 ** p$<$0,05 *** p$<$0,01.}
 \end{table}
 
 \begin{table}[htbp]
     \centering
     \caption{Estudio de eventos con TWFE y Sun y Abraham, ventana 2021 a 2026} \label{tab:ventana_2021_2026}
-    \resizebox{\textwidth}{!}{\input{output/tablas/ventana_2021_2026.tex}}
+    \ajustar{\input{output/tablas/ventana_2021_2026.tex}}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Incumbentes presentes en 2021 y cohortes de entrada de 2022 a febrero de 2026. Log del precio $\times$ 100. SA: \textcite{SUNABRAHAM2021} con cohortes mensuales y las nunca tratadas como referencia. Bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. Control: estaciones sin entradas a menos de 5 km. Errores estándar agrupados por comuna entre paréntesis. * p$<$0,10 ** p$<$0,05 *** p$<$0,01.}
 \end{table}
 

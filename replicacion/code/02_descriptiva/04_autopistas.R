@@ -35,4 +35,4 @@ fig <- ggplot(l, aes(d_auto, dev_com)) +
   facet_wrap(~combustible, nrow = 1) +
   scale_x_log10(breaks = c(10, 50, 200, 500, 1000, 5000)) +
   labs(x = "Distancia a la autopista (m)", y = "Desviación del promedio comunal ($/L)")
-ggsave(here("output", "graficos", "autopistas.pdf"), fig, width = 14, height = 5)
+guardar(fig, "autopistas.pdf", alto = 2.2)

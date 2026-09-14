@@ -18,17 +18,13 @@ serie <- panel[, .(precio = mean(price), margen = mean(100 * margin / price, na.
 fig <- ggplot(serie, aes(wk, precio, colour = combustible)) +
   geom_line() +
   scale_x_date(expand = expansion(mult = c(0, .02)), date_breaks = "2 years", date_labels = "%Y") +
-  labs(x = NULL, y = "Precio promedio ($/L)", colour = NULL) +
-  theme_gray(base_size = 18) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "serie_precios.pdf"), fig, width = 9, height = 5)
+  labs(x = NULL, y = "Precio promedio ($/L)", colour = NULL)
+guardar(fig, "serie_precios.pdf", alto = 2.6)
 
 fig <- ggplot(serie[!is.na(margen)], aes(wk, margen, colour = combustible)) +
   geom_line() +
   # drop = FALSE: mismos colores que el grafico de precios, sin la 95
   scale_colour_discrete(drop = FALSE, breaks = unname(PRECIOS[names(PRECIOS) != "p95"])) +
   scale_x_date(expand = expansion(mult = c(0, .02)), date_breaks = "2 years", date_labels = "%Y") +
-  labs(x = NULL, y = "Margen de venta (%)", colour = NULL) +
-  theme_gray(base_size = 18) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "serie_margen.pdf"), fig, width = 9, height = 5)
+  labs(x = NULL, y = "Margen de venta (%)", colour = NULL)
+guardar(fig, "serie_margen.pdf", alto = 2.6)

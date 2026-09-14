@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  14 SEP 2026 12:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  14 SEP 2026 13:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -52,7 +52,9 @@ Package babel Info: Making > an active character on input line 722.
 ))
 LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 4.
 LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
@@ -72,12 +74,6 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count286
 \c@continuedfloat=\count287
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -90,7 +86,7 @@ Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \csq@qlevel=\count292
 \csq@maxlvl=\count293
 \csq@tshold=\count294
-\csq@ltx@everypar=\toks21
+\csq@ltx@everypar=\toks19
  (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -98,25 +94,7 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
@@ -126,7 +104,9 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -149,7 +129,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count298
 \@thisrulewidth=\dimen172
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks20
 \pgfutil@tempdima=\dimen173
 \pgfutil@tempdimb=\dimen174
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -161,10 +141,10 @@ Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks23
 ))
 \pgf@x=\dimen175
 \pgf@y=\dimen176
@@ -182,9 +162,9 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \c@pgf@countb=\count300
 \c@pgf@countc=\count301
 \c@pgf@countd=\count302
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
 \pgf@sys@id@count=\count303
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
@@ -200,15 +180,31 @@ File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@bigbuffer@items=\count305
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen185
 \pgfmath@count=\count306
 \pgfmath@box=\box54
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count307
 )) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
@@ -291,8 +287,8 @@ Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen268
 \pgffor@skip=\dimen269
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
 )) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
@@ -346,7 +342,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2024/11/17 v2.01 AMS text
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks34
+\@emptytoks=\toks32
 \ex@=\dimen283
 )) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -384,34 +380,23 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count327
 \dspbrk@lvl=\count328
-\tag@help=\toks35
+\tag@help=\toks33
 \row@=\count329
 \column@=\count330
 \maxfields@=\count331
-\andhelp@=\toks36
+\andhelp@=\toks34
 \eqnshift@=\dimen286
 \alignsep@=\dimen287
 \tagshift@=\dimen288
 \tagwidth@=\dimen289
 \totwidth@=\dimen290
 \lineht@=\dimen291
-\@envbody=\toks37
+\@envbody=\toks35
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks38
+\mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks39
-\thm@bodyfont=\toks40
-\thm@headfont=\toks41
-\thm@notefont=\toks42
-\thm@headpunct=\toks43
-\thm@preskip=\skip54
-\thm@postskip=\skip55
-\thm@headsep=\skip56
-\dth@everypar=\toks44
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
  (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
@@ -508,9 +493,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip57
+\Hy@SectionHShift=\skip54
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+Package hyperref Info: Option `colorlinks' set `true' on input line 28.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -524,7 +509,6 @@ LaTeX Info: Redefining \cpagerefrange on input line 2370.
 LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
-Package cleveref Info: `amsthm' support loaded on input line 3026.
 )
 ==> First Aid for cleveref.sty applied!
 (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
@@ -543,17 +527,17 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen301
 \Gm@layouthoffset=\dimen302
 \Gm@layoutvoffset=\dimen303
-\Gm@dimlist=\toks45
+\Gm@dimlist=\toks37
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-\MT@toks=\toks46
+\MT@toks=\toks38
 \MT@tempbox=\box66
 \MT@count=\count345
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
 LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks47
+\MT@prot@toks=\toks39
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen304
@@ -564,7 +548,7 @@ LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip58
+\MT@outer@space=\skip55
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg
@@ -624,14 +608,14 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@sectionciteorderinternal@0=\count388
 \blx@entrysetcounter=\count389
 \blx@biblioinstance=\count390
-\labelnumberwidth=\skip59
-\labelalphawidth=\skip60
-\biblabelsep=\skip61
-\bibitemsep=\skip62
-\bibnamesep=\skip63
-\bibinitsep=\skip64
-\bibparsep=\skip65
-\bibhang=\skip66
+\labelnumberwidth=\skip56
+\labelalphawidth=\skip57
+\biblabelsep=\skip58
+\bibitemsep=\skip59
+\bibnamesep=\skip60
+\bibinitsep=\skip61
+\bibparsep=\skip62
+\bibhang=\skip63
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language92
@@ -728,20 +712,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedcitation=\count469
 \c@pageref=\count470
 \c@savedpageref=\count471
-\shorthandwidth=\skip67
-\shortjournalwidth=\skip68
-\shortserieswidth=\skip69
-\shorttitlewidth=\skip70
-\shortauthorwidth=\skip71
-\shorteditorwidth=\skip72
-\locallabelnumberwidth=\skip73
-\locallabelalphawidth=\skip74
-\localshorthandwidth=\skip75
-\localshortjournalwidth=\skip76
-\localshortserieswidth=\skip77
-\localshorttitlewidth=\skip78
-\localshortauthorwidth=\skip79
-\localshorteditorwidth=\skip80
+\shorthandwidth=\skip64
+\shortjournalwidth=\skip65
+\shortserieswidth=\skip66
+\shorttitlewidth=\skip67
+\shortauthorwidth=\skip68
+\shorteditorwidth=\skip69
+\locallabelnumberwidth=\skip70
+\locallabelalphawidth=\skip71
+\localshorthandwidth=\skip72
+\localshortjournalwidth=\skip73
+\localshortserieswidth=\skip74
+\localshorttitlewidth=\skip75
+\localshortauthorwidth=\skip76
+\localshorteditorwidth=\skip77
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -867,12 +851,12 @@ Package caption Info: End \AtBeginDocument code.
 \scratchbox=\box67
 \nofMPsegments=\count485
 \nofMParguments=\count486
-\everyMPshowfont=\toks48
+\everyMPshowfont=\toks40
 \MPscratchCnt=\count487
 \MPscratchDim=\dimen306
 \MPnumerator=\count488
 \makeMPintoPDFobject=\count489
-\everyMPtoPDFconversion=\toks49
+\everyMPtoPDFconversion=\toks41
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -970,140 +954,103 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./tex/01_introduccion.tex [2]) (./tex/02_literatura.tex [3]) (./tex/03_mercado.tex [4] [5]
-<output/graficos/serie_precios.pdf, id=213, 650.43pt x 361.35pt>
+<output/graficos/serie_precios.pdf, id=214, 361.35pt x 187.70125pt>
 File: output/graficos/serie_precios.pdf Graphic file (type pdf)
 <use output/graficos/serie_precios.pdf>
 Package pdftex.def Info: output/graficos/serie_precios.pdf  used on input line 54.
-(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7 <./output/graficos/serie_precios.pdf>]
-<output/graficos/entradas_anio.pdf, id=237, 650.43pt x 361.35pt>
+(pdftex.def)             Requested size: 361.34912pt x 187.70079pt.
+ [6] [7 <./output/graficos/serie_precios.pdf>]
+<output/graficos/entradas_anio.pdf, id=238, 361.35pt x 172.645pt>
 File: output/graficos/entradas_anio.pdf Graphic file (type pdf)
 <use output/graficos/entradas_anio.pdf>
 Package pdftex.def Info: output/graficos/entradas_anio.pdf  used on input line 69.
-(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
- [8 <./output/graficos/entradas_anio.pdf>]
-<output/graficos/caso_entrada.pdf, id=251, 505.89pt x 542.025pt>
+(pdftex.def)             Requested size: 361.34912pt x 172.64456pt.
+<output/graficos/caso_entrada.pdf, id=241, 303.1325pt x 332.24126pt>
 File: output/graficos/caso_entrada.pdf Graphic file (type pdf)
 <use output/graficos/caso_entrada.pdf>
 Package pdftex.def Info: output/graficos/caso_entrada.pdf  used on input line 78.
-(pdftex.def)             Requested size: 386.96027pt x 414.60641pt.
- [9 <./output/graficos/caso_entrada.pdf>] (./output/tablas/dispersion_p93.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11]) (./tex/04_identificacion.tex [12] [13]) (./tex/05_resultados.tex
-<output/graficos/sunab_2012_2026.pdf, id=344, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 303.13176pt x 332.24043pt.
+ [8 <./output/graficos/entradas_anio.pdf>] [9 <./output/graficos/caso_entrada.pdf>] (./output/tablas/dispersion_p93.tex) [10]) [11] (./tex/04_identificacion.tex [12] [13]) (./tex/05_resultados.tex
+<output/graficos/sunab_2012_2026.pdf, id=344, 361.35pt x 230.8625pt>
 File: output/graficos/sunab_2012_2026.pdf Graphic file (type pdf)
 <use output/graficos/sunab_2012_2026.pdf>
 Package pdftex.def Info: output/graficos/sunab_2012_2026.pdf  used on input line 10.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
- [14] [15 <./output/graficos/sunab_2012_2026.pdf>] (./output/tablas/es_2012_2026_p93.tex)
-<output/graficos/atenuacion_distancia.pdf, id=367, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+ [14 <./output/graficos/sunab_2012_2026.pdf>] (./output/tablas/es_2012_2026_p93.tex)
+<output/graficos/atenuacion_distancia.pdf, id=362, 361.35pt x 230.8625pt>
 File: output/graficos/atenuacion_distancia.pdf Graphic file (type pdf)
 <use output/graficos/atenuacion_distancia.pdf>
 Package pdftex.def Info: output/graficos/atenuacion_distancia.pdf  used on input line 36.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
- [16] [17] [18 <./output/graficos/atenuacion_distancia.pdf>]
-<output/graficos/mercado.pdf, id=394, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+ [15] [16] [17 <./output/graficos/atenuacion_distancia.pdf>]
+<output/graficos/mercado.pdf, id=390, 361.35pt x 230.8625pt>
 File: output/graficos/mercado.pdf Graphic file (type pdf)
 <use output/graficos/mercado.pdf>
 Package pdftex.def Info: output/graficos/mercado.pdf  used on input line 55.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-<output/graficos/distribucion_beta.pdf, id=400, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+ [18 <./output/graficos/mercado.pdf>]
+<output/graficos/distribucion_beta.pdf, id=409, 361.35pt x 230.8625pt>
 File: output/graficos/distribucion_beta.pdf Graphic file (type pdf)
 <use output/graficos/distribucion_beta.pdf>
 Package pdftex.def Info: output/graficos/distribucion_beta.pdf  used on input line 68.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
- [19] [20 <./output/graficos/mercado.pdf>]
-<output/graficos/distribucion_acumulada.pdf, id=421, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+<output/graficos/distribucion_acumulada.pdf, id=410, 361.35pt x 230.8625pt>
 File: output/graficos/distribucion_acumulada.pdf Graphic file (type pdf)
 <use output/graficos/distribucion_acumulada.pdf>
 Package pdftex.def Info: output/graficos/distribucion_acumulada.pdf  used on input line 75.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-) (./tex/06_robustez.tex [21 <./output/graficos/distribucion_beta.pdf>] [22 <./output/graficos/distribucion_acumulada.pdf>]
-<output/graficos/placebo_adelanto.pdf, id=457, 650.43pt x 469.755pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+ [19 <./output/graficos/distribucion_beta.pdf>]) (./tex/06_robustez.tex [20 <./output/graficos/distribucion_acumulada.pdf>]
+<output/graficos/placebo_adelanto.pdf, id=449, 361.35pt x 244.915pt>
 File: output/graficos/placebo_adelanto.pdf Graphic file (type pdf)
 <use output/graficos/placebo_adelanto.pdf>
 Package pdftex.def Info: output/graficos/placebo_adelanto.pdf  used on input line 12.
-(pdftex.def)             Requested size: 455.24411pt x 328.79759pt.
- [23] [24 <./output/graficos/placebo_adelanto.pdf>]
-<output/graficos/ventana_2014_2019.pdf, id=486, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 244.91438pt.
+<output/graficos/ventana_2014_2019.pdf, id=451, 361.35pt x 230.8625pt>
 File: output/graficos/ventana_2014_2019.pdf Graphic file (type pdf)
 <use output/graficos/ventana_2014_2019.pdf>
-Package pdftex.def Info: output/graficos/ventana_2014_2019.pdf  used on input line 23.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-<output/graficos/ventana_2021_2026.pdf, id=489, 650.43pt x 433.62pt>
+Package pdftex.def Info: output/graficos/ventana_2014_2019.pdf  used on input line 21.
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+<output/graficos/ventana_2021_2026.pdf, id=454, 361.35pt x 230.8625pt>
 File: output/graficos/ventana_2021_2026.pdf Graphic file (type pdf)
 <use output/graficos/ventana_2021_2026.pdf>
-Package pdftex.def Info: output/graficos/ventana_2021_2026.pdf  used on input line 30.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-) [25 <./output/graficos/ventana_2014_2019.pdf>] [26 <./output/graficos/ventana_2021_2026.pdf>] (./tex/07_conclusion.tex [27]) [28] [29] [30] [31] [32] (./tex/anexo.tex [33] [34]
-<output/graficos/estructura_precios.pdf, id=622, 433.62pt x 325.215pt>
+Package pdftex.def Info: output/graficos/ventana_2021_2026.pdf  used on input line 28.
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+ [21] [22 <./output/graficos/placebo_adelanto.pdf>] [23 <./output/graficos/ventana_2014_2019.pdf> <./output/graficos/ventana_2021_2026.pdf>]) (./tex/07_conclusion.tex [24]) [25] [26] [27] [28] [29] (./tex/anexo.tex [30] [31]
+<output/graficos/estructura_precios.pdf, id=610, 289.08pt x 237.88875pt>
 File: output/graficos/estructura_precios.pdf Graphic file (type pdf)
 <use output/graficos/estructura_precios.pdf>
 Package pdftex.def Info: output/graficos/estructura_precios.pdf  used on input line 42.
-(pdftex.def)             Requested size: 318.66948pt x 239.01279pt.
-<output/graficos/serie_margen.pdf, id=623, 650.43pt x 361.35pt>
+(pdftex.def)             Requested size: 289.07928pt x 237.88815pt.
+<output/graficos/serie_margen.pdf, id=611, 361.35pt x 187.70125pt>
 File: output/graficos/serie_margen.pdf Graphic file (type pdf)
 <use output/graficos/serie_margen.pdf>
 Package pdftex.def Info: output/graficos/serie_margen.pdf  used on input line 49.
-(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<output/graficos/conley_2012_2026.pdf, id=626, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 187.70079pt.
+<output/graficos/conley_2012_2026.pdf, id=614, 361.35pt x 230.8625pt>
 File: output/graficos/conley_2012_2026.pdf Graphic file (type pdf)
 <use output/graficos/conley_2012_2026.pdf>
 Package pdftex.def Info: output/graficos/conley_2012_2026.pdf  used on input line 58.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<output/graficos/fischer_semanal.pdf, id=632, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+<output/graficos/fischer_semanal.pdf, id=620, 361.35pt x 230.8625pt>
 File: output/graficos/fischer_semanal.pdf Graphic file (type pdf)
 <use output/graficos/fischer_semanal.pdf>
 Package pdftex.def Info: output/graficos/fischer_semanal.pdf  used on input line 67.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-<output/graficos/het_autopista.pdf, id=635, 650.43pt x 433.62pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+<output/graficos/het_autopista.pdf, id=623, 361.35pt x 230.8625pt>
 File: output/graficos/het_autopista.pdf Graphic file (type pdf)
 <use output/graficos/het_autopista.pdf>
 Package pdftex.def Info: output/graficos/het_autopista.pdf  used on input line 74.
-(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
-<output/graficos/persistencia.pdf, id=638, 650.43pt x 325.215pt>
+(pdftex.def)             Requested size: 361.34912pt x 230.86192pt.
+<output/graficos/persistencia.pdf, id=626, 361.35pt x 172.645pt>
 File: output/graficos/persistencia.pdf Graphic file (type pdf)
 <use output/graficos/persistencia.pdf>
 Package pdftex.def Info: output/graficos/persistencia.pdf  used on input line 81.
-(pdftex.def)             Requested size: 455.24411pt x 227.62909pt.
-[35
+(pdftex.def)             Requested size: 361.34912pt x 172.64456pt.
+ [32
 
- <./output/graficos/estructura_precios.pdf>] [36 <./output/graficos/serie_margen.pdf>] [37 <./output/graficos/conley_2012_2026.pdf>] [38 <./output/graficos/fischer_semanal.pdf>] [39 <./output/graficos/het_autopista.pdf>] [40 <./output/graficos/persistencia.pdf>] (./output/tablas/composicion_muestra.tex) (./output/tablas/es_controles_p93.tex)
+ <./output/graficos/estructura_precios.pdf>] [33 <./output/graficos/serie_margen.pdf> <./output/graficos/conley_2012_2026.pdf>] [34 <./output/graficos/fischer_semanal.pdf> <./output/graficos/het_autopista.pdf>] [35 <./output/graficos/persistencia.pdf>] (./output/tablas/composicion_muestra.tex) (./output/tablas/es_controles_p93.tex) (./output/tablas/es_controles_p97.tex) (./output/tablas/es_controles_pdi.tex) (./output/tablas/es_2012_2026_p97.tex) (./output/tablas/es_2012_2026_pdi.tex) (./output/tablas/het_autopista.tex) (./output/tablas/mercado.tex) (./output/tablas/validacion_margen.tex) (./output/tablas/honest_principal.tex) (./output/tablas/honest_mercado.tex) (./output/tablas/placebo_controles.tex) (./output/tablas/ventana_2014_2019.tex) (./output/tablas/ventana_2021_2026.tex)) [36
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./output/tablas/es_controles_p97.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./output/tablas/es_controles_pdi.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./output/tablas/es_2012_2026_p97.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./output/tablas/es_2012_2026_pdi.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./output/tablas/het_autopista.tex) (./output/tablas/mercado.tex) (./output/tablas/validacion_margen.tex) (./output/tablas/honest_principal.tex) (./output/tablas/honest_mercado.tex) (./output/tablas/placebo_controles.tex) (./output/tablas/ventana_2014_2019.tex) (./output/tablas/ventana_2021_2026.tex)) [41
-
-] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] (./tesis.aux
+] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] (./tesis.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -1120,18 +1067,18 @@ Package logreq Info: Writing requests to 'tesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37041 strings out of 467525
- 714273 string characters out of 5418982
- 1742119 words of memory out of 5000000
- 64884 multiletter control sequences out of 15000+600000
+ 36941 strings out of 467525
+ 712590 string characters out of 5418982
+ 1741274 words of memory out of 5000000
+ 64797 multiletter control sequences out of 15000+600000
  662824 words of font info for 279 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,94p,1961b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,104p,1961b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesis.pdf (52 pages, 818523 bytes).
+Output written on tesis.pdf (47 pages, 806830 bytes).
 PDF statistics:
- 926 PDF objects out of 1000 (max. 8388607)
- 756 compressed objects within 8 object streams
- 157 named destinations out of 1000 (max. 500000)
+ 904 PDF objects out of 1000 (max. 8388607)
+ 739 compressed objects within 8 object streams
+ 152 named destinations out of 1000 (max. 500000)
  72418 words of extra memory for PDF output out of 74296 (max. 10000000)
 

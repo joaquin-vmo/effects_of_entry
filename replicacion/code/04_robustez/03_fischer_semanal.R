@@ -13,18 +13,14 @@ source(here("code", "00_utilidades.R"))
 SEM_BIN <- 26L                                                # semanas por bin
 FUEL    <- c(p93 = "93", p95 = "95", p97 = "97", pdi = "di")  # codigos del panel semanal
 FE_SEM  <- "station_key + wi + region^year + distribuidor^year"
-SERIES  <- c("Mensual, TWFE", "Semanal, TWFE", "Semanal, Sun y Abraham")
+ESTIMACIONES <- c("Mensual, TWFE", "Semanal, TWFE", "Semanal, Sun y Abraham")
 
 p <- PANELES[["2012_2026"]]
 
-w <- fread(file.path(p$dir, "panel_semanal.csv.gz"))
-w[, `:=`(ym = as.IDate(ym), g_entry = as.IDate(g_entry), g2_entry = as.IDate(g2_entry))]
-w[, year := year(ym)]
+w <- leer_panel(p, "panel_semanal.csv.gz")
 
-# misma muestra que muestra_estacion(), con filas semanales
-d <- w[role_entry %in% c("treated", CTRL_ESTRICTO) & base == TRUE & (is.na(g2_entry) | ym < g2_entry)]
-d <- d[!(role_entry == "treated" & year(g_entry) < p$focal)]
-d[, treated := as.integer(role_entry == "treated")]
+# misma muestra que el panel mensual, con filas semanales; rel se rehace en semanas mas abajo
+d <- muestra_estacion(w[, miym := mi(ym)], CTRL_ESTRICTO, p$focal)
 
 # semana de la entrada: primera semana con precio de la entrante competidora a <= RTREAT
 # km que abrio en el mes g_entry (la regla de 05_armado_panel.R, a nivel de semana)
@@ -59,20 +55,11 @@ res <- rbindlist(lapply(names(FUEL), \(fv) {
   message(fv)
   x <- d[fuel == FUEL[[fv]] & !is.na(price)]
   fml <- \(rhs) as.formula(sprintf("log(price) * 100 ~ %s | %s", rhs, FE_SEM))
-  mens <- feols(as.formula(sprintf("log(%s) * 100 ~ i(rel, treated, ref = -1) | %s", fv, FE_PRINCIPAL)),
-                data = dm[!is.na(get(fv))], cluster = ~comuna)
-  rbind(tidy_es(mens)[, serie := SERIES[1]],
-        tidy_es(feols(fml("i(rel, treated, ref = -1)"), data = x, cluster = ~comuna))[, serie := SERIES[2]],
-        tidy_es(sunab_id(x, fml), "rel_sa")[, serie := SERIES[3]])[, combustible := PRECIOS[[fv]]]
+  mens <- estimar_es(dm[!is.na(get(fv))], fv)
+  rbind(tidy_es(mens)[, serie := ESTIMACIONES[1]],
+        tidy_es(feols(fml("i(rel, treated, ref = -1)"), data = x, cluster = ~comuna))[, serie := ESTIMACIONES[2]],
+        tidy_es(sunab_id(x, fml), "rel_sa")[, serie := ESTIMACIONES[3]])[, combustible := PRECIOS[[fv]]]
 }))
-res[, `:=`(combustible = factor(combustible, levels = PRECIOS), serie = factor(serie, levels = SERIES))]
+res[, `:=`(combustible = factor(combustible, levels = PRECIOS), serie = factor(serie, levels = ESTIMACIONES))]
 
-fig <- ggplot(res, aes(event_time, estimate, colour = serie)) +
-  geom_hline(yintercept = 0) +
-  geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se),
-                  position = position_dodge(width = 0.6)) +
-  facet_wrap(~combustible, scales = "free_y") +
-  scale_x_continuous(breaks = -NBIN:NBIN) +
-  labs(x = "Semestres desde la entrada", y = "Efecto sobre el precio (%)", colour = NULL) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "fischer_semanal.pdf"), fig, width = 9, height = 6)
+guardar(grafico_es(res, "serie", dodge = 0.6), "fischer_semanal.pdf", alto = 3.2)

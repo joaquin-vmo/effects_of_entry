@@ -7,7 +7,7 @@ La Figura \ref{fig:es_principal} presenta el estudio de eventos de \eqref{eq:es}
 \begin{figure}[htbp]
     \centering
     \caption{Efecto de la entrada sobre el precio de las incumbentes, ventana 2012 a 2026} \label{fig:es_principal}
-    \includegraphics[width = \textwidth]{output/graficos/sunab_2012_2026.pdf}
+    \includegraphics{output/graficos/sunab_2012_2026.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Panel mensual de estaciones, log del precio $\times$ 100. Tratadas son estación con una entrada competidora a 2 km o menos, controles son estación sin entradas a menos de 5 km. El eje horizontal está en semestres, bins de seis meses desde la entrada, con extremos agrupados ($\leq -4$ y $\geq 4$) y referencia en $-1$. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. Estimadores Sun y Abraham con cohortes mensuales y las nunca tratadas como referencia. Intervalos al 95\% con errores estándar agrupados por comuna. Tratadas y controles, 501 y 373 en gasolina 93, 503 y 375 en gasolina 95, 471 y 313 en gasolina 97, 506 y 383 en diésel.}
 \end{figure}
 
@@ -33,7 +33,7 @@ La Figura \ref{fig:atenuacion} presenta el efecto de la entrada por anillo de di
 \begin{figure}[htbp]
     \centering
     \caption{Efecto de la entrada sobre el precio de las incumbentes por distancia a la entrante} \label{fig:atenuacion}
-    \includegraphics[width = \textwidth]{output/graficos/atenuacion_distancia.pdf}
+    \includegraphics{output/graficos/atenuacion_distancia.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Panel mensual 2012 a 2026, log del precio $\times$ 100. Efecto estático por anillo de distancia a la primera entrada competidora a 5 km o menos. Las tratadas aportan los seis meses antes y los seis meses después de la entrada, los controles, estaciones sin entradas a menos de 5 km, aportan todos sus meses. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. Intervalos al 95\% con errores estándar agrupados por comuna. Entre 89 y 125 tratadas por anillo y entre 313 y 383 controles según el combustible.}
 \end{figure}
 
@@ -52,7 +52,7 @@ La Tabla \ref{tab:mercado} presenta el efecto de la entrada sobre el percentil 9
 \begin{figure}[htbp]
     \centering
     \caption{Estudio de eventos sobre los precios del mercado local} \label{fig:mercado}
-    \includegraphics[width = \textwidth]{output/graficos/mercado.pdf}
+    \includegraphics{output/graficos/mercado.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Estudio de eventos con estimadores Sun y Abraham con cohortes mensuales sobre el log del percentil 90, la mediana y el percentil 10 de los precios del mercado $\times$ 100. Eje horizontal en semestres, bins de seis meses desde la entrada, extremos agrupados, referencia en $-1$. Intervalos al 95\% con errores estándar agrupados por comuna. Mercados, muestra y efectos fijos como en la Tabla \ref{tab:mercado}.}
 \end{figure}
 
@@ -65,14 +65,14 @@ La Figura \ref{fig:distribucion_beta} presenta el perfil de $\beta(c)$ de la reg
 \begin{figure}[htbp]
     \centering
     \caption{Desplazamiento de la distribución de precios por efecto de la entrada} \label{fig:distribucion_beta}
-    \includegraphics[width = \textwidth]{output/graficos/distribucion_beta.pdf}
+    \includegraphics{output/graficos/distribucion_beta.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Panel mensual 2012 a 2026. Cada punto es una regresión de $\mathbf{1}[\tilde{p}_{it} \leq c]$ sobre el indicador de entrada, con $\tilde{p}_{it}$ el precio menos su media nacional del mes y $c$ el umbral correspondiente al cuantil del eje horizontal. $\beta(c) > 0$ indica más masa bajo $c$, es decir, precios más bajos. Efectos fijos de estación, mes, región $\times$ año y marca $\times$ año. Bandas al 95\% con errores estándar agrupados por comuna. Control: estaciones sin entradas a menos de 5 km.}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \caption{Distribución de precios con y sin entrada} \label{fig:distribucion_acumulada}
-    \includegraphics[width = \textwidth]{output/graficos/distribucion_acumulada.pdf}
+    \includegraphics{output/graficos/distribucion_acumulada.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Distribución acumulada del precio menos su media nacional del mes para las tratadas después de la entrada (observada) y la que habrían tenido sin la entrada (observada menos $\beta(c)$), sobre 41 umbrales entre los cuantiles 2 y 98. Misma muestra y regresiones que la Figura \ref{fig:distribucion_beta}.}
 \end{figure}
 

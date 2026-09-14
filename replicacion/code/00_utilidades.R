@@ -72,6 +72,52 @@ fixest::setFixest_etable(digits = "r3", fitstat = ~n, float = FALSE, depvar = FA
 fila <- function(...) paste(paste(c(...), collapse = " & "), "\\\\")
 estrellas <- \(p) fifelse(p < 0.01, "$^{***}$", fifelse(p < 0.05, "$^{**}$", fifelse(p < 0.10, "$^{*}$", "")))
 
+# coeficiente con estrellas y, debajo, su error estandar
+filas_coef <- function(nombre, est, se, p, dig = 3) {
+  c(fila(nombre, sprintf("%.*f%s", dig, est, estrellas(p))), fila("", sprintf("(%.*f)", dig, se)))
+}
+
+# tabular booktabs en output/tablas; `cuerpo`: lineas entre \toprule y \bottomrule
+escribir_tabla <- function(columnas, cuerpo, archivo) {
+  writeLines(c(sprintf("\\begin{tabular}{%s}", columnas), "\\toprule", cuerpo,
+               "\\bottomrule", "\\end{tabular}"),
+             here("output", "tablas", archivo))
+}
+
+# ==============================================================================
+# formato de figuras
+# ==============================================================================
+
+# colores: cambiarlos aqui cambia todas las figuras
+PALETA <- c("#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9")   # series, en orden
+PALETA_DIVERGENTE <- c(bajo = "#3A3A98", alto = "#832424")                        # 03_mapa_calor
+PALETA_ANILLOS <- c("#b2182b", "#ef8a62", "grey60", "#67a9cf", "#2166ac")         # 08_caso_entrada
+
+ggplot2::theme_set(ggplot2::theme_bw(base_size = 10) +
+                     ggplot2::theme(legend.position = "bottom",
+                                    palette.colour.discrete = PALETA,
+                                    palette.fill.discrete = PALETA))
+
+# la tesis incluye las figuras a su tamanio natural (\includegraphics sin width), asi la letra
+# mide lo mismo en todas. 5 pulgadas ~ 0.8\textwidth; con alto ~3.2 caben dos figuras por plana
+ANCHO_FIG <- 5
+guardar <- function(fig, archivo, alto, ancho = ANCHO_FIG) {
+  ggsave(here("output", "graficos", archivo), fig, width = ancho, height = alto)
+}
+
+# estudio de eventos (event_time, estimate, se) con IC al 95%; `color`: columna de las series
+grafico_es <- function(res, color = NULL, dodge = 0.4, y = "Efecto sobre el precio (%)",
+                       facetas = ~combustible, escalas = "free_y") {
+  fig <- ggplot(res, aes(event_time, estimate)) +
+    geom_hline(yintercept = 0) +
+    geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se),
+                    position = position_dodge(width = dodge), size = 0.3) +
+    facet_wrap(facetas, scales = escalas) +
+    scale_x_continuous(breaks = -NBIN:NBIN) +
+    labs(x = "Semestres desde la entrada", y = y, colour = NULL)
+  if (is.null(color)) fig else fig + aes(colour = .data[[color]])
+}
+
 # ==============================================================================
 # calendario: indices enteros para la aritmetica de tiempo-evento
 # ==============================================================================
@@ -115,6 +161,13 @@ coords_estacion <- function(panel) {         # una coordenada por estacion
   s[, .SD[1], by = station_key]
 }
 
+# pares (station_key, vecina) de `sloc` a <= r km; incluye_propia: cada estacion es su vecina
+vecinas <- function(sloc, r, incluye_propia = FALSE) {
+  D <- if (incluye_propia) dist_km(sloc$lat, sloc$lon) else dist_propia(sloc$lat, sloc$lon)
+  ix <- which(D <= r, arr.ind = TRUE)
+  data.table(station_key = sloc$station_key[ix[, 1]], vecina = sloc$station_key[ix[, 2]])
+}
+
 modal <- function(x) {                       # valor mas frecuente, sin NA
   x <- x[!is.na(x)]
   if (!length(x)) return(NA_character_)
@@ -126,8 +179,8 @@ modal <- function(x) {                       # valor mas frecuente, sin NA
 # estimacion
 # ==============================================================================
 
-leer_panel <- function(p) {
-  panel <- fread(file.path(p$dir, "panel_mensual.csv"))
+leer_panel <- function(p, archivo = "panel_mensual.csv") {
+  panel <- fread(file.path(p$dir, archivo))
   panel[, `:=`(ym = as.IDate(ym), g_entry = as.IDate(g_entry), g2_entry = as.IDate(g2_entry))]
   panel[, year := year(ym)][]
 }
@@ -146,14 +199,28 @@ muestra_estacion <- function(panel, roles, focal) {
   d[]
 }
 
+# especificacion principal: log(y) x 100, FE_PRINCIPAL, errores agrupados por comuna
+estimar_es <- function(data, y, rhs = "i(rel, treated, ref = -1)", ...) {
+  fixest::feols(as.formula(sprintf("log(%s) * 100 ~ %s | %s", y, rhs, FE_PRINCIPAL)),
+                data = data, cluster = ~comuna, ...)
+}
+
+# sunab() no acepta bins: se le pasa per = cohorte + rel, de modo que per - cohorte = bin.
+# las no tratadas llevan una cohorte fuera del rango de meses: sunab() las trata como nunca tratadas
+COH_NUNCA <- 99999L
+cohortes_sunab <- function(d) {
+  d[, cohorte := fifelse(treated == 1L, mi(g_entry), COH_NUNCA)]
+  d[, per := fifelse(treated == 1L, cohorte + rel, miym)][]
+}
+
 # coeficientes `patron`::k de un modelo fixest, con la referencia -1 en cero
 tidy_es <- function(m, patron = "rel") {
   ct <- fixest::coeftable(m)
   ct <- ct[grepl(sprintf("^%s::", patron), rownames(ct)), , drop = FALSE]
   d <- data.table(event_time = as.integer(sub(sprintf("^%s::(-?\\d+).*", patron), "\\1",
                                               rownames(ct))),
-                  estimate = ct[, 1], se = ct[, 2])
-  setorder(rbind(d, data.table(event_time = -1L, estimate = 0, se = 0)), event_time)[]
+                  estimate = ct[, 1], se = ct[, 2], p = ct[, 4])
+  setorder(rbind(d, data.table(event_time = -1L, estimate = 0, se = 0, p = NA_real_)), event_time)[]
 }
 
 # tratadas y controles que usa el modelo (sin singletons descartados)
@@ -167,9 +234,8 @@ n_estaciones <- function(m, d) {
 # <nombre>_con (todas) y <nombre>_sin (sin `entrantes`). filtra mercados con al menos
 # min_comp competidoras en promedio antes de la entrada
 mercado_local <- function(panel, d, entrantes, fv, cuantiles, min_comp) {
-  sloc <- coords_estacion(panel)
-  ix <- which(dist_km(sloc$lat, sloc$lon) <= RTREAT, arr.ind = TRUE)   # diagonal 0: incluye a la focal
-  edges <- data.table(station_key = sloc$station_key[ix[, 1]], miembro = sloc$station_key[ix[, 2]])
+  edges <- vecinas(coords_estacion(panel), RTREAT, incluye_propia = TRUE)
+  setnames(edges, "vecina", "miembro")
   edges <- edges[station_key %in% d$station_key]
   px <- panel[!is.na(get(fv)), .(miembro = station_key, miym, p = get(fv),
                                  entrante = station_key %in% entrantes)]

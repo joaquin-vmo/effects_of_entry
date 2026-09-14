@@ -28,10 +28,7 @@ coh_real <- mi(st[treated == 1L, g_entry])
 d2_real  <- st[treated == 1L & !is.na(g2_entry), mi(g2_entry) - mi(g_entry)]
 
 # densidad: competidoras con reporte a <= RTREAT km, promedio sobre los meses de la estacion
-sloc <- coords_estacion(panel)
-ix <- which(dist_propia(sloc$lat, sloc$lon) <= RTREAT, arr.ind = TRUE)
-edges <- data.table(station_key = sloc$station_key[ix[, 1]], vecina = sloc$station_key[ix[, 2]])
-ncomp <- merge(edges, unique(panel[, .(vecina = station_key, miym)]), by = "vecina",
+ncomp <- merge(vecinas(coords_estacion(panel), RTREAT), unique(panel[, .(vecina = station_key, miym)]), by = "vecina",
                allow.cartesian = TRUE)[, .(n = .N), by = .(station_key, miym)]
 dens <- merge(unique(real[treated == 0L, .(station_key, miym)]), ncomp, all.x = TRUE)[
   , .(n = mean(fcoalesce(n, 0L))), by = station_key]
@@ -81,9 +78,7 @@ cuerpo <- unlist(lapply(names(POOLS), \(pl) {
     "\\addlinespace")
 }))
 r <- orden(reales)
-writeLines(c("\\begin{tabular}{lcccc}", "\\toprule", fila("", unname(PRECIOS)), "\\midrule",
-             cuerpo, "\\midrule",
-             fila("ATT real", sprintf("%.3f%s", r$att, estrellas(r$p))),
-             fila("", sprintf("(%.3f)", r$se)),
-             "\\bottomrule", "\\end{tabular}"),
-           here("output", "tablas", "placebo_controles.tex"))
+escribir_tabla("lcccc",
+               c(fila("", unname(PRECIOS)), "\\midrule", cuerpo, "\\midrule",
+                 filas_coef("ATT real", r$att, r$se, r$p)),
+               "placebo_controles.tex")

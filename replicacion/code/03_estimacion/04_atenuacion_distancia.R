@@ -27,8 +27,7 @@ d[, tpr := factor(fifelse(treated == 1L & ym >= g_entry, ring_entry, "none"),
 
 modelos <- lapply(names(PRECIOS), \(fv) {
   dd <- d[!is.na(get(fv))]
-  m <- feols(as.formula(sprintf("log(%s) * 100 ~ i(tpr, ref = 'none') | %s", fv, FE_PRINCIPAL)),
-             data = dd, cluster = ~comuna)
+  m <- estimar_es(dd, fv, "i(tpr, ref = 'none')")
   u <- dd[obs(m)]
   list(m = m, n_anillo = u[treated == 1L, uniqueN(station_key), keyby = ring_entry][ANILLOS, V1],
        n = n_estaciones(m, dd))
@@ -53,7 +52,7 @@ res <- rbindlist(lapply(seq_along(ms), \(i) {
 
 fig <- ggplot(res, aes(anillo, estimate)) +
   geom_hline(yintercept = 0) +
-  geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se)) +
+  geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se), size = 0.3) +
   facet_wrap(~combustible, scales = "free_y") +
   labs(x = "Distancia a la entrada", y = "Efecto sobre el precio (%)")
-ggsave(here("output", "graficos", "atenuacion_distancia.pdf"), fig, width = 9, height = 6)
+guardar(fig, "atenuacion_distancia.pdf", alto = 3.2)

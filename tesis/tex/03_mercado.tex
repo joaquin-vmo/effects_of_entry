@@ -13,7 +13,7 @@ La base de datos principal de esta investigación es el registro de precios hist
 
 Junto estas dos bases se arma un panel semanal de EDS y combustible, el precio de cada observación es el último dentro de un período de jueves a miércoles. Esto dado que el MEPCO se anuncia los miércoles y empiezan a regir los jueves. Este panel se puede colapsar a uno mensual tomando el precio de la última semana. La Figura \ref{fig:esquema_base} resume la construcción de la base.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \caption{Construcción de la base de datos} \label{fig:esquema_base}
     \begin{tikzpicture}[
@@ -48,10 +48,10 @@ El panel semanal nos permite graficar una serie de precios promedio por combusti
 
 La Tabla \ref{tab:validacion_margen} compara el margen calculado como precio menos costo mayorista con MEPCO con el margen contable que la \textcite{FNE2021informe} reporta para Copec, Petrobras y Shell en torno a una estación de Providencia. El margen con MEPCO es parecido entre marcas y mayor que el contable en todas, con una diferencia de unos 20 pesos por litro en Copec y de unos 40 en Shell y Petrobras. El costo mayorista con MEPCO omite el flete, el almacenamiento y las diferencias de costo de adquisición entre compañías, por lo que sobrestima el nivel del margen y oculta que Copec tiene costos menores que sus competidoras.\footnote{Las estimaciones usan el precio, y los efectos fijos de marca por año absorben las diferencias de costo entre compañías que se mantienen dentro de cada año.} 
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \caption{Pesos por litro para gasolinas y diésel desde 2012 a 2026 en Chile} \label{fig:serie_precios}
-    \includegraphics[width = \textwidth]{output/graficos/serie_precios.pdf}
+    \includegraphics{output/graficos/serie_precios.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Promedio simple semanal entre estaciones, precios nominales.}
 \end{figure}
 Se define la entrada como la primera aparición de una estación de servicio en el panel, mientras que una estación incumbente es cualquiera que ya estaba en el panel en una determinada fecha hacia atrás. Por lo tanto cada ventana que se mire requiere de un año base, que contiene las estaciones incumbentes, y una fecha desde la cual las nuevas estaciones que aparezcan definen cohortes de entrada. Se proponen tres ventanas para este cometido.
@@ -63,10 +63,10 @@ Se define la entrada como la primera aparición de una estación de servicio en 
 
 La Figura \ref{fig:entradas} muestra la cantidad de entradas que ocurren cada año. Quitando el aumento de estaciones ocurrido en 2013, la entrada de bencineras se mantienen relativamente estable durante el tiempo.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \caption{Aperturas de nuevas estaciones de bencina desde 2013 a 2026} \label{fig:entradas}
-    \includegraphics[width = \textwidth]{output/graficos/entradas_anio.pdf}
+    \includegraphics{output/graficos/entradas_anio.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. El año 2012 no se considera al ser el año en que paulatinamente se pobló de manera administrativa las base.}
 \end{figure}
 
@@ -75,17 +75,17 @@ Cada entrante genera una cohorte de tratamiento, siguiendo la línea de \textcit
 \begin{figure}[htbp]
     \centering
     \caption{Asignación de tratamiento en torno a una entrada en Santiago, noviembre de 2015} \label{fig:caso_entrada}
-    \includegraphics[width = 0.85\textwidth]{output/graficos/caso_entrada.pdf}
+    \includegraphics{output/graficos/caso_entrada.pdf}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl y límites comunales. La estrella es una estación Shell que entra en noviembre de 2015 en la comuna de Santiago, Portugal 270, los círculos marcan 1, 2, 3 y 5 km. Los puntos son las estaciones con registro ese mes, coloreadas según su distancia a esta entrada. El rol efectivo de cada estación considera además todas las demás entradas de la ventana y la marca, una estación de la misma marca que la entrante no queda tratada por ella.}
 \end{figure}
 
 Un punto relevante a considerar es que una estación que recibe una entrada a 2 kilómetros o menos se considera tratada durante toda la ventana, por lo que nunca cuenta como control, y sus observaciones se cortan en el mes de la segunda entrada, de modo que no puede considerarse como tratada para siguientes cohortes de tratamiento. La Tabla \ref{tab:composicion} muestra la composición de la muestra en la ventana más grande.
 La Tabla \ref{tab:dispersion} describe la dispersión de precios dentro de los mercados locales. Un mercado local es el círculo del radio indicado en torno a cada estación, incluida ella misma, las medidas se calculan solo para los mercado-mes con al menos dos estaciones activas. Dentro de dos kilómetros el rango de precios promedio es de 16,3 pesos por litro y el ahorro esperado de comparar precios de 8,2, cifras que se reducen a la mitad al estrechar el mercado a un kilómetro. La asimetría ya es visible en el descriptivo, la estación más barata del mercado cobra en promedio 8,2 pesos bajo la media y la más cara 8,2 por sobre ella. La dispersión no es entonces un residuo despreciable, y de ahí se sigue que el efecto de la entrada no se agote en el precio promedio, ya que consumidores con distinto acceso a la información se benefician de cambios en puntos distintos de la distribución como se sugiere en \textcite{LUCO2019, SOLIS2025}. \textcite{FISCHER2025} encuentra que la entrada de una competidora reduce los precios en las estaciones ex-ante más baratas, dejando iguales a las estaciones relativamente más caras, dado los datos dipsonibles se puede testear esto para Chile. 
 
-\begin{table}[h]
+\begin{table}[htbp]
     \centering
     \caption{Precios y dispersión de precios a nivel de mercado local, gasolina 93, 2025} \label{tab:dispersion}
-    \resizebox{\textwidth}{!}{\input{output/tablas/dispersion_p93.tex}}
+    \ajustar{\input{output/tablas/dispersion_p93.tex}}
     \caption*{\footnotesize Fuente: Precios históricos de bencinaenlinea.cl. Precios en \$/L. Mercado = estación focal y todas las estaciones con precio a 1 (2) km o menos en el mes, solo mercado-mes con al menos dos estaciones con precio. Ahorro esperado de buscar = precio medio $-$ precio mínimo. Percentiles, media y desviación estándar de cada medida entre mercado-mes.}
 \end{table}
 

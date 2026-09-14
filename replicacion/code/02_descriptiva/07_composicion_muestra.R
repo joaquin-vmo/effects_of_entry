@@ -3,7 +3,6 @@
 # conteo de estaciones por rol en la ventana larga y muestra de estimacion de la 93.
 # panel_mensual.csv + entradas.csv -> output/tablas/composicion_muestra.tex
 
-library(fixest)
 library(here)
 
 source(here("code", "00_utilidades.R"))
@@ -16,8 +15,7 @@ st <- unique(panel[, .(station_key, base, role_entry)])
 # mismos n que las tablas de resultados: estaciones que usa el modelo, sin singletons
 n_muestra <- \(roles) {
   d <- muestra_estacion(panel, roles, p$focal)[!is.na(p93)]
-  n_estaciones(feols(as.formula(sprintf("log(p93) ~ i(rel, treated, ref = -1) | %s", FE_PRINCIPAL)),
-                     data = d), d)
+  n_estaciones(estimar_es(d, "p93"), d)
 }
 n_amplio <- n_muestra(CTRL_AMPLIO)
 n_estricto <- n_muestra(CTRL_ESTRICTO)
@@ -39,7 +37,5 @@ filas <- list(
   c("\\quad control estricto", n_estricto[2])
 )
 
-writeLines(c("\\begin{tabular}{lr}", "\\toprule", fila("", "N"), "\\midrule",
-             vapply(filas, \(f) fila(f[1], f[2]), character(1)),
-             "\\bottomrule", "\\end{tabular}"),
-           here("output", "tablas", "composicion_muestra.tex"))
+escribir_tabla("lr", c(fila("", "N"), "\\midrule", vapply(filas, \(f) fila(f[1], f[2]), character(1))),
+               "composicion_muestra.tex")

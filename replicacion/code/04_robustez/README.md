@@ -4,7 +4,7 @@ Requieren haber corrido `01_buid/`; `02` repite las estimaciones de `03_estimaci
 
 | Script | Ventanas | Productos |
 |---|---|---|
-| `01_conley.R` | las tres | `output/graficos/conley_<ventana>.pdf` |
+| `01_conley.R` | 2012_2026 | `output/graficos/conley_2012_2026.pdf` |
 | `02_honest_did.R` | 2012_2026 (+ `entradas.csv`) | `output/tablas/honest_principal.tex`, `honest_mercado.tex` |
 | `03_fischer_semanal.R` | 2012_2026 (panel semanal + `entradas.csv`) | `output/graficos/fischer_semanal.pdf` |
 | `04_validacion_margen.R` | 2012_2026 (ago 2018 a jul 2019) | `output/tablas/validacion_margen.tex` |

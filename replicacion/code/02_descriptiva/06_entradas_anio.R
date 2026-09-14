@@ -16,6 +16,5 @@ conteo <- entradas[, .N, by = anio]
 fig <- ggplot(conteo, aes(anio, N)) +
   geom_col() +
   scale_x_continuous(breaks = 2013:2026) +
-  labs(x = NULL, y = "Entradas") +
-  theme_gray(base_size = 18)
-ggsave(here("output", "graficos", "entradas_anio.pdf"), fig, width = 9, height = 5)
+  labs(x = NULL, y = "Entradas")
+guardar(fig, "entradas_anio.pdf", alto = 2.4)

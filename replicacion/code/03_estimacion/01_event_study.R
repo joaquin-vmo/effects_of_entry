@@ -1,7 +1,7 @@
 # 01_event_study.R
 #
 # estudio de eventos principal, control estricto, escalera de efectos fijos, por ventana.
-# panel_mensual.csv -> output/tablas/es_<ventana>_<combustible>.tex, output/graficos/es_<ventana>.pdf
+# panel_mensual.csv -> output/tablas/es_<ventana>_<combustible>.tex (sin la 95), output/graficos/es_<ventana>.pdf
 
 library(fixest)
 library(ggplot2)
@@ -24,16 +24,6 @@ estimar <- function(d, fv) {
     data = d, cluster = ~comuna))
 }
 
-grafico <- function(res, archivo) {
-  res[, combustible := factor(PRECIOS[outcome], levels = PRECIOS)]
-  fig <- ggplot(res, aes(event_time, estimate)) +
-    geom_hline(yintercept = 0) +
-    geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se)) +
-    facet_wrap(~combustible, scales = "free_y") +
-    labs(x = "Tiempo desde la entrada", y = "Efecto sobre el precio (%)")
-  ggsave(archivo, fig, width = 9, height = 6)
-}
-
 for (nombre in names(PANELES)) {
   p <- PANELES[[nombre]]
   d <- muestra_estacion(leer_panel(p), CTRL_ESTRICTO, p$focal)
@@ -42,12 +32,14 @@ for (nombre in names(PANELES)) {
     dd <- d[!is.na(get(fv))]
     modelos <- estimar(dd, fv)
     n <- sapply(modelos, n_estaciones, d = dd)
-    etable(modelos, tex = TRUE, drop = "Constant", replace = TRUE,
-           extralines = list(Tratadas = n[1, ], Controles = n[2, ]),
-           file = here("output", "tablas", sprintf("es_%s_%s.tex", nombre, fv)))
+    if (fv != "p95")   # la tesis no usa la tabla de la 95; sus coeficientes si van a la figura
+      etable(modelos, tex = TRUE, drop = "Constant", replace = TRUE,
+             extralines = list(Tratadas = n[1, ], Controles = n[2, ]),
+             file = here("output", "tablas", sprintf("es_%s_%s.tex", nombre, fv)))
     tidy_es(modelos[[length(modelos)]])[, outcome := fv]
   }))
 
-  grafico(res, here("output", "graficos", sprintf("es_%s.pdf", nombre)))
+  res[, combustible := factor(PRECIOS[outcome], levels = PRECIOS)]
+  guardar(grafico_es(res), sprintf("es_%s.pdf", nombre), alto = 3.2)
   message("panel ", nombre, " listo")
 }

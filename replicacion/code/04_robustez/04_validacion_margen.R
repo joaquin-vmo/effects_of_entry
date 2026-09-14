@@ -41,12 +41,11 @@ print(dcast(agr, anillo ~ marca, value.var = c("pct", "pesos")), digits = 3)
 print(unique(d[km <= 3, .(station_key, marca)])[, .N, by = marca])   # FNE: 15 Copec, 11 Shell, 3 Petrobras
 
 celda <- \(m, a) { r <- agr[marca == m & anillo == a]; if (nrow(r)) sprintf("%.1f\\%% (%.0f)", r$pct, r$pesos) else "--" }
-writeLines(c("\\begin{tabular}{lcccccc}", "\\toprule",
-             fila("", sprintf("\\multicolumn{2}{c}{%s}", MARCAS)),
-             "\\cmidrule(lr){2-3} \\cmidrule(lr){4-5} \\cmidrule(lr){6-7}",
-             fila("Anillo", rep(c("Este trabajo", "FNE"), 3)), "\\midrule",
-             vapply(0:4, \(a) fila(sprintf("%d--%d km", a, a + 1),
-                                   c(rbind(vapply(MARCAS, celda, "", a = a),
-                                           vapply(MARCAS, \(m) FNE[[m]][a + 1], "")))), ""),
-             "\\bottomrule", "\\end{tabular}"),
-           here("output", "tablas", "validacion_margen.tex"))
+escribir_tabla("lcccccc",
+               c(fila("", sprintf("\\multicolumn{2}{c}{%s}", MARCAS)),
+                 "\\cmidrule(lr){2-3} \\cmidrule(lr){4-5} \\cmidrule(lr){6-7}",
+                 fila("Anillo", rep(c("Este trabajo", "FNE"), 3)), "\\midrule",
+                 vapply(0:4, \(a) fila(sprintf("%d--%d km", a, a + 1),
+                                       c(rbind(vapply(MARCAS, celda, "", a = a),
+                                               vapply(MARCAS, \(m) FNE[[m]][a + 1], "")))), "")),
+               "validacion_margen.tex")

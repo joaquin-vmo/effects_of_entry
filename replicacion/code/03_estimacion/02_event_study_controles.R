@@ -1,7 +1,7 @@
 # 02_event_study_controles.R
 #
 # especificacion principal con control amplio y estricto, panel completo.
-# panel_mensual.csv -> output/tablas/es_controles_<combustible>.tex
+# panel_mensual.csv -> output/tablas/es_controles_<combustible>.tex (sin la 95, que la tesis no usa)
 
 library(fixest)
 library(here)
@@ -15,11 +15,9 @@ GRUPOS <- setNames(list(CTRL_AMPLIO, CTRL_ESTRICTO),
                    sprintf("Control $>$%d km", c(RCTRL_A, RCTRL_B)))
 muestras <- lapply(GRUPOS, \(roles) muestra_estacion(panel, roles, p$focal))
 
-for (fv in names(PRECIOS)) {
+for (fv in setdiff(names(PRECIOS), "p95")) {
   datos <- lapply(muestras, \(d) d[!is.na(get(fv))])
-  modelos <- lapply(datos, \(d) feols(
-    as.formula(sprintf("log(%s) * 100 ~ i(rel, treated, ref = -1) | %s", fv, FE_PRINCIPAL)),
-    data = d, cluster = ~comuna))
+  modelos <- lapply(datos, estimar_es, y = fv)
   n <- mapply(n_estaciones, modelos, datos)
   etable(modelos, tex = TRUE, headers = names(GRUPOS), replace = TRUE,
          extralines = list(Tratadas = n[1, ], Controles = n[2, ]),

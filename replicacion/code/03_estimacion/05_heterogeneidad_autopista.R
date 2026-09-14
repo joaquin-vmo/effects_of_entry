@@ -50,9 +50,7 @@ d[, `:=`(post_lejos = post * (1L - cerca), post_cerca = post * cerca,
 
 res <- lapply(names(PRECIOS), \(fv) {
   dd <- d[!is.na(get(fv))]
-  lhs <- sprintf("log(%s) * 100", fv)
-  f <- \(rhs) feols(as.formula(sprintf("%s ~ %s | %s", lhs, rhs, FE_PRINCIPAL)),
-                    data = dd, cluster = ~comuna)
+  f <- \(rhs) estimar_es(dd, fv, rhs)
 
   m_es <- f("i(rel, trat_lejos, ref = -1) + i(rel, trat_cerca, ref = -1)")
   ct <- coeftable(m_es)
@@ -95,11 +93,4 @@ etable(lapply(res, `[[`, "m_dif"), tex = TRUE, headers = unname(PRECIOS), replac
 es[, `:=`(combustible = factor(PRECIOS[outcome], levels = PRECIOS),
           grupo = factor(grupo, levels = LBL))]
 
-fig <- ggplot(es, aes(event_time, estimate, colour = grupo)) +
-  geom_hline(yintercept = 0) +
-  geom_pointrange(aes(ymin = estimate - 1.96 * se, ymax = estimate + 1.96 * se),
-                  position = position_dodge(width = 0.4)) +
-  facet_wrap(~combustible, scales = "free_y") +
-  scale_x_continuous(breaks = -NBIN:NBIN) +
-  labs(x = "Tiempo desde la entrada", y = "Efecto sobre el precio (%)", colour = NULL)
-ggsave(here("output", "graficos", "het_autopista.pdf"), fig, width = 9, height = 6)
+guardar(grafico_es(es, "grupo"), "het_autopista.pdf", alto = 3.2)

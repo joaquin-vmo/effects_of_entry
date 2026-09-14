@@ -62,9 +62,8 @@ fig <- ggplot() +
   geom_sf(data = gs, fill = NA, colour = "grey40", linewidth = 0.15) +
   geom_sf(data = pts, size = 0.2) +
   facet_wrap(~combustible, nrow = 1) +
-  scale_fill_gradient2(low = scales::muted("blue"), high = scales::muted("red"),
+  scale_fill_gradient2(low = PALETA_DIVERGENTE[["bajo"]], high = PALETA_DIVERGENTE[["alto"]],
                        limits = c(-tope, tope), oob = scales::squish) +
   coord_sf(xlim = lim_x, ylim = lim_y, expand = FALSE, datum = NA) +
-  labs(x = NULL, y = NULL, fill = "Desviación ($/L)") +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "mapa_calor.pdf"), fig, width = 14, height = 6)
+  labs(x = NULL, y = NULL, fill = "Desviación ($/L)")
+guardar(fig, "mapa_calor.pdf", alto = 2.4)

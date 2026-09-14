@@ -4,8 +4,8 @@ Estudios de eventos y extensiones. Requieren haber corrido `01_buid/`. Los scrip
 
 | Script | Ventanas | Productos |
 |---|---|---|
-| `01_event_study.R` | las tres | `output/tablas/es_<ventana>_<comb>.tex`, `output/graficos/es_<ventana>.pdf` |
-| `02_event_study_controles.R` | 2012_2026 | `output/tablas/es_controles_<comb>.tex` |
+| `01_event_study.R` | las tres | `output/tablas/es_<ventana>_<comb>.tex` (sin la 95), `output/graficos/es_<ventana>.pdf` |
+| `02_event_study_controles.R` | 2012_2026 | `output/tablas/es_controles_<comb>.tex` (sin la 95) |
 | `03_event_study_sunab.R` | 2012_2026 | `output/graficos/sunab_2012_2026.pdf` |
 | `04_atenuacion_distancia.R` | 2012_2026 | `output/tablas/atenuacion_distancia.tex`, `output/graficos/atenuacion_distancia.pdf` |
 | `05_heterogeneidad_autopista.R` | 2012_2026 (+ red vial MOP) | `output/tablas/het_autopista.tex`, `output/graficos/het_autopista.pdf` |

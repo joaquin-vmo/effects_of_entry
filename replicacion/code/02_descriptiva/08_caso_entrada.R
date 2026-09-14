@@ -49,14 +49,14 @@ nombres <- suppressWarnings(st_point_on_surface(st_crop(gs, caja)))
 
 fig <- ggplot() +
   geom_sf(data = gs, fill = "grey97", colour = "grey70", linewidth = 0.3) +
-  geom_sf_text(data = nombres, aes(label = Comuna), size = 2.3, colour = "grey55") +
+  geom_sf_text(data = nombres, aes(label = Comuna), size = 1.9, colour = "grey55") +
   geom_sf(data = circulos, fill = NA, colour = "grey25", linetype = "dashed") +
-  geom_sf(data = pts, aes(colour = grupo), size = 1.8) +
-  geom_sf(data = centro, shape = 8, size = 4, stroke = 1.2) +
-  scale_colour_manual(values = c("#b2182b", "#ef8a62", "grey60", "#67a9cf", "#2166ac"), drop = FALSE) +
+  geom_sf(data = pts, aes(colour = grupo), size = 1.2) +
+  geom_sf(data = centro, shape = 8, size = 3, stroke = 1) +
+  scale_colour_manual(values = PALETA_ANILLOS, drop = FALSE) +
   coord_sf(xlim = caja[c("xmin", "xmax")], ylim = caja[c("ymin", "ymax")], datum = NA) +
   labs(x = NULL, y = NULL, colour = NULL) +
-  theme_void() +
+  theme_void(base_size = 10) +
   theme(legend.position = "bottom") +
-  guides(colour = guide_legend(nrow = 2))
-ggsave(here("output", "graficos", "caso_entrada.pdf"), fig, width = 7, height = 7.5)
+  guides(colour = guide_legend(ncol = 2))
+guardar(fig, "caso_entrada.pdf", alto = 4.6, ancho = 4.2)

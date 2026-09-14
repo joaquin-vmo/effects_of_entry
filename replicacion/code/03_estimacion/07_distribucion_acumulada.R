@@ -57,21 +57,18 @@ ref <- cdf[, .SD[vapply(KREF, \(kk) which.min(abs(k - kk)), integer(1))], by = o
 ref[, kref := rep(KREF, length(PRECIOS))]
 cuerpo <- unlist(lapply(KREF, \(kk) {
   r <- ref[kref == kk][match(names(PRECIOS), outcome)]
-  c(fila(sprintf("Cuantil %d", round(100 * kk)), sprintf("%.4f%s", r$est, estrellas(r$p))),
-    fila("", sprintf("(%.4f)", r$se)))
+  filas_coef(sprintf("Cuantil %d", round(100 * kk)), r$est, r$se, r$p, dig = 4)
 }))
-tabla <- c("\\begin{tabular}{lcccc}", "\\toprule",
-           fila("", unname(PRECIOS)), "\\midrule",
-           cuerpo, "\\midrule",
-           fila("$\\max_c \\beta(c)$", sprintf("%.4f", fosd$max_b)),
-           fila("$\\min_c \\beta(c)$", sprintf("%.4f", fosd$min_b)),
-           fila(sprintf("Valor crítico ($\\alpha = %.2f$)", ALPHA), sprintf("%.4f", fosd$vc)),
-           "\\midrule",
-           fila("Tratadas", sapply(res, `[[`, "tratadas")),
-           fila("Controles", sapply(res, `[[`, "controles")),
-           fila("Observaciones", format(sapply(res, `[[`, "n_obs"), big.mark = ",")),
-           "\\bottomrule", "\\end{tabular}")
-writeLines(tabla, here("output", "tablas", "distribucion_acumulada.tex"))
+escribir_tabla("lcccc",
+               c(fila("", unname(PRECIOS)), "\\midrule", cuerpo, "\\midrule",
+                 fila("$\\max_c \\beta(c)$", sprintf("%.4f", fosd$max_b)),
+                 fila("$\\min_c \\beta(c)$", sprintf("%.4f", fosd$min_b)),
+                 fila(sprintf("Valor crítico ($\\alpha = %.2f$)", ALPHA), sprintf("%.4f", fosd$vc)),
+                 "\\midrule",
+                 fila("Tratadas", sapply(res, `[[`, "tratadas")),
+                 fila("Controles", sapply(res, `[[`, "controles")),
+                 fila("Observaciones", format(sapply(res, `[[`, "n_obs"), big.mark = ","))),
+               "distribucion_acumulada.tex")
 
 cl <- melt(cdf, id.vars = c("outcome", "c"), measure.vars = c("cdf", "cdf_cf"),
            variable.name = "serie", value.name = "F")
@@ -81,9 +78,8 @@ fig <- ggplot(cl, aes(c, F, colour = serie, linetype = serie)) +
   geom_line() +
   facet_wrap(~combustible, scales = "free_x") +
   labs(x = "Precio menos su media nacional del mes ($/L)", y = "Distribución acumulada",
-       colour = NULL, linetype = NULL) +
-  theme(legend.position = "bottom")
-ggsave(here("output", "graficos", "distribucion_acumulada.pdf"), fig, width = 9, height = 6)
+       colour = NULL, linetype = NULL)
+guardar(fig, "distribucion_acumulada.pdf", alto = 3.2)
 
 # perfil de beta(c) sobre la grilla: desplazamiento de la distribucion por la entrada
 cdf[, combustible := factor(PRECIOS[outcome], levels = PRECIOS)]
@@ -94,4 +90,4 @@ fig <- ggplot(cdf, aes(100 * k, est)) +
   facet_wrap(~combustible) +
   labs(x = "Cuantil de la distribución del precio menos su media nacional del mes",
        y = expression(beta(c)))
-ggsave(here("output", "graficos", "distribucion_beta.pdf"), fig, width = 9, height = 6)
+guardar(fig, "distribucion_beta.pdf", alto = 3.2)
