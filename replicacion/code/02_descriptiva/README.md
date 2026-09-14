@@ -11,6 +11,7 @@ Figuras y tablas descriptivas. Todos los scripts leen el panel completo (`data/p
 | `05_dispersion_precios.R` | `panel_mensual.csv` | `output/tablas/dispersion_{p93,p95,p97,pdi}.tex` |
 | `06_entradas_anio.R` | `entradas.csv` (ventana `2012_2026`) | `output/graficos/entradas_anio.pdf` |
 | `07_composicion_muestra.R` | `panel_mensual.csv`, `entradas.csv` (ventana `2012_2026`) | `output/tablas/composicion_muestra.tex` |
+| `08_caso_entrada.R` | `panel_mensual.csv`, `entradas.csv`, `data/input/mapas/comunas` | `output/graficos/caso_entrada.pdf` |
 
 ## 01_serie_precios
 
@@ -82,3 +83,9 @@ Estaciones por rol en la ventana `2012_2026` (tabla 7, "Composición de la muest
 De 849 tratadas a 501 en la muestra: 117 no son de base, 226 tienen su primera entrada en 2013 y 5 no tienen precio de 93. Control estricto, de 662 a 373: 276 no son de base, 9 no tienen precio de 93 y 4 son singletons.
 
 **Nota.** Conteos sobre el panel mensual y las entradas de la ventana 2012–2026, después de unificar los códigos de un mismo local. Tratadas: estaciones con una entrada de otra marca a 2 km o menos mientras operaban; excluidas: entrada competidora más cercana entre 2 y 3 km; control amplio y estricto: nunca una entrada competidora a 3 y 5 km o menos. Muestra de estimación: estaciones presentes en 2012, cohortes desde 2014, cortada en la segunda entrada, gasolina 93. Tabla descriptiva, sin estimación.
+
+## 08_caso_entrada
+
+Mapa de una entrada con círculos de 1, 2, 3 y 5 km y las estaciones con registro ese mes coloreadas por distancia a la entrante: tratada (0–1 y 1–2 km), excluida (2–3 km), control amplio (3–5 km), control amplio y estricto (≥ 5 km). Se elige la entrada de una cohorte focal dentro del Gran Santiago con al menos una estación en cada anillo y la mayor cantidad a ≤ 2 km: sh1310110 (Shell, comuna de Santiago, noviembre de 2015). Es ilustrativo: el rol efectivo depende de todas las entradas de la ventana y de la marca.
+
+**Nota.** Estrella: estación Shell que entra en noviembre de 2015 en la comuna de Santiago; círculos a 1, 2, 3 y 5 km; puntos: estaciones con registro ese mes, coloreadas por distancia a esta entrada; el rol efectivo considera todas las entradas de la ventana y la marca (una estación de la misma marca no queda tratada).

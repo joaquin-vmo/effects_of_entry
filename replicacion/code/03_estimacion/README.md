@@ -1,17 +1,16 @@
 # 03_estimacion: efecto de la entrada
 
-Estudios de eventos y extensiones. Requieren haber corrido `01_buid/`. Los scripts son independientes entre sí; `08` repite las estimaciones de `01` y `06`.
+Estudios de eventos y extensiones. Requieren haber corrido `01_buid/`. Los scripts son independientes entre sí.
 
 | Script | Ventanas | Productos |
 |---|---|---|
 | `01_event_study.R` | las tres | `output/tablas/es_<ventana>_<comb>.tex`, `output/graficos/es_<ventana>.pdf` |
 | `02_event_study_controles.R` | 2012_2026 | `output/tablas/es_controles_<comb>.tex` |
-| `03_event_study_sunab.R` | las tres | `output/graficos/sunab_<ventana>.pdf` |
+| `03_event_study_sunab.R` | 2012_2026 | `output/graficos/sunab_2012_2026.pdf` |
 | `04_atenuacion_distancia.R` | 2012_2026 | `output/tablas/atenuacion_distancia.tex`, `output/graficos/atenuacion_distancia.pdf` |
 | `05_heterogeneidad_autopista.R` | 2012_2026 (+ red vial MOP) | `output/tablas/het_autopista.tex`, `output/graficos/het_autopista.pdf` |
-| `06_mercado_min_media_max.R` | 2012_2026 (+ `entradas.csv`) | `output/tablas/mercado_<comb>.tex`, `output/graficos/mercado_<comb>.pdf` |
-| `07_distribucion_acumulada.R` | 2012_2026 | `output/tablas/distribucion_acumulada.tex`, `output/graficos/distribucion_acumulada.pdf` |
-| `08_honestdid.R` | 2012_2026 (+ `entradas.csv`) | `output/tablas/honest_principal.tex`, `honest_mercado.tex` |
+| `06_mercado_min_media_max.R` | 2012_2026 (+ `entradas.csv`) | `output/tablas/mercado.tex`, `output/graficos/mercado.pdf` |
+| `07_distribucion_acumulada.R` | 2012_2026 | `output/tablas/distribucion_acumulada.tex`, `output/graficos/distribucion_acumulada.pdf`, `distribucion_beta.pdf` |
 
 `<comb>` ∈ {p93, p95, p97, pdi}. Las tablas se escriben como `tabular` sin nota; las notas para la tesis están abajo.
 
@@ -83,13 +82,12 @@ Efecto de la entrada sobre el percentil 90, la mediana y el percentil 10 de los 
 - **Mercado**: cada estación focal de `muestra_estacion()` más todas las estaciones con precio a ≤ 2 km en el mes. La focal debe tener precio. Resultado: log del cuantil × 100.
 - **Cuantiles en vez de máximo, media y mínimo** (la figura de Fischer et al.): el máximo es el precio de una sola estación. En ~3 % de los mercado-mes la más cara está más de 5 % sobre la mediana, en episodios que duran meses. Eso triplicaba el error estándar y generaba bins previos negativos (−0,24 en la 93); subir el mínimo de competidoras lo empeoraba. Cuantil tipo 7: en un mercado de dos estaciones el p90 queda a 90 % del camino del más bajo al más alto y la mediana coincide con la media.
 - **Mínimo de competidoras** (`MIN_COMP` = 1): el mercado debe tener en promedio al menos una competidora con precio **antes** de la entrada; en los controles, en todos sus meses. Medirlo con el conteo contemporáneo seleccionaría sobre la propia entrada. Con 2, los controles caen de 191 a 91 (son mercados ralos).
-- **Con y sin entrante**:
-  - *Con entrante*: toda estación del radio, la entrante incluida desde que abre. Es el mercado que enfrenta el consumidor, pero ahí la parte barata baja y la cara sube por pura composición.
-  - *Sin entrante*: excluye a toda estación que sea un evento de entrada, de modo que el movimiento es conducta de incumbentes. Se calcula sobre los mismos mercado-mes aunque quede una sola estación (p10 = p90).
+- **Entrante incluida**: toda estación del radio, la entrante incluida desde que abre. Es el mercado que enfrenta el consumidor, pero ahí la parte barata baja y la cara sube por pura composición. La versión sin entrante se dejó de estimar (`mercado_local()` aún la calcula, y `04_robustez/02_honest_did.R` la usa).
 - **Efectos fijos**: se mantiene marca × año de la focal.
+- **Estimador**: Sun y Abraham (2021), con cohortes mensuales y el mismo truco de bins que `03_event_study_sunab.R`. La tabla es el ATT agregado (`sunab(..., att = TRUE)`), la figura el estudio de eventos. Una tabla con los cuatro combustibles y una figura de cuatro paneles. Frente a TWFE los cuantiles bajos caen más en 93, 95 y diésel, y en la 97 el ATT pasa a cero: su efecto dura dos semestres y los bins largos, que pesan más en el ATT, están en cero. Tarda ~10 minutos. `04_robustez/02_honest_did.R` sigue usando TWFE para estas series.
 
-**Nota de la tabla.** ⟨combustible⟩; ATT en % del cuantil del mercado (log × 100 del percentil 90, la mediana y el percentil 10 de los precios); mercado = estación focal y estaciones con precio a 2 km o menos; con entrante incluye a la estación que abre, sin entrante excluye a toda entrante; mercados con al menos 1 competidora en promedio antes de la entrada; especificación principal; control: estaciones sin entradas a menos de 5 km; errores estándar agrupados por comuna entre paréntesis; * p<0,10 ** p<0,05 *** p<0,01.
-**Nota de la figura.** ⟨combustible⟩; estudio de eventos sobre el log del percentil 90, la mediana y el percentil 10 de los precios del mercado (radio de 2 km); bins de seis meses, extremos agrupados; referencia en −1; intervalos al 95 %; resto como la nota de la tabla.
+**Nota de la tabla.** ATT de Sun y Abraham (2021) en % del cuantil del mercado (log × 100 del percentil 90, la mediana y el percentil 10 de los precios); mercado = estación focal y estaciones con precio a 2 km o menos, entrante incluida; mercados con al menos 1 competidora en promedio antes de la entrada; especificación principal; control: estaciones sin entradas a menos de 5 km; errores estándar agrupados por comuna entre paréntesis; * p<0,10 ** p<0,05 *** p<0,01.
+**Nota de la figura.** Estudio de eventos de Sun y Abraham (2021) sobre el log del percentil 90, la mediana y el percentil 10 de los precios del mercado (radio de 2 km); bins de seis meses, extremos agrupados; referencia en −1; intervalos al 95 %; resto como la nota de la tabla.
 
 ## 07_distribucion_acumulada
 
@@ -101,19 +99,4 @@ Regresión de distribución de Chernozhukov, Fernández-Val y Melly (2013), como
 
 **Nota de la tabla.** β(c) = efecto de la entrada sobre 1[precio ≤ c], con c el cuantil indicado del precio menos su media nacional del mes; regresión de distribución de Chernozhukov, Fernández-Val y Melly (2013); β(c) > 0 = más masa bajo c (precios más bajos); dominancia estocástica de primer orden si max β(c) supera el valor crítico de Gail y Green (1976) y min β(c) no es negativo; especificación principal; control: estaciones sin entradas a menos de 5 km; errores estándar agrupados por comuna entre paréntesis; * p<0,10 ** p<0,05 *** p<0,01.
 **Nota de la figura.** Acumulada del precio menos su media nacional del mes para las tratadas después de la entrada (observada) y la que habrían tenido sin ella (observada menos β(c)); regresión de distribución sobre 41 umbrales; especificación principal; control a más de 5 km.
-
-## 08_honestdid
-
-No rechazar el test de leads no prueba tendencias paralelas: esos tests tienen poca potencia contra una deriva suave (Roth 2022). Rambachan y Roth (2023) acotan cuánto puede diferir la violación posterior a la entrada de la previa, que sí se observa, y entregan un intervalo robusto.
-
-- **Restricción de magnitudes relativas**, Δ^RM(M̄): el salto de la violación entre periodos posteriores no supera M̄ veces el mayor salto observado entre periodos previos. M̄ = 1 significa que la deriva después de la entrada no es mayor que la de antes. Es adimensional, así que se puede comparar entre combustibles y series.
-- **M̄ de quiebre**: el mayor M̄ de la grilla (0,25 a 3, paso 0,25) con el que el intervalo robusto al 95 % todavía excluye el cero.
-  - "< 0,25": ni la relajación mínima lo sostiene.
-  - "> 3": resiste una violación posterior del triple de la previa.
-
-  Como el intervalo se ensancha con M̄, el quiebre se busca por bisección. La búsqueda del intervalo cubre ± 60 errores estándar; el default de HonestDiD, 20, truncaba intervalos a M̄ alto.
-- **Horizontes**: impacto = bin 0 (meses 0 a 5) y bin 1 (meses 6 a 11). La violación se acumula bin a bin, así que el horizonte más lejano siempre resiste menos.
-- **Verificación**: con control amplio y la grilla del proyecto anterior, los quiebres del bin de impacto coinciden (1, 2, 0,5 y 2).
-
-**Nota (principal).** Sensibilidad a violaciones de tendencias paralelas de Rambachan y Roth (2023), restricción de magnitudes relativas, sobre el estudio de eventos principal (log del precio × 100); estimador e IC 95 % convencional del bin indicado; M̄ de quiebre = mayor M̄ (grilla 0,25 a 3) con el que el intervalo robusto al 95 % excluye el cero, es decir, cuántas veces el mayor salto previo puede ser el salto posterior de la violación; control a más de 5 km; errores agrupados por comuna.
-**Nota (mercado).** M̄ de quiebre de Rambachan y Roth (2023), restricción de magnitudes relativas, sobre el estudio de eventos del log del percentil 90, la mediana y el percentil 10 de los precios del mercado; con entrante incluye a la estación que abre, sin entrante la excluye; mayor M̄ (grilla 0,25 a 3) con el que el intervalo robusto al 95 % excluye el cero; mercados de 2 km con al menos 1 competidora antes de la entrada; control a más de 5 km; errores agrupados por comuna.
+**Nota de la figura (β).** Desplazamiento de la distribución de precios por efecto de la entrada: β(c) sobre los 41 umbrales, en el eje x el cuantil del precio menos su media nacional del mes al que corresponde cada umbral; β(c) > 0 = más masa bajo c (precios más bajos); bandas al 95 % con errores agrupados por comuna; especificación principal; control a más de 5 km.

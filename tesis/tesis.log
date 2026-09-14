@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 SEP 2026 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  14 SEP 2026 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -837,26 +837,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -879,7 +879,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 55.
  (./tesis.out) (./tesis.out)
 \@outlinefile=\write5
 \openout5 = `tesis.out'.
@@ -919,13 +919,13 @@ Package hyperref Info: Link coloring ON on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 53.
-Package microtype Info: Applying patch `item' on input line 53.
-Package microtype Info: Applying patch `toc' on input line 53.
-Package microtype Info: Applying patch `eqnum' on input line 53.
-Package microtype Info: Applying patch `footnote' on input line 53.
-Package microtype Info: Applying patch `verbatim' on input line 53.
-LaTeX Info: Redefining \microtypesetup on input line 53.
+LaTeX Info: Redefining \microtypecontext on input line 55.
+Package microtype Info: Applying patch `item' on input line 55.
+Package microtype Info: Applying patch `toc' on input line 55.
+Package microtype Info: Applying patch `eqnum' on input line 55.
+Package microtype Info: Applying patch `footnote' on input line 55.
+Package microtype Info: Applying patch `verbatim' on input line 55.
+LaTeX Info: Redefining \microtypesetup on input line 55.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -961,78 +961,177 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesis.bbl' found.
  (./tesis.bbl)
-Package biblatex Info: Reference section=0 on input line 53.
-Package biblatex Info: Reference segment=0 on input line 53.
+Package biblatex Info: Reference section=0 on input line 55.
+Package biblatex Info: Reference segment=0 on input line 55.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [1
 
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./tex/01_introduccion.tex) (./tex/02_literatura.tex) [2] (./tex/03_mercado.tex [3]
-<output/graficos/serie_precios.pdf, id=145, 650.43pt x 361.35pt>
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./tex/01_introduccion.tex [2]) (./tex/02_literatura.tex [3]) (./tex/03_mercado.tex [4] [5]
+<output/graficos/serie_precios.pdf, id=213, 650.43pt x 361.35pt>
 File: output/graficos/serie_precios.pdf Graphic file (type pdf)
 <use output/graficos/serie_precios.pdf>
-Package pdftex.def Info: output/graficos/serie_precios.pdf  used on input line 24.
+Package pdftex.def Info: output/graficos/serie_precios.pdf  used on input line 54.
 (pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<output/graficos/serie_margen.pdf, id=146, 650.43pt x 361.35pt>
-File: output/graficos/serie_margen.pdf Graphic file (type pdf)
-<use output/graficos/serie_margen.pdf>
-Package pdftex.def Info: output/graficos/serie_margen.pdf  used on input line 31.
-(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5 <./output/graficos/serie_precios.pdf>]
-<output/graficos/entradas_anio.pdf, id=167, 650.43pt x 361.35pt>
+[6] [7 <./output/graficos/serie_precios.pdf>]
+<output/graficos/entradas_anio.pdf, id=237, 650.43pt x 361.35pt>
 File: output/graficos/entradas_anio.pdf Graphic file (type pdf)
 <use output/graficos/entradas_anio.pdf>
-Package pdftex.def Info: output/graficos/entradas_anio.pdf  used on input line 47.
+Package pdftex.def Info: output/graficos/entradas_anio.pdf  used on input line 69.
+(pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
+ [8 <./output/graficos/entradas_anio.pdf>]
+<output/graficos/caso_entrada.pdf, id=251, 505.89pt x 542.025pt>
+File: output/graficos/caso_entrada.pdf Graphic file (type pdf)
+<use output/graficos/caso_entrada.pdf>
+Package pdftex.def Info: output/graficos/caso_entrada.pdf  used on input line 78.
+(pdftex.def)             Requested size: 386.96027pt x 414.60641pt.
+ [9 <./output/graficos/caso_entrada.pdf>] (./output/tablas/dispersion_p93.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10] [11]) (./tex/04_identificacion.tex [12] [13]) (./tex/05_resultados.tex
+<output/graficos/sunab_2012_2026.pdf, id=344, 650.43pt x 433.62pt>
+File: output/graficos/sunab_2012_2026.pdf Graphic file (type pdf)
+<use output/graficos/sunab_2012_2026.pdf>
+Package pdftex.def Info: output/graficos/sunab_2012_2026.pdf  used on input line 10.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+ [14] [15 <./output/graficos/sunab_2012_2026.pdf>] (./output/tablas/es_2012_2026_p93.tex)
+<output/graficos/atenuacion_distancia.pdf, id=367, 650.43pt x 433.62pt>
+File: output/graficos/atenuacion_distancia.pdf Graphic file (type pdf)
+<use output/graficos/atenuacion_distancia.pdf>
+Package pdftex.def Info: output/graficos/atenuacion_distancia.pdf  used on input line 36.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+ [16] [17] [18 <./output/graficos/atenuacion_distancia.pdf>]
+<output/graficos/mercado.pdf, id=394, 650.43pt x 433.62pt>
+File: output/graficos/mercado.pdf Graphic file (type pdf)
+<use output/graficos/mercado.pdf>
+Package pdftex.def Info: output/graficos/mercado.pdf  used on input line 55.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+<output/graficos/distribucion_beta.pdf, id=400, 650.43pt x 433.62pt>
+File: output/graficos/distribucion_beta.pdf Graphic file (type pdf)
+<use output/graficos/distribucion_beta.pdf>
+Package pdftex.def Info: output/graficos/distribucion_beta.pdf  used on input line 68.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+ [19] [20 <./output/graficos/mercado.pdf>]
+<output/graficos/distribucion_acumulada.pdf, id=421, 650.43pt x 433.62pt>
+File: output/graficos/distribucion_acumulada.pdf Graphic file (type pdf)
+<use output/graficos/distribucion_acumulada.pdf>
+Package pdftex.def Info: output/graficos/distribucion_acumulada.pdf  used on input line 75.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+) (./tex/06_robustez.tex [21 <./output/graficos/distribucion_beta.pdf>] [22 <./output/graficos/distribucion_acumulada.pdf>]
+<output/graficos/placebo_adelanto.pdf, id=457, 650.43pt x 469.755pt>
+File: output/graficos/placebo_adelanto.pdf Graphic file (type pdf)
+<use output/graficos/placebo_adelanto.pdf>
+Package pdftex.def Info: output/graficos/placebo_adelanto.pdf  used on input line 12.
+(pdftex.def)             Requested size: 455.24411pt x 328.79759pt.
+ [23] [24 <./output/graficos/placebo_adelanto.pdf>]
+<output/graficos/ventana_2014_2019.pdf, id=486, 650.43pt x 433.62pt>
+File: output/graficos/ventana_2014_2019.pdf Graphic file (type pdf)
+<use output/graficos/ventana_2014_2019.pdf>
+Package pdftex.def Info: output/graficos/ventana_2014_2019.pdf  used on input line 23.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+<output/graficos/ventana_2021_2026.pdf, id=489, 650.43pt x 433.62pt>
+File: output/graficos/ventana_2021_2026.pdf Graphic file (type pdf)
+<use output/graficos/ventana_2021_2026.pdf>
+Package pdftex.def Info: output/graficos/ventana_2021_2026.pdf  used on input line 30.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+) [25 <./output/graficos/ventana_2014_2019.pdf>] [26 <./output/graficos/ventana_2021_2026.pdf>] (./tex/07_conclusion.tex [27]) [28] [29] [30] [31] [32] (./tex/anexo.tex [33] [34]
+<output/graficos/estructura_precios.pdf, id=622, 433.62pt x 325.215pt>
+File: output/graficos/estructura_precios.pdf Graphic file (type pdf)
+<use output/graficos/estructura_precios.pdf>
+Package pdftex.def Info: output/graficos/estructura_precios.pdf  used on input line 42.
+(pdftex.def)             Requested size: 318.66948pt x 239.01279pt.
+<output/graficos/serie_margen.pdf, id=623, 650.43pt x 361.35pt>
+File: output/graficos/serie_margen.pdf Graphic file (type pdf)
+<use output/graficos/serie_margen.pdf>
+Package pdftex.def Info: output/graficos/serie_margen.pdf  used on input line 49.
 (pdftex.def)             Requested size: 455.24411pt x 252.92122pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./output/graficos/serie_margen.pdf>] (./output/tablas/composicion_muestra.tex)
+<output/graficos/conley_2012_2026.pdf, id=626, 650.43pt x 433.62pt>
+File: output/graficos/conley_2012_2026.pdf Graphic file (type pdf)
+<use output/graficos/conley_2012_2026.pdf>
+Package pdftex.def Info: output/graficos/conley_2012_2026.pdf  used on input line 58.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./output/graficos/entradas_anio.pdf>] (./output/tablas/dispersion_p93.tex)
+<output/graficos/fischer_semanal.pdf, id=632, 650.43pt x 433.62pt>
+File: output/graficos/fischer_semanal.pdf Graphic file (type pdf)
+<use output/graficos/fischer_semanal.pdf>
+Package pdftex.def Info: output/graficos/fischer_semanal.pdf  used on input line 67.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+<output/graficos/het_autopista.pdf, id=635, 650.43pt x 433.62pt>
+File: output/graficos/het_autopista.pdf Graphic file (type pdf)
+<use output/graficos/het_autopista.pdf>
+Package pdftex.def Info: output/graficos/het_autopista.pdf  used on input line 74.
+(pdftex.def)             Requested size: 455.24411pt x 303.50546pt.
+<output/graficos/persistencia.pdf, id=638, 650.43pt x 325.215pt>
+File: output/graficos/persistencia.pdf Graphic file (type pdf)
+<use output/graficos/persistencia.pdf>
+Package pdftex.def Info: output/graficos/persistencia.pdf  used on input line 81.
+(pdftex.def)             Requested size: 455.24411pt x 227.62909pt.
+[35
+
+ <./output/graficos/estructura_precios.pdf>] [36 <./output/graficos/serie_margen.pdf>] [37 <./output/graficos/conley_2012_2026.pdf>] [38 <./output/graficos/fischer_semanal.pdf>] [39 <./output/graficos/het_autopista.pdf>] [40 <./output/graficos/persistencia.pdf>] (./output/tablas/composicion_muestra.tex) (./output/tablas/es_controles_p93.tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9] [10]) [11] [12] [13] [14] (./tesis.aux
+(./output/tablas/es_controles_p97.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./output/tablas/es_controles_pdi.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./output/tablas/es_2012_2026_p97.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./output/tablas/es_2012_2026_pdi.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./output/tablas/het_autopista.tex) (./output/tablas/mercado.tex) (./output/tablas/validacion_margen.tex) (./output/tablas/honest_principal.tex) (./output/tablas/honest_mercado.tex) (./output/tablas/placebo_controles.tex) (./output/tablas/ventana_2014_2019.tex) (./output/tablas/ventana_2021_2026.tex)) [41
+
+] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] (./tesis.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
+Package cleveref Info: loaded `spanish' language definitions on input line 12.
 )
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 22EF961142AE5C5B9F5E0685319A0785;884.
+(rerunfilecheck)             Checksum: BA8E432C03CC87CCE052EF4F049C3A57;2131.
 Package logreq Info: Writing requests to 'tesis.run.xml'.
 \openout1 = `tesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36278 strings out of 467525
- 697554 string characters out of 5418982
- 1646251 words of memory out of 5000000
- 64403 multiletter control sequences out of 15000+600000
- 654138 words of font info for 200 fonts, out of 8000000 for 9000
+ 37041 strings out of 467525
+ 714273 string characters out of 5418982
+ 1742119 words of memory out of 5000000
+ 64884 multiletter control sequences out of 15000+600000
+ 662824 words of font info for 279 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,94p,1716b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesis.pdf (14 pages, 441136 bytes).
+ 84i,11n,94p,1961b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on tesis.pdf (52 pages, 818523 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 53836 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 756 compressed objects within 8 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 72418 words of extra memory for PDF output out of 74296 (max. 10000000)
 

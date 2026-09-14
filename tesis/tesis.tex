@@ -24,7 +24,9 @@
     citecolor=blue,
     urlcolor=blue
 }
-\usepackage{cleveref}
+\usepackage[spanish]{cleveref}
+\crefname{section}{sección}{secciones}
+\Crefname{section}{Sección}{Secciones}
 
 \usepackage[
     margin=2.5cm,
@@ -48,7 +50,7 @@
 
 \title{\textbf{Efectos competitivos de la entrada y dispersión de precios en mercados locales}\textsuperscript{*}}
 \author{Joaquín Martínez\textsuperscript{\dag}}
-\date{Borrador: 13 de septiembre, 2026}
+\date{Borrador: 14 de septiembre, 2026}
 
 \begin{document}
 
@@ -63,7 +65,7 @@
 
 \begin{abstract}
 \noindent
-Abstract
+Este trabajo estima el efecto disciplinador sobre los precios que induce la apertura de una nueva estación de bencina. Utilizando bases de datos oficiales y públicamente disponibles se identifican precios y entradas. Mediante un estudio de eventos se captura la respuesta en menores precios ante la entrada de una competidora.  Se encuentra un efecto causal cercano al $0{,}4\%$ sobre el precio en la gasolina de 93 octanos y al $0{,}6\%$ en el diésel, del orden de cuatro pesos por litro, equivalente a un $5{,}6\%$ y un $5{,}2\%$ del margen de venta, y un efecto marcadamente menor en la gasolina de 97 octanos. El efecto se atenúa con la distancia y deja de distinguirse de cero entre los tres y los cuatro kilómetros, marcando así un mercado relevante geográfico. Las estaciones ex-ante más baratas son las que concentran la reducción en el precio. La ganancia de la entrada la captura entonces de manera desproporcionada el consumidor que compara activamente precios.
 \end{abstract}
 
 \vspace{0.5cm}
@@ -80,9 +82,22 @@ Abstract
 
 \input{tex/03_mercado.tex}
 
+\input{tex/04_identificacion.tex}
+
+\input{tex/05_resultados.tex}
+
+\input{tex/06_robustez.tex}
+
+\input{tex/07_conclusion.tex}
+
 \newpage
 
 \printbibliography
+
+\newpage
+\appendix
+
+\input{tex/anexo.tex}
 
 
 \end{document}

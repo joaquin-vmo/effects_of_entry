@@ -1,7 +1,7 @@
-# 08_honestdid.R
+# 02_honest_did.R
 #
 # sensibilidad a tendencias paralelas (Rambachan y Roth 2023, magnitudes relativas) de
-# los estudios de eventos de 01 y 06. panel_mensual.csv + entradas.csv ->
+# los estudios de eventos de 03_estimacion/01 y 06. panel_mensual.csv + entradas.csv ->
 # output/tablas/honest_{principal,mercado}.tex
 
 library(fixest)

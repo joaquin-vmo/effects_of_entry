@@ -1,0 +1,3829 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{ARCIDIACONO2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1c81edbece3116f2b298acb4b8e30e7d}{%
+           family={Arcidiacono},
+           familyi={A\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c176df36c9fe1f8a0f6ef7f36bbdedf}{%
+           family={Ellickson},
+           familyi={E\bibinitperiod},
+           given={Paul\bibnamedelima B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8975140c1bcd76e249293621da67f507}{%
+           family={Mela},
+           familyi={M\bibinitperiod},
+           given={Carl\bibnamedelima F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=608366bd406c26b6295926d31b2c1db1}{%
+           family={Singleton},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{d6fb64182ed89539c39c8e205446f115}
+      \strng{fullhash}{a062308049f995923d26b6c5a73d3884}
+      \strng{fullhashraw}{a062308049f995923d26b6c5a73d3884}
+      \strng{bibnamehash}{a062308049f995923d26b6c5a73d3884}
+      \strng{authorbibnamehash}{a062308049f995923d26b6c5a73d3884}
+      \strng{authornamehash}{d6fb64182ed89539c39c8e205446f115}
+      \strng{authorfullhash}{a062308049f995923d26b6c5a73d3884}
+      \strng{authorfullhashraw}{a062308049f995923d26b6c5a73d3884}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Coupling weekly grocery transactions with the exact location and opening date of Walmarts over an 11-year period, we examine how Supercenter entry affects prices and revenues at incumbent supermarkets. We find that entry within 1 mile of an incumbent causes a sharp 16 percent drop in revenue, a competitive effect that decays quickly with distance. Surprisingly, despite large cross-sectional differences in supermarket prices by exposure to Walmart, our findings also indicate that Supercenter entry has no causal effect on incumbent prices. This result is robust across many dimensions, including a lack of price response for individual products, and across brands within a category.}
+      \field{issn}{19457782, 19457790}
+      \field{journaltitle}{American Economic Journal: Applied Economics}
+      \field{number}{3}
+      \field{title}{The Competitive Effects of Entry: Evidence from Supercenter Expansion}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{pp. 175\bibrangedash 206}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/26921832
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/26921832
+      \endverb
+    \endentry
+    \entry{BERGANTINO2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=30ad3ac0b424cff394b4a7472b925178}{%
+           family={Bergantino},
+           familyi={B\bibinitperiod},
+           given={Angela\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6dc3b48c0127300d23ca3dc874f1bb5d}{%
+           family={Capozza},
+           familyi={C\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d16929570d73d84e85127e859fe835e}{%
+           family={Intini},
+           familyi={I\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7bf8a4ebc925dc3a15999bc38e888ec0}
+      \strng{fullhash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{fullhashraw}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{bibnamehash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{authorbibnamehash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{authornamehash}{7bf8a4ebc925dc3a15999bc38e888ec0}
+      \strng{authorfullhash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{authorfullhashraw}{c396c2b819e7e3ed74afa533cb57cedc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explores the determinants of fuel prices by proposing an empirical framework that integrates three kinds of influencing factors: spatial interaction, competition and territorial factors. For competition, we define a general variable, the presence of competing stations within a radius, and two specific variables, the presence of low-cost stations and the presence of same-brand stations. We proceed with a step-wise adjustment of the radius, by gradually increasing it, to evaluate the spatial scope of different competition effects. Using data on prices of fuel stations in Rome, Italy, we estimate spatial econometric models that provide evidence of spatial dependence in price between stations. We also find that competition affects prices, but the relevance of its impact depends on radius length. Finally, the territorial factors remarkably influence prices. If these factors are introduced in the model, the magnitude of spatial parameters weakens, allowing to accurately assess the intensity of spatial dependence.}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{title}{Empirical investigation of retail fuel pricing: The impact of spatial interaction, competition and territorial factors}
+      \field{volume}{90}
+      \field{year}{2020}
+      \field{pages}{104876}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.eneco.2020.104876
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988320302164
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988320302164
+      \endverb
+      \keyw{Gasoline and diesel prices,Spatial interaction,Competition,Territorial factors}
+    \endentry
+    \entry{BERNARDO2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc09c36153e67911ee88d2aa375dacac}{%
+           family={Bernardo},
+           familyi={B\bibinitperiod},
+           given={Valeria},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{fullhash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{fullhashraw}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{bibnamehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authorbibnamehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authornamehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authorfullhash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authorfullhashraw}{bc09c36153e67911ee88d2aa375dacac}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I exploit a change in Spanish regulations to test the effect of the relaxation of entry restrictions on the equilibrium retail price of diesel. In February 2013, a Central Government reform permitted gasoline stations to operate in industrial and commercial areas. Over the following 2-year period, this deregulation led to a high number of new market entrants in these newly designated free entry areas. By isolating markets exposed to entry and markets unaffected by new entrants, and adopting a difference-in-difference approach, results show that gasoline stations exposed to a new market entrant within a one-mile radius lower their prices by an average 1.04{\%}. This result is significant, representing almost one fifth of the average retail margin. Additionally, the results show that the reduction in the equilibrium price is caused by the first market entrant and that the effect decreases over time.}
+      \field{journaltitle}{Journal of Regulatory Economics}
+      \field{number}{1}
+      \field{title}{The effect of entry restrictions on price: evidence from the retail gasoline market}
+      \field{volume}{53}
+      \field{year}{2018}
+      \field{pages}{75\bibrangedash 99}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s11149-017-9349-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11149-017-9349-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11149-017-9349-3
+      \endverb
+    \endentry
+    \entry{BORENSTEIN1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6bbf98960262c8700be69e1f4e4bba8d}{%
+           family={Borenstein},
+           familyi={B\bibinitperiod},
+           given={Severin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[RAND Corporation, Wiley]}%
+      }
+      \strng{namehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{fullhash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{fullhashraw}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{bibnamehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authorbibnamehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authornamehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authorfullhash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authorfullhashraw}{6bbf98960262c8700be69e1f4e4bba8d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent theoretical work has shown that price discrimination can take place in imperfectly competitive, as well as monopoly, markets. The persistence of higher retail margins on unleaded than on leaded gasoline during the 1980s suggests that discrimination may occur even in very competitive markets. This article studies a number of cost-based explanations for such gasoline pricing, as well as the possibility of price discrimination. The analysis indicates that gas stations discriminate against groups of customers who are less likely to switch to another station. The conclusions highlight the influence of shopping or search costs on pricing decisions, even in markets thought to be quite competitive.}
+      \field{issn}{07416261}
+      \field{journaltitle}{The RAND Journal of Economics}
+      \field{number}{3}
+      \field{title}{Selling Costs and Switching Costs: Explaining Retail Gasoline Margins}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{354\bibrangedash 369}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2601052
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2601052
+      \endverb
+    \endentry
+    \entry{BORUSYAK2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bd786f74596fee4b3890f929e06a0f8a}{%
+           family={Borusyak},
+           familyi={B\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf9f59745c80d75e4b28c948d6b49032}{%
+           family={Jaravel},
+           familyi={J\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e249611355f88583165432eab0ba4e1}{%
+           family={Spiess},
+           familyi={S\bibinitperiod},
+           given={Jann},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{868bd3b0860d23d0522ca78a414bfd87}
+      \strng{fullhash}{088786d88490d4ebdcd781569cc02694}
+      \strng{fullhashraw}{088786d88490d4ebdcd781569cc02694}
+      \strng{bibnamehash}{088786d88490d4ebdcd781569cc02694}
+      \strng{authorbibnamehash}{088786d88490d4ebdcd781569cc02694}
+      \strng{authornamehash}{868bd3b0860d23d0522ca78a414bfd87}
+      \strng{authorfullhash}{088786d88490d4ebdcd781569cc02694}
+      \strng{authorfullhashraw}{088786d88490d4ebdcd781569cc02694}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We develop a framework for difference-in-differences designs with staggered treatment adoption and heterogeneous causal effects. We show that conventional regression-based estimators fail to provide unbiased estimates of relevant estimands absent strong restrictions on treatment-effect homogeneity. We then derive the efficient estimator addressing this challenge, which takes an intuitive “imputation” form when treatment-effect heterogeneity is unrestricted. We characterize the asymptotic behaviour of the estimator, propose tools for inference, and develop tests for identifying assumptions. Our method applies with time-varying controls, in triple-difference designs, and with certain non-binary treatments. We show the practical relevance of our results in a simulation study and an application. Studying the consumption response to tax rebates in the U.S., we find that the notional marginal propensity to consume is between 8 and 11\% in the first quarter—about half as large as benchmark estimates used to calibrate macroeconomic models—and predominantly occurs in the first month after the rebate.}
+      \field{issn}{0034-6527}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Revisiting Event-Study Designs: Robust and Efficient Estimation}
+      \field{volume}{91}
+      \field{year}{2024}
+      \field{pages}{3253\bibrangedash 3285}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1093/restud/rdae007
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/restud/article-pdf/91/6/3253/60441633/rdae007.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/restud/rdae007
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/restud/rdae007
+      \endverb
+    \endentry
+    \entry{BRESNAHAN1991}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a45e952216a4661b3c133a6742ab669a}{%
+           family={Bresnahan},
+           familyi={B\bibinitperiod},
+           given={Timothy\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13e77cf6959b7ffaeb1c2dce63802f22}{%
+           family={Reiss},
+           familyi={R\bibinitperiod},
+           given={Peter\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{fullhash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{fullhashraw}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{bibnamehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authorbibnamehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authornamehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authorfullhash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authorfullhashraw}{ec01c78bd7cdd4cab706875538aa7b09}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes an empirical framework for measuring the effects of entry in concentrated markets. Building on models of entry in atomistically competitive markets, we show how the number of producers in an oligopolistic market varies with changes in demand and market competition. These analytical results structure our empirical analysis of competition in five retail and professional industries. Using data on geographically isolated monopolies, duopolies, and oligopolies, we study the relationship between the number of firms in a market, market size, and competition. Our empirical results suggest that competitive conduct changes quickly as the number of incumbents increases. In markets with five or fewer incumbents, almost all variation in competitive conduct occurs with the entry of the second or third firm. Surprisingly, once the market has between three and five firms, the next entrant has little effect on competitive conduct.}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{5}
+      \field{title}{Entry and Competition in Concentrated Markets}
+      \field{urlday}{3}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{99}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{977\bibrangedash 1009}
+      \range{pages}{33}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2937655
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2937655
+      \endverb
+    \endentry
+    \entry{BYRNE2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ffd185b08426546e3c9c0d5a0424b02c}{%
+           family={Byrne},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=911726c73610fe554263e9cd8f4a8fde}{%
+           family={Roos},
+           familyi={R\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{fullhash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{fullhashraw}{aec33e5ef549aee6a212f8df00165766}
+      \strng{bibnamehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authorbibnamehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authornamehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authorfullhash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authorfullhashraw}{aec33e5ef549aee6a212f8df00165766}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops direct tests for search behavior in retail gasoline markets. We exploit a unique market-level dataset that allows us to directly measure search intensity with daily web traffic data from a gasoline price reporting website and perfectly measure daily changes in price levels and dispersion. Our simple yet powerful tests provide strong evidence of both cross-sectional and intertemporal price search.}
+      \field{issn}{00221821, 14676451}
+      \field{journaltitle}{The Journal of Industrial Economics}
+      \field{number}{1}
+      \field{title}{CONSUMER SEARCH IN RETAIL GASOLINE MARKETS*}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{65}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{183\bibrangedash 193}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/26627681
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/26627681
+      \endverb
+    \endentry
+    \entry{CALLAWAYSANTANNA2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4a5a67b3788b4a3653a14d9ab03fba0e}{%
+           family={Callaway},
+           familyi={C\bibinitperiod},
+           given={Brantly},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7767820037a369ec59519519e44c7e9a}{%
+           family={Sant’Anna},
+           familyi={S\bibinitperiod},
+           given={Pedro\bibnamedelima H.C.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{fullhash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{fullhashraw}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{bibnamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorbibnamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authornamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorfullhash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorfullhashraw}{81e94baa528cefc8bb56e5c1a70471e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we consider identification, estimation, and inference procedures for treatment effect parameters using Difference-in-Differences (DiD) with (i) multiple time periods, (ii) variation in treatment timing, and (iii) when the “parallel trends assumption” holds potentially only after conditioning on observed covariates. We show that a family of causal effect parameters are identified in staggered DiD setups, even if differences in observed characteristics create non-parallel outcome dynamics between groups. Our identification results allow one to use outcome regression, inverse probability weighting, or doubly-robust estimands. We also propose different aggregation schemes that can be used to highlight treatment effect heterogeneity across different dimensions as well as to summarize the overall effect of participating in the treatment. We establish the asymptotic properties of the proposed estimators and prove the validity of a computationally convenient bootstrap procedure to conduct asymptotically valid simultaneous (instead of pointwise) inference. Finally, we illustrate the relevance of our proposed tools by analyzing the effect of the minimum wage on teen employment from 2001–2007. Open-source software is available for implementing the proposed methods.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{note}{Themed Issue: Treatment Effect 1}
+      \field{number}{2}
+      \field{title}{Difference-in-Differences with multiple time periods}
+      \field{volume}{225}
+      \field{year}{2021}
+      \field{pages}{200\bibrangedash 230}
+      \range{pages}{31}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jeconom.2020.12.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407620303948
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407620303948
+      \endverb
+      \keyw{Difference-in-Differences,Dynamic treatment effects,Doubly robust,Event study,Variation in treatment timing,Treatment effect heterogeneity,Semi-parametric}
+    \endentry
+    \entry{CARDOSO2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e988f89642282ecef531573c91275da5}{%
+           family={Cardoso},
+           familyi={C\bibinitperiod},
+           given={Leonardo\bibnamedelima C.B.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd49cfc71c06e20934ef81c9e412f1b3}{%
+           family={Uchôa},
+           familyi={U\bibinitperiod},
+           given={Carlos\bibnamedelimb Frederico\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d28099f2f7b9f3c7a157f42c94206d5c}{%
+           family={Huamani},
+           familyi={H\bibinitperiod},
+           given={Williams},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfa99034e22d35496ecaac49ebc6b5d9}{%
+           family={Just},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf16eb76ba3f4f262c27b361256eedea}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Raúl\bibnamedelima V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85b5c8432b2ba1b1131c446eddbb42b1}
+      \strng{fullhash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{fullhashraw}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{bibnamehash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{authorbibnamehash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{authornamehash}{85b5c8432b2ba1b1131c446eddbb42b1}
+      \strng{authorfullhash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{authorfullhashraw}{e37835038e78ec3b5a2e86d73b10fcec}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1056-8190}
+      \field{journaltitle}{Papers in Regional Science}
+      \field{number}{1}
+      \field{title}{Price effects of spatial competition in retail fuel markets: the impact of a new rival nearby}
+      \field{volume}{101}
+      \field{year}{2022}
+      \field{pages}{81\bibrangedash 106}
+      \range{pages}{26}
+      \verb{doi}
+      \verb https://doi.org/10.1111/pirs.12645
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1056819023005298
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1056819023005298
+      \endverb
+      \keyw{ethanol prices,gasoline prices,price dispersion,spatial competition}
+    \endentry
+    \entry{CASTILLO2018}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a412081917bc3901cfc6890ea98e5936}{%
+           family={Castillo},
+           familyi={C\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad de Chile}%
+      }
+      \strng{namehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{fullhash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{fullhashraw}{a412081917bc3901cfc6890ea98e5936}
+      \strng{bibnamehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authorbibnamehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authornamehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authorfullhash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authorfullhashraw}{a412081917bc3901cfc6890ea98e5936}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Competencia en la distribución minorista de combustibles líquidos: explorando la dimensión espacial}
+      \field{type}{Tesis de Magíster en Economía Aplicada}
+      \field{year}{2018}
+    \endentry
+    \entry{CHANDRA2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=722c8da44ca1bb8aaad46597b11ad414}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={Ambarish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f420feaccc9227083ae5cd582c95730e}{%
+           family={Tappata},
+           familyi={T\bibinitperiod},
+           given={Mariano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[RAND Corporation, Wiley]}%
+      }
+      \strng{namehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{fullhash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{fullhashraw}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{bibnamehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authorbibnamehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authornamehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authorfullhash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authorfullhashraw}{dec2692fa6114f4e3f5af411ce0332a1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article studies the role of imperfect information in explaining price dispersion. We use a new panel data set on the U.S. retail gasoline industry and propose a new test of temporal price dispersion to establish the importance of consumer search. We show that price rankings vary significantly over time; however, they are more stable among stations at the same street intersection. We establish the equilibrium relationships between price dispersion and key variables from consumer search models. Price dispersion increases with the number of firms in the market, decreases with the production cost, and increases with search costs.}
+      \field{issn}{07416261}
+      \field{journaltitle}{The RAND Journal of Economics}
+      \field{number}{4}
+      \field{title}{Consumer search and dynamic price dispersion: an application to gasoline markets}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{42}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{681\bibrangedash 704}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/23208728
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/23208728
+      \endverb
+    \endentry
+    \entry{CHERNOZHUKOV2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00018206993be186898211545ed16048}{%
+           family={Fernández-Val},
+           familyi={F\bibinithyphendelim V\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62d4e62464feaf6360fb3259cc2be2d8}{%
+           family={Melly},
+           familyi={M\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{fullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{fullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \strng{bibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorbibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{authorfullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorfullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Counterfactual distributions are important ingredients for policy analysis and decomposition analysis in empirical economics. In this article, we develop modeling and inference tools for counterfactual distributions based on regression methods. The counterfactual scenarios that we consider consist of ceteris paribus changes in either the distribution of covariates related to the outcome of interest or the conditional distribution of the outcome given covariates. For either of these scenarios, we derive joint functional central limit theorems and bootstrap validity results for regression-based estimators of the status quo and counterfactual outcome distributions. These results allow us to construct simultaneous confidence sets for function-valued effects of the counterfactual changes, including the effects on the entire distribution and quantile functions of the outcome as well as on related functionals. These confidence sets can be used to test functional hypotheses such as no-effect, positive effect, or stochastic dominance. Our theory applies to general counterfactual changes and covers the main regression methods including classical, quantile, duration, and distribution regressions. We illustrate the results with an empirical application to wage decompositions using data for the United States. As a part of developing the main results, we introduce distribution regression as a comprehensive and flexible tool for modeling and estimating the entire conditional distribution. We show that distribution regression encompasses the Cox duration regression and represents a useful alternative to quantile regression. We establish functional central limit theorems and bootstrap validity results for the empirical distribution regression process and various related functionals.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{INFERENCE ON COUNTERFACTUAL DISTRIBUTIONS}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{81}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{2205\bibrangedash 2268}
+      \range{pages}{64}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+    \endentry
+    \entry{CLEMENZGUGLER2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=47c10cddb0a1d88950327df385b24791}{%
+           family={Clemenz},
+           familyi={C\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84a038e102a15a235e7e50bf5715943d}{%
+           family={Gugler},
+           familyi={G\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{fullhash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{fullhashraw}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{bibnamehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authorbibnamehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authornamehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authorfullhash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authorfullhashraw}{d22e22b203ce1d23df714a18f14564c7}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using data from the Austrian retail gasoline market we find that a higher station density reduces average prices. Market (i.e. ownership) concentration does not significantly affect average price, however is negatively related to the density of stations. Estimation of the pricing and entry equations as simultaneous equations does not alter our conclusions, and suggests causality running from station density to price. We argue that the spatial dimension of markets allows the identification of market conduct, which is particularly relevant for competition policy.}
+      \field{day}{1}
+      \field{issn}{1435-8921}
+      \field{journaltitle}{Empirical Economics}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Locational choice and price competition: some empirical results for the Austrian retail gasoline market}
+      \field{volume}{31}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{291\bibrangedash 312}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s00181-005-0016-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00181-005-0016-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00181-005-0016-7
+      \endverb
+    \endentry
+    \entry{CONLEY1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df4c65309421035207cd58005c79ed3f}{%
+           family={Conley},
+           familyi={C\bibinitperiod},
+           given={T.G.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \strng{bibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorbibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authornamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{1}
+      \field{title}{GMM estimation with cross sectional dependence}
+      \field{volume}{92}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 45}
+      \range{pages}{45}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0304-4076(98)00084-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \keyw{Cross-sectional dependence,Non-parametric covariance matrix estimation,Random fields,Generalized method of moments}
+    \endentry
+    \entry{DAVIS2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=94f5f72d656726e3ddb509d29066bc77}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Lucas\bibnamedelima W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=969aee82c82eebd5b4fbb877c2ae4d93}{%
+           family={McRae},
+           familyi={M\bibinitperiod},
+           given={Shaun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abd8467b87378ae42836519d0483e7ae}{%
+           family={Seira},
+           familyi={S\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b2f438be3648bcc7507d2687c17e0fb}
+      \strng{fullhash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{fullhashraw}{7417e365499afb5ca59e2172da7f757f}
+      \strng{bibnamehash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{authorbibnamehash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{authornamehash}{3b2f438be3648bcc7507d2687c17e0fb}
+      \strng{authorfullhash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{authorfullhashraw}{7417e365499afb5ca59e2172da7f757f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT We use panel data on the location, prices, and quality of the universe of gas stations in Mexico to study the competitive effects of entry on incumbent firms. Using more than 1000 entry events and defining local markets based on the road network, we find that the entry of a new station within 3 min driving time decreases regular gasoline prices by 6\% of the retail price spread. Competitive effects decline with travel time and are largest in markets that previously had only one station. Entry of stations with the same owner as the incumbent has near-zero effects. The effect of competition on quality is less clear, with suggestive evidence of improved service quality in some specifications.}
+      \field{journaltitle}{The Journal of Industrial Economics}
+      \field{number}{4}
+      \field{title}{Competitive Effects of Entry in Gasoline Markets}
+      \field{volume}{73}
+      \field{year}{2025}
+      \field{pages}{589\bibrangedash 607}
+      \range{pages}{19}
+      \verb{doi}
+      \verb https://doi.org/10.1111/joie.12418
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/joie.12418
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joie.12418
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joie.12418
+      \endverb
+    \endentry
+    \entry{DECHAISEMARTIN2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e476426fa9151355cd09327277745a1c}{%
+           family={Chaisemartin},
+           familyi={C\bibinitperiod},
+           given={Clément},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=411f64c7f01ee0e2a0fdc31e20535454}{%
+           family={D'Haultfœuille},
+           familyi={D\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48bc62d3b1de71e129248df511640093}
+      \strng{fullhash}{48bc62d3b1de71e129248df511640093}
+      \strng{fullhashraw}{48bc62d3b1de71e129248df511640093}
+      \strng{bibnamehash}{48bc62d3b1de71e129248df511640093}
+      \strng{authorbibnamehash}{48bc62d3b1de71e129248df511640093}
+      \strng{authornamehash}{48bc62d3b1de71e129248df511640093}
+      \strng{authorfullhash}{48bc62d3b1de71e129248df511640093}
+      \strng{authorfullhashraw}{48bc62d3b1de71e129248df511640093}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects}
+      \field{volume}{110}
+      \field{year}{2020}
+      \field{pages}{2964\bibrangedash 96}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1257/aer.20181169
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.20181169
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.20181169
+      \endverb
+    \endentry
+    \entry{ECKERT2013}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ad8f4d81bbbe91cd372d690a1ce1dbc}{%
+           family={Eckert},
+           familyi={E\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{fullhash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{fullhashraw}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{bibnamehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authorbibnamehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authornamehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authorfullhash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authorfullhashraw}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{No abstract is available for this item.}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Empirical Studies Of Gasoline Retailing: A Guide To The Literature}
+      \field{volume}{27}
+      \field{year}{2013}
+      \field{pages}{140\bibrangedash 166}
+      \range{pages}{27}
+      \verb{doi}
+      \verb j.1467-6419.2011.00698.x
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/bla/jecsur/v27y2013i1p140-166.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/bla/jecsur/v27y2013i1p140-166.html
+      \endverb
+    \endentry
+    \entry{FNE2021informe}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4b1fd7e10d4bdd1573138f987384ee0}{%
+           family={{Fiscalía Nacional Económica}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Fiscalía Nacional Económica}%
+      }
+      \strng{namehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{bibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorbibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authornamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{12}
+      \field{title}{Informe de Archivo. Investigación Rol N°2615-20}
+      \field{type}{Informe}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
+    \entry{FNE2025informe}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4b1fd7e10d4bdd1573138f987384ee0}{%
+           family={{Fiscalía Nacional Económica}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Fiscalía Nacional Económica}%
+      }
+      \strng{namehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{bibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorbibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authornamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{1}
+      \field{title}{Informe de Archivo. Investigación Rol N°2538-19}
+      \field{type}{Informe}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{FISCHER2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=00495fd279d93dfc503d0cc61a8b5c49}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7e5470ce3f84533810682aefac44021}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73b8106cf33a20c33cfeb2a1b1f06174}{%
+           family={Schmidt-Dengler},
+           familyi={S\bibinithyphendelim D\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b45fc6a4b28f0acb1668ebad158a8a6f}
+      \strng{fullhash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{fullhashraw}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{bibnamehash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{authorbibnamehash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{authornamehash}{b45fc6a4b28f0acb1668ebad158a8a6f}
+      \strng{authorfullhash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{authorfullhashraw}{87fbb95a272a1e2d29cfee5047256e0b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the effect of entry on the price distribution in the German retail gasoline market. Exploiting several hundred entries over five years in an event study design, we find that entry causes a persistent first-order stochastic shift in the price distribution for at least three years after entry. Prices at the top of the distribution change moderately or not at all, but prices at the left tail decrease by up to 13\% (9\%) of stations’ gross margins after entry within a 1 km (2 km) radius. The value of information (VOI) increases by 29\% (15\%) in 1 km (2 km) markets, suggesting larger savings for consumers with easy access to information.}
+      \field{issn}{1542-4766}
+      \field{journaltitle}{Journal of the European Economic Association}
+      \field{month}{12}
+      \field{title}{The Heterogeneous Effects of Entry on Prices}
+      \field{year}{2025}
+      \field{pages}{jvaf061}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/jeea/jvaf061
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/jeea/advance-article-pdf/doi/10.1093/jeea/jvaf061/66132123/jvaf061.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/jeea/jvaf061
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/jeea/jvaf061
+      \endverb
+    \endentry
+    \entry{GAILGREEN1976}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a3e030bc69209ef983524432e6dfc916}{%
+           family={Gail},
+           familyi={G\bibinitperiod},
+           given={Mitchell\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68fd2344040f056b23cff3a389245260}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Sylvan\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{fullhash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{fullhashraw}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{bibnamehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authorbibnamehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authornamehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authorfullhash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authorfullhashraw}{a85bdbd32c7431b971677b4b6d481331}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a new recursion for counting the number of paths which ever attain a given height. Using this recursion, we calculate exact critical values for the one-sided two-sample Kolmogorov-Smirnov statistic for n and m = 3(1)30 and for significance levels α = 0.10, 0.05 and 0.01.}
+      \field{issn}{01621459, 1537274X}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{355}
+      \field{title}{Critical Values for the One-Sided Two-Sample Kolmogorov-Smirnov Statistic}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{71}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{757\bibrangedash 760}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2285616
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2285616
+      \endverb
+    \endentry
+    \entry{GARDNER2024}{unpublished}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=91208309c506b8d2252f8c9828f1f742}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab41e9307ea2c4eec805089805da2711}{%
+           family={Thakral},
+           familyi={T\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b2df71e1aa508073bf15ad3f842b5d2}{%
+           family={Tô},
+           familyi={T\bibinitperiod},
+           given={Linh\bibnamedelima T.},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10d32096dd928ae3979775b6e9c74eb8}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Luther},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd1379739e8504a0cfb0b816bee4aed0}
+      \strng{fullhash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{fullhashraw}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{bibnamehash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{authorbibnamehash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{authornamehash}{bd1379739e8504a0cfb0b816bee4aed0}
+      \strng{authorfullhash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{authorfullhashraw}{c5558098c87a13bcb74a44c5fb67f150}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documento de trabajo}
+      \field{title}{Two-Stage Difference-in-Differences}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{GENAKOS2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=996d1de70762ca914de2c5069212d812}{%
+           family={Genakos},
+           familyi={G\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eed475bbc23cb9a7321cee72794d28e4}{%
+           family={Pagliero},
+           familyi={P\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{fullhash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{fullhashraw}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{bibnamehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authorbibnamehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authornamehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authorfullhash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authorfullhashraw}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Journal: Applied Economics}
+      \field{number}{4}
+      \field{title}{Competition and Pass-Through: Evidence from Isolated Markets}
+      \field{volume}{14}
+      \field{year}{2022}
+      \field{pages}{35\bibrangedash 57}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1257/app.20200863
+      \endverb
+    \endentry
+    \entry{HAUCAP2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=79e9982f4623ebcfaf6e0086d1562dc5}{%
+           family={Haucap},
+           familyi={H\bibinitperiod},
+           given={Justus},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f84b23a5e3ca5b21f409192213b1f8c}{%
+           family={Heimeshoff},
+           familyi={H\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c33d46802f7ed23589ca2b5604cae986}{%
+           family={Siekmann},
+           familyi={S\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {International Association for Energy Economics}%
+      }
+      \strng{namehash}{f43c738999c544d8209e070e992a4529}
+      \strng{fullhash}{8aa0bf2933e82a8867de131696178620}
+      \strng{fullhashraw}{8aa0bf2933e82a8867de131696178620}
+      \strng{bibnamehash}{8aa0bf2933e82a8867de131696178620}
+      \strng{authorbibnamehash}{8aa0bf2933e82a8867de131696178620}
+      \strng{authornamehash}{f43c738999c544d8209e070e992a4529}
+      \strng{authorfullhash}{8aa0bf2933e82a8867de131696178620}
+      \strng{authorfullhashraw}{8aa0bf2933e82a8867de131696178620}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We empirically investigate how and why price levels differ across gasoline stations, using the first full year from a novel panel data set including price quotes from virtually all gas stations in Germany. Our analysis specifically explores the role of station heterogeneity in explaining price differences across gasoline stations. Key determinants of price levels are found to be ex-refinery prices as key input costs, a station’s location on roads or highway service areas, and brand recognition. A lower number of station-specific services implies lower fuel price levels, as does a more heterogeneous local competitive environment.}
+      \field{issn}{01956574, 19449089}
+      \field{journaltitle}{The Energy Journal}
+      \field{number}{6}
+      \field{title}{Fuel Prices and Station Heterogeneity on Retail Gasoline Markets}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{38}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 104}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/26534391
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/26534391
+      \endverb
+    \endentry
+    \entry{HOTELLING1929}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=628a6bd9bb208bfcbeb8394b69088107}{%
+           family={Hotelling},
+           familyi={H\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Royal Economic Society, Wiley]}%
+      }
+      \strng{namehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{fullhash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{fullhashraw}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{bibnamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorbibnamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authornamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorfullhash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorfullhashraw}{628a6bd9bb208bfcbeb8394b69088107}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00130133, 14680297}
+      \field{journaltitle}{The Economic Journal}
+      \field{number}{153}
+      \field{title}{Stability in Competition}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{39}
+      \field{year}{1929}
+      \field{urldateera}{ce}
+      \field{pages}{41\bibrangedash 57}
+      \range{pages}{17}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2224214
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2224214
+      \endverb
+    \endentry
+    \entry{HOUDE2005}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ccad26f5b739beef9fc2f8f421e22a6e}{%
+           family={Houde},
+           familyi={H\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{bibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorbibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authornamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Documento de trabajo, Queen's University}
+      \field{title}{Entry and Exit in a Price Regulated Industry: Gasoline Retailing in Québec}
+      \field{year}{2005}
+    \endentry
+    \entry{HOUDE2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ccad26f5b739beef9fc2f8f421e22a6e}{%
+           family={Houde},
+           familyi={H\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{bibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorbibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authornamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{8}
+      \field{number}{5}
+      \field{title}{Spatial Differentiation and Vertical Mergers in Retail Markets for Gasoline}
+      \field{volume}{102}
+      \field{year}{2012}
+      \field{pages}{2147\bibrangedash 82}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1257/aer.102.5.2147
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.102.5.2147
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.102.5.2147
+      \endverb
+    \endentry
+    \entry{KIHM2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d1785f4b962273b340b9e46de59681c5}{%
+           family={Kihm},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32d08da9ccd92b1d9fa07bfa4a240d3a}{%
+           family={Ritter},
+           familyi={R\bibinitperiod},
+           given={Nolan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50bea9e05a91650d364afe7e107d0833}{%
+           family={Vance},
+           familyi={V\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Board of Regents of the University of Wisconsin System, University of Wisconsin Press]}%
+      }
+      \strng{namehash}{50492264213a6c12e5d666a826868fc4}
+      \strng{fullhash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{fullhashraw}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{bibnamehash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{authorbibnamehash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{authornamehash}{50492264213a6c12e5d666a826868fc4}
+      \strng{authorfullhash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{authorfullhashraw}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We explore whether noncompetitive pricing prevails in Germany's retail gasoline market by examining the influence of the crude oil price on the retail gasoline price, focusing specifically on how this influence varies according to the brand and to the degree of competition in the vicinity of the station. Our analysis identifies several factors other than cost—including the absence of nearby competitors and regional market concentration—that play a statistically significant role in mediating the influence of the oil price on the retail gas price, suggesting moderate price-setting power among stations.}
+      \field{issn}{00237639}
+      \field{journaltitle}{Land Economics}
+      \field{number}{4}
+      \field{title}{Is the German Retail Gasoline Market Competitive? A Spatial-Temporal Analysis Using Quantile Regression}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{92}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{718\bibrangedash 736}
+      \range{pages}{19}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/24773570
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/24773570
+      \endverb
+    \endentry
+    \entry{KOH2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e21002e6fd3a8e386d52fd68f15d67fc}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Kanghyok},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b71e357ffef5c4c57272ecdb49f3da52}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Sungho},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ba41d910cff5f2417435f020e345d96}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jinhyuk},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b445690adc222dd91cef2cc50f718d6d}
+      \strng{fullhash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{fullhashraw}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{bibnamehash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{authorbibnamehash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{authornamehash}{b445690adc222dd91cef2cc50f718d6d}
+      \strng{authorfullhash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{authorfullhashraw}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the effects of price competition induced by entries of thrifty gas stations on incumbent gas stations' operational probabilities and gasoline prices. Using administrative panel data of the entire population of retail gas stations in South Korea, we document that entries of thrifty gas stations decreased incumbent gas stations' operational probability but marginally reduced gasoline prices. Our heterogeneity analysis indicates that the operational probability impacts were greater when the market competition was already intense or when the pre-entry profit margins were low. The previous studies mainly focused only on price impacts of market competition. This study provides novel evidence that price competition might not always decrease market prices if incumbent firms stop operating their business. The results imply that a more complete understanding of the effects of price competition can be possible by jointly estimating its impacts on incumbent firms' operational probabilities and product prices.}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{title}{The effects of price competition on firms' operations and market price: Evidence from a retail gasoline market}
+      \field{volume}{108}
+      \field{year}{2022}
+      \field{pages}{105889}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.eneco.2022.105889
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988322000718
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988322000718
+      \endverb
+      \keyw{Price competition,Entry effect,Thrifty gas station policy,Operational probability,Gasoline price,Retail gasoline market}
+    \endentry
+    \entry{LEWIS2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16fc23958650f1e0f6d1d445282b0385}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{fullhash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{fullhashraw}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{bibnamehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authorbibnamehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authornamehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authorfullhash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authorfullhashraw}{16fc23958650f1e0f6d1d445282b0385}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I measure price dispersion among differentiated retail gasoline sellers and study the relationship between dispersion and the local competitive environment. Significant price dispersion exists even after controlling for differences in station characteristics, and price differences between sellers change frequently. The extent of price dispersion is related to the density of local competition, but this relationship varies significantly depending on the type of seller and the composition of its competitors. These findings are consistent with interactions between seller and consumer heterogeneity that are not well understood in the existing price dispersion literature.}
+      \field{issn}{00221821, 14676451}
+      \field{journaltitle}{The Journal of Industrial Economics}
+      \field{number}{3}
+      \field{title}{Price Dispersion and Competition with Differentiated Sellers}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{56}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{654\bibrangedash 678}
+      \range{pages}{25}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/25483428
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/25483428
+      \endverb
+    \endentry
+    \entry{LUCO2019}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=312d8c784b3c14fd11cd6b12c400f3ff}{%
+           family={Luco},
+           familyi={L\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{fullhash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{fullhashraw}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{bibnamehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authorbibnamehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authornamehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authorfullhash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authorfullhashraw}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Journal: Microeconomics}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Who Benefits from Information Disclosure? The Case of Retail Gasoline}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{277\bibrangedash 305}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1257/mic.20170110
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/mic.20170110
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/mic.20170110
+      \endverb
+    \endentry
+    \entry{LEY20765}{legislation}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
+           family={{Ministerio de Hacienda}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chile}%
+      }
+      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{7}
+      \field{title}{Ley N°20.765. Crea mecanismo de estabilización de precios de los combustibles que indica}
+      \field{type}{Ley}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bcn.cl/3mf3h
+      \endverb
+      \verb{url}
+      \verb https://bcn.cl/3mf3h
+      \endverb
+    \endentry
+    \entry{LEY21537}{legislation}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
+           family={{Ministerio de Hacienda}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chile}%
+      }
+      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{1}
+      \field{title}{Ley N°21.537. Modifica el mecanismo de estabilización de precios de los combustibles para evitar fluctuaciones semanales, y extiende el beneficio de reintegro parcial del impuesto específico a los combustibles para transportistas de carga}
+      \field{type}{Ley}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bcn.cl/3l26v
+      \endverb
+      \verb{url}
+      \verb https://bcn.cl/3l26v
+      \endverb
+    \endentry
+    \entry{SALOP1979}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=77e1a5c39e8caa3441c6f868095bd022}{%
+           family={Salop},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[RAND Corporation, Wiley]}%
+      }
+      \strng{namehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{fullhash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{fullhashraw}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{bibnamehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authorbibnamehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authornamehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authorfullhash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authorfullhashraw}{77e1a5c39e8caa3441c6f868095bd022}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Chamberlinian monopolistically competitive equilibrium has been explored and extended in a number of recent papers. These analyses have paid only cursory attention to the existence of an industry outside the Chamberlinian group. In this article I analyze a model of spatial competition in which a second commodity is explicitly treated. In this two-industry economy, a zero-profit equilibrium with symmetrically located firms may exhibit rather strange properties. First, demand curves are kinked, although firms make "Nash" conjectures. If equilibrium lies at the kink, the effects of parameter changes are perverse. In the short run, prices are rigid in the face of small cost changes. In the long run, increases in costs lower equilibrium prices. Increases in market size raise prices. The welfare properties are also perverse at a kinked equilibrium.}
+      \field{issn}{0361915X, 23263032}
+      \field{journaltitle}{The Bell Journal of Economics}
+      \field{number}{1}
+      \field{title}{Monopolistic Competition with Outside Goods}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{10}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{141\bibrangedash 156}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/3003323
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/3003323
+      \endverb
+    \endentry
+    \entry{SEN2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b41e9f927a99f7ff9f869b0e058ef6b7}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Anindya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{fullhash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{fullhashraw}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{bibnamehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authorbibnamehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authornamehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authorfullhash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authorfullhashraw}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is little consensus on whether higher retail gasoline prices in Canada are the result of international crude oil price fluctuations or local market power exercised by large vertically-integrated firms. I find that although both increasing local market concentration and higher average monthly wholesale prices are positively and significantly associated with higher retail prices, wholesale prices are more important than local market concentration. Similarly, crude oil prices are more important than the number of local wholesalers in determining wholesale prices. These results suggest that movements in gasoline prices are largely the result of input price fluctuations rather than local market structure.}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{number}{3}
+      \field{title}{Higher prices at Canadian gas pumps: international crude oil prices or local market concentration? An empirical investigation}
+      \field{volume}{25}
+      \field{year}{2003}
+      \field{pages}{269\bibrangedash 288}
+      \range{pages}{20}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0140-9883(02)00097-X
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S014098830200097X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S014098830200097X
+      \endverb
+      \keyw{Gasoline prices,Market structure,Competition}
+    \endentry
+    \entry{SOLIS2025}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d856697204e98d23d7ede31e2ebb7fb1}{%
+           family={Solís},
+           familyi={S\bibinitperiod},
+           given={Camila},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad de Chile}%
+      }
+      \strng{namehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{fullhash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{fullhashraw}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{bibnamehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authorbibnamehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authornamehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authorfullhash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authorfullhashraw}{d856697204e98d23d7ede31e2ebb7fb1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dispersión de precios en el mercado minorista de gasolina en Chile: una primera aproximación enfocada en los costos de búsqueda}
+      \field{type}{Tesis de Magíster en Análisis Económico}
+      \field{year}{2025}
+    \endentry
+    \entry{STIGLER1961}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e27ef99bf72db975408034556b655be}{%
+           family={Stigler},
+           familyi={S\bibinitperiod},
+           given={George\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{3e27ef99bf72db975408034556b655be}
+      \strng{fullhash}{3e27ef99bf72db975408034556b655be}
+      \strng{fullhashraw}{3e27ef99bf72db975408034556b655be}
+      \strng{bibnamehash}{3e27ef99bf72db975408034556b655be}
+      \strng{authorbibnamehash}{3e27ef99bf72db975408034556b655be}
+      \strng{authornamehash}{3e27ef99bf72db975408034556b655be}
+      \strng{authorfullhash}{3e27ef99bf72db975408034556b655be}
+      \strng{authorfullhashraw}{3e27ef99bf72db975408034556b655be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{3}
+      \field{title}{The Economics of Information}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{69}
+      \field{year}{1961}
+      \field{urldateera}{ce}
+      \field{pages}{213\bibrangedash 225}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1829263
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1829263
+      \endverb
+    \endentry
+    \entry{SUNABRAHAM2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3011926b49b3aa7b3e8913ca855e42fc}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Liyang},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1bfe7aacc440efc360e6a6e3eaa7a2d3}{%
+           family={Abraham},
+           familyi={A\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{fullhash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{fullhashraw}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{bibnamehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authorbibnamehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authornamehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authorfullhash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authorfullhashraw}{c7a84aba4076f349fbfad5258d37c1a1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{2}
+      \field{title}{Estimating dynamic treatment effects in event studies with heterogeneous treatment effects}
+      \field{volume}{225}
+      \field{year}{2021}
+      \field{pages}{175\bibrangedash 199}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2020.09.006
+      \endverb
+    \endentry
+    \entry{TAYLORMUEHLEGGER2026}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1dd2aad3d728a0790b0f16dfe2cbcceb}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Reid\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4ab220a2a45eba34da0cdabc71643b6}{%
+           family={Muehlegger},
+           familyi={M\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{fullhash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{fullhashraw}{b5e538d36f80bb49606aee31c0969410}
+      \strng{bibnamehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authorbibnamehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authornamehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authorfullhash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authorfullhashraw}{b5e538d36f80bb49606aee31c0969410}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{Versión revisada de marzo de 2025}
+      \field{number}{33569}
+      \field{title}{The Effects of Competition in the Retail Gasoline Industry}
+      \field{type}{Working Paper}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.3386/w33569
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w33569
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w33569
+      \endverb
+    \endentry
+    \entry{VANMEERBEECK2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d26a6a40af35cdfc4f3b2e2cd9a6155f}{%
+           family={Van\bibnamedelima Meerbeeck},
+           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{fullhash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{fullhashraw}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{bibnamehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authorbibnamehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authornamehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authorfullhash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authorfullhashraw}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Belgian retail gasoline network is one of the densest in the world and is characterised by a maximum price agreement between the government and the oil industry. Using price data covering almost 500 points of sale located all over Belgium, the price competition among Belgian gas stations is analysed. We observe that stations located along a highway always charge the maximum price. On local markets that are sufficiently competitive, prices are below the maximum price. The analysis further suggests that the number of local competitors does not have a large impact on retail gasoline prices. However, competition is fiercer in the presence of independent gasoline retailers.}
+      \field{journaltitle}{De Economist}
+      \field{number}{4}
+      \field{title}{Competition and Local Market Conditions on the Belgian Retail Gasoline Market}
+      \field{volume}{151}
+      \field{year}{2003}
+      \field{pages}{369\bibrangedash 388}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1023/B:ECOT.0000006590.66223.9a
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1023/B:ECOT.0000006590.66223.9a
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1023/B:ECOT.0000006590.66223.9a
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{ARCIDIACONO2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1c81edbece3116f2b298acb4b8e30e7d}{%
+           family={Arcidiacono},
+           familyi={A\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c176df36c9fe1f8a0f6ef7f36bbdedf}{%
+           family={Ellickson},
+           familyi={E\bibinitperiod},
+           given={Paul\bibnamedelima B.},
+           giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8975140c1bcd76e249293621da67f507}{%
+           family={Mela},
+           familyi={M\bibinitperiod},
+           given={Carl\bibnamedelima F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=608366bd406c26b6295926d31b2c1db1}{%
+           family={Singleton},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{d6fb64182ed89539c39c8e205446f115}
+      \strng{fullhash}{a062308049f995923d26b6c5a73d3884}
+      \strng{fullhashraw}{a062308049f995923d26b6c5a73d3884}
+      \strng{bibnamehash}{a062308049f995923d26b6c5a73d3884}
+      \strng{authorbibnamehash}{a062308049f995923d26b6c5a73d3884}
+      \strng{authornamehash}{d6fb64182ed89539c39c8e205446f115}
+      \strng{authorfullhash}{a062308049f995923d26b6c5a73d3884}
+      \strng{authorfullhashraw}{a062308049f995923d26b6c5a73d3884}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Coupling weekly grocery transactions with the exact location and opening date of Walmarts over an 11-year period, we examine how Supercenter entry affects prices and revenues at incumbent supermarkets. We find that entry within 1 mile of an incumbent causes a sharp 16 percent drop in revenue, a competitive effect that decays quickly with distance. Surprisingly, despite large cross-sectional differences in supermarket prices by exposure to Walmart, our findings also indicate that Supercenter entry has no causal effect on incumbent prices. This result is robust across many dimensions, including a lack of price response for individual products, and across brands within a category.}
+      \field{issn}{19457782, 19457790}
+      \field{journaltitle}{American Economic Journal: Applied Economics}
+      \field{number}{3}
+      \field{title}{The Competitive Effects of Entry: Evidence from Supercenter Expansion}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{pp. 175\bibrangedash 206}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/26921832
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/26921832
+      \endverb
+    \endentry
+    \entry{BERGANTINO2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=30ad3ac0b424cff394b4a7472b925178}{%
+           family={Bergantino},
+           familyi={B\bibinitperiod},
+           given={Angela\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6dc3b48c0127300d23ca3dc874f1bb5d}{%
+           family={Capozza},
+           familyi={C\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d16929570d73d84e85127e859fe835e}{%
+           family={Intini},
+           familyi={I\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7bf8a4ebc925dc3a15999bc38e888ec0}
+      \strng{fullhash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{fullhashraw}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{bibnamehash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{authorbibnamehash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{authornamehash}{7bf8a4ebc925dc3a15999bc38e888ec0}
+      \strng{authorfullhash}{c396c2b819e7e3ed74afa533cb57cedc}
+      \strng{authorfullhashraw}{c396c2b819e7e3ed74afa533cb57cedc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explores the determinants of fuel prices by proposing an empirical framework that integrates three kinds of influencing factors: spatial interaction, competition and territorial factors. For competition, we define a general variable, the presence of competing stations within a radius, and two specific variables, the presence of low-cost stations and the presence of same-brand stations. We proceed with a step-wise adjustment of the radius, by gradually increasing it, to evaluate the spatial scope of different competition effects. Using data on prices of fuel stations in Rome, Italy, we estimate spatial econometric models that provide evidence of spatial dependence in price between stations. We also find that competition affects prices, but the relevance of its impact depends on radius length. Finally, the territorial factors remarkably influence prices. If these factors are introduced in the model, the magnitude of spatial parameters weakens, allowing to accurately assess the intensity of spatial dependence.}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{title}{Empirical investigation of retail fuel pricing: The impact of spatial interaction, competition and territorial factors}
+      \field{volume}{90}
+      \field{year}{2020}
+      \field{pages}{104876}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.eneco.2020.104876
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988320302164
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988320302164
+      \endverb
+      \keyw{Gasoline and diesel prices,Spatial interaction,Competition,Territorial factors}
+    \endentry
+    \entry{BERNARDO2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc09c36153e67911ee88d2aa375dacac}{%
+           family={Bernardo},
+           familyi={B\bibinitperiod},
+           given={Valeria},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{fullhash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{fullhashraw}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{bibnamehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authorbibnamehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authornamehash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authorfullhash}{bc09c36153e67911ee88d2aa375dacac}
+      \strng{authorfullhashraw}{bc09c36153e67911ee88d2aa375dacac}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I exploit a change in Spanish regulations to test the effect of the relaxation of entry restrictions on the equilibrium retail price of diesel. In February 2013, a Central Government reform permitted gasoline stations to operate in industrial and commercial areas. Over the following 2-year period, this deregulation led to a high number of new market entrants in these newly designated free entry areas. By isolating markets exposed to entry and markets unaffected by new entrants, and adopting a difference-in-difference approach, results show that gasoline stations exposed to a new market entrant within a one-mile radius lower their prices by an average 1.04{\%}. This result is significant, representing almost one fifth of the average retail margin. Additionally, the results show that the reduction in the equilibrium price is caused by the first market entrant and that the effect decreases over time.}
+      \field{journaltitle}{Journal of Regulatory Economics}
+      \field{number}{1}
+      \field{title}{The effect of entry restrictions on price: evidence from the retail gasoline market}
+      \field{volume}{53}
+      \field{year}{2018}
+      \field{pages}{75\bibrangedash 99}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s11149-017-9349-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11149-017-9349-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11149-017-9349-3
+      \endverb
+    \endentry
+    \entry{BORENSTEIN1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6bbf98960262c8700be69e1f4e4bba8d}{%
+           family={Borenstein},
+           familyi={B\bibinitperiod},
+           given={Severin},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[RAND Corporation, Wiley]}%
+      }
+      \strng{namehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{fullhash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{fullhashraw}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{bibnamehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authorbibnamehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authornamehash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authorfullhash}{6bbf98960262c8700be69e1f4e4bba8d}
+      \strng{authorfullhashraw}{6bbf98960262c8700be69e1f4e4bba8d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent theoretical work has shown that price discrimination can take place in imperfectly competitive, as well as monopoly, markets. The persistence of higher retail margins on unleaded than on leaded gasoline during the 1980s suggests that discrimination may occur even in very competitive markets. This article studies a number of cost-based explanations for such gasoline pricing, as well as the possibility of price discrimination. The analysis indicates that gas stations discriminate against groups of customers who are less likely to switch to another station. The conclusions highlight the influence of shopping or search costs on pricing decisions, even in markets thought to be quite competitive.}
+      \field{issn}{07416261}
+      \field{journaltitle}{The RAND Journal of Economics}
+      \field{number}{3}
+      \field{title}{Selling Costs and Switching Costs: Explaining Retail Gasoline Margins}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{354\bibrangedash 369}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2601052
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2601052
+      \endverb
+    \endentry
+    \entry{BORUSYAK2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bd786f74596fee4b3890f929e06a0f8a}{%
+           family={Borusyak},
+           familyi={B\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf9f59745c80d75e4b28c948d6b49032}{%
+           family={Jaravel},
+           familyi={J\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e249611355f88583165432eab0ba4e1}{%
+           family={Spiess},
+           familyi={S\bibinitperiod},
+           given={Jann},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{868bd3b0860d23d0522ca78a414bfd87}
+      \strng{fullhash}{088786d88490d4ebdcd781569cc02694}
+      \strng{fullhashraw}{088786d88490d4ebdcd781569cc02694}
+      \strng{bibnamehash}{088786d88490d4ebdcd781569cc02694}
+      \strng{authorbibnamehash}{088786d88490d4ebdcd781569cc02694}
+      \strng{authornamehash}{868bd3b0860d23d0522ca78a414bfd87}
+      \strng{authorfullhash}{088786d88490d4ebdcd781569cc02694}
+      \strng{authorfullhashraw}{088786d88490d4ebdcd781569cc02694}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We develop a framework for difference-in-differences designs with staggered treatment adoption and heterogeneous causal effects. We show that conventional regression-based estimators fail to provide unbiased estimates of relevant estimands absent strong restrictions on treatment-effect homogeneity. We then derive the efficient estimator addressing this challenge, which takes an intuitive “imputation” form when treatment-effect heterogeneity is unrestricted. We characterize the asymptotic behaviour of the estimator, propose tools for inference, and develop tests for identifying assumptions. Our method applies with time-varying controls, in triple-difference designs, and with certain non-binary treatments. We show the practical relevance of our results in a simulation study and an application. Studying the consumption response to tax rebates in the U.S., we find that the notional marginal propensity to consume is between 8 and 11\% in the first quarter—about half as large as benchmark estimates used to calibrate macroeconomic models—and predominantly occurs in the first month after the rebate.}
+      \field{issn}{0034-6527}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Revisiting Event-Study Designs: Robust and Efficient Estimation}
+      \field{volume}{91}
+      \field{year}{2024}
+      \field{pages}{3253\bibrangedash 3285}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1093/restud/rdae007
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/restud/article-pdf/91/6/3253/60441633/rdae007.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/restud/rdae007
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/restud/rdae007
+      \endverb
+    \endentry
+    \entry{BRESNAHAN1991}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a45e952216a4661b3c133a6742ab669a}{%
+           family={Bresnahan},
+           familyi={B\bibinitperiod},
+           given={Timothy\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13e77cf6959b7ffaeb1c2dce63802f22}{%
+           family={Reiss},
+           familyi={R\bibinitperiod},
+           given={Peter\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{fullhash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{fullhashraw}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{bibnamehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authorbibnamehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authornamehash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authorfullhash}{ec01c78bd7cdd4cab706875538aa7b09}
+      \strng{authorfullhashraw}{ec01c78bd7cdd4cab706875538aa7b09}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes an empirical framework for measuring the effects of entry in concentrated markets. Building on models of entry in atomistically competitive markets, we show how the number of producers in an oligopolistic market varies with changes in demand and market competition. These analytical results structure our empirical analysis of competition in five retail and professional industries. Using data on geographically isolated monopolies, duopolies, and oligopolies, we study the relationship between the number of firms in a market, market size, and competition. Our empirical results suggest that competitive conduct changes quickly as the number of incumbents increases. In markets with five or fewer incumbents, almost all variation in competitive conduct occurs with the entry of the second or third firm. Surprisingly, once the market has between three and five firms, the next entrant has little effect on competitive conduct.}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{5}
+      \field{title}{Entry and Competition in Concentrated Markets}
+      \field{urlday}{3}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{99}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{977\bibrangedash 1009}
+      \range{pages}{33}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2937655
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2937655
+      \endverb
+    \endentry
+    \entry{BYRNE2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ffd185b08426546e3c9c0d5a0424b02c}{%
+           family={Byrne},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=911726c73610fe554263e9cd8f4a8fde}{%
+           family={Roos},
+           familyi={R\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{fullhash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{fullhashraw}{aec33e5ef549aee6a212f8df00165766}
+      \strng{bibnamehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authorbibnamehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authornamehash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authorfullhash}{aec33e5ef549aee6a212f8df00165766}
+      \strng{authorfullhashraw}{aec33e5ef549aee6a212f8df00165766}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops direct tests for search behavior in retail gasoline markets. We exploit a unique market-level dataset that allows us to directly measure search intensity with daily web traffic data from a gasoline price reporting website and perfectly measure daily changes in price levels and dispersion. Our simple yet powerful tests provide strong evidence of both cross-sectional and intertemporal price search.}
+      \field{issn}{00221821, 14676451}
+      \field{journaltitle}{The Journal of Industrial Economics}
+      \field{number}{1}
+      \field{title}{CONSUMER SEARCH IN RETAIL GASOLINE MARKETS*}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{65}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{183\bibrangedash 193}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/26627681
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/26627681
+      \endverb
+    \endentry
+    \entry{CALLAWAYSANTANNA2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4a5a67b3788b4a3653a14d9ab03fba0e}{%
+           family={Callaway},
+           familyi={C\bibinitperiod},
+           given={Brantly},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7767820037a369ec59519519e44c7e9a}{%
+           family={Sant’Anna},
+           familyi={S\bibinitperiod},
+           given={Pedro\bibnamedelima H.C.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{fullhash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{fullhashraw}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{bibnamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorbibnamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authornamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorfullhash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorfullhashraw}{81e94baa528cefc8bb56e5c1a70471e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we consider identification, estimation, and inference procedures for treatment effect parameters using Difference-in-Differences (DiD) with (i) multiple time periods, (ii) variation in treatment timing, and (iii) when the “parallel trends assumption” holds potentially only after conditioning on observed covariates. We show that a family of causal effect parameters are identified in staggered DiD setups, even if differences in observed characteristics create non-parallel outcome dynamics between groups. Our identification results allow one to use outcome regression, inverse probability weighting, or doubly-robust estimands. We also propose different aggregation schemes that can be used to highlight treatment effect heterogeneity across different dimensions as well as to summarize the overall effect of participating in the treatment. We establish the asymptotic properties of the proposed estimators and prove the validity of a computationally convenient bootstrap procedure to conduct asymptotically valid simultaneous (instead of pointwise) inference. Finally, we illustrate the relevance of our proposed tools by analyzing the effect of the minimum wage on teen employment from 2001–2007. Open-source software is available for implementing the proposed methods.}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{note}{Themed Issue: Treatment Effect 1}
+      \field{number}{2}
+      \field{title}{Difference-in-Differences with multiple time periods}
+      \field{volume}{225}
+      \field{year}{2021}
+      \field{pages}{200\bibrangedash 230}
+      \range{pages}{31}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jeconom.2020.12.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407620303948
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407620303948
+      \endverb
+      \keyw{Difference-in-Differences,Dynamic treatment effects,Doubly robust,Event study,Variation in treatment timing,Treatment effect heterogeneity,Semi-parametric}
+    \endentry
+    \entry{CARDOSO2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e988f89642282ecef531573c91275da5}{%
+           family={Cardoso},
+           familyi={C\bibinitperiod},
+           given={Leonardo\bibnamedelima C.B.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd49cfc71c06e20934ef81c9e412f1b3}{%
+           family={Uchôa},
+           familyi={U\bibinitperiod},
+           given={Carlos\bibnamedelimb Frederico\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d28099f2f7b9f3c7a157f42c94206d5c}{%
+           family={Huamani},
+           familyi={H\bibinitperiod},
+           given={Williams},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfa99034e22d35496ecaac49ebc6b5d9}{%
+           family={Just},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf16eb76ba3f4f262c27b361256eedea}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Raúl\bibnamedelima V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85b5c8432b2ba1b1131c446eddbb42b1}
+      \strng{fullhash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{fullhashraw}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{bibnamehash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{authorbibnamehash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{authornamehash}{85b5c8432b2ba1b1131c446eddbb42b1}
+      \strng{authorfullhash}{e37835038e78ec3b5a2e86d73b10fcec}
+      \strng{authorfullhashraw}{e37835038e78ec3b5a2e86d73b10fcec}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1056-8190}
+      \field{journaltitle}{Papers in Regional Science}
+      \field{number}{1}
+      \field{title}{Price effects of spatial competition in retail fuel markets: the impact of a new rival nearby}
+      \field{volume}{101}
+      \field{year}{2022}
+      \field{pages}{81\bibrangedash 106}
+      \range{pages}{26}
+      \verb{doi}
+      \verb https://doi.org/10.1111/pirs.12645
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1056819023005298
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1056819023005298
+      \endverb
+      \keyw{ethanol prices,gasoline prices,price dispersion,spatial competition}
+    \endentry
+    \entry{CASTILLO2018}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a412081917bc3901cfc6890ea98e5936}{%
+           family={Castillo},
+           familyi={C\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad de Chile}%
+      }
+      \strng{namehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{fullhash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{fullhashraw}{a412081917bc3901cfc6890ea98e5936}
+      \strng{bibnamehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authorbibnamehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authornamehash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authorfullhash}{a412081917bc3901cfc6890ea98e5936}
+      \strng{authorfullhashraw}{a412081917bc3901cfc6890ea98e5936}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Competencia en la distribución minorista de combustibles líquidos: explorando la dimensión espacial}
+      \field{type}{Tesis de Magíster en Economía Aplicada}
+      \field{year}{2018}
+    \endentry
+    \entry{CHANDRA2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=722c8da44ca1bb8aaad46597b11ad414}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={Ambarish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f420feaccc9227083ae5cd582c95730e}{%
+           family={Tappata},
+           familyi={T\bibinitperiod},
+           given={Mariano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[RAND Corporation, Wiley]}%
+      }
+      \strng{namehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{fullhash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{fullhashraw}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{bibnamehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authorbibnamehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authornamehash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authorfullhash}{dec2692fa6114f4e3f5af411ce0332a1}
+      \strng{authorfullhashraw}{dec2692fa6114f4e3f5af411ce0332a1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article studies the role of imperfect information in explaining price dispersion. We use a new panel data set on the U.S. retail gasoline industry and propose a new test of temporal price dispersion to establish the importance of consumer search. We show that price rankings vary significantly over time; however, they are more stable among stations at the same street intersection. We establish the equilibrium relationships between price dispersion and key variables from consumer search models. Price dispersion increases with the number of firms in the market, decreases with the production cost, and increases with search costs.}
+      \field{issn}{07416261}
+      \field{journaltitle}{The RAND Journal of Economics}
+      \field{number}{4}
+      \field{title}{Consumer search and dynamic price dispersion: an application to gasoline markets}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{42}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{681\bibrangedash 704}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/23208728
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/23208728
+      \endverb
+    \endentry
+    \entry{CHERNOZHUKOV2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00018206993be186898211545ed16048}{%
+           family={Fernández-Val},
+           familyi={F\bibinithyphendelim V\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62d4e62464feaf6360fb3259cc2be2d8}{%
+           family={Melly},
+           familyi={M\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{fullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{fullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \strng{bibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorbibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{authorfullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorfullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Counterfactual distributions are important ingredients for policy analysis and decomposition analysis in empirical economics. In this article, we develop modeling and inference tools for counterfactual distributions based on regression methods. The counterfactual scenarios that we consider consist of ceteris paribus changes in either the distribution of covariates related to the outcome of interest or the conditional distribution of the outcome given covariates. For either of these scenarios, we derive joint functional central limit theorems and bootstrap validity results for regression-based estimators of the status quo and counterfactual outcome distributions. These results allow us to construct simultaneous confidence sets for function-valued effects of the counterfactual changes, including the effects on the entire distribution and quantile functions of the outcome as well as on related functionals. These confidence sets can be used to test functional hypotheses such as no-effect, positive effect, or stochastic dominance. Our theory applies to general counterfactual changes and covers the main regression methods including classical, quantile, duration, and distribution regressions. We illustrate the results with an empirical application to wage decompositions using data for the United States. As a part of developing the main results, we introduce distribution regression as a comprehensive and flexible tool for modeling and estimating the entire conditional distribution. We show that distribution regression encompasses the Cox duration regression and represents a useful alternative to quantile regression. We establish functional central limit theorems and bootstrap validity results for the empirical distribution regression process and various related functionals.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{INFERENCE ON COUNTERFACTUAL DISTRIBUTIONS}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{81}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{2205\bibrangedash 2268}
+      \range{pages}{64}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+    \endentry
+    \entry{CLEMENZGUGLER2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=47c10cddb0a1d88950327df385b24791}{%
+           family={Clemenz},
+           familyi={C\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84a038e102a15a235e7e50bf5715943d}{%
+           family={Gugler},
+           familyi={G\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{fullhash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{fullhashraw}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{bibnamehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authorbibnamehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authornamehash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authorfullhash}{d22e22b203ce1d23df714a18f14564c7}
+      \strng{authorfullhashraw}{d22e22b203ce1d23df714a18f14564c7}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using data from the Austrian retail gasoline market we find that a higher station density reduces average prices. Market (i.e. ownership) concentration does not significantly affect average price, however is negatively related to the density of stations. Estimation of the pricing and entry equations as simultaneous equations does not alter our conclusions, and suggests causality running from station density to price. We argue that the spatial dimension of markets allows the identification of market conduct, which is particularly relevant for competition policy.}
+      \field{day}{1}
+      \field{issn}{1435-8921}
+      \field{journaltitle}{Empirical Economics}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Locational choice and price competition: some empirical results for the Austrian retail gasoline market}
+      \field{volume}{31}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{291\bibrangedash 312}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s00181-005-0016-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00181-005-0016-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00181-005-0016-7
+      \endverb
+    \endentry
+    \entry{CONLEY1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df4c65309421035207cd58005c79ed3f}{%
+           family={Conley},
+           familyi={C\bibinitperiod},
+           given={T.G.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \strng{bibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorbibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authornamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{1}
+      \field{title}{GMM estimation with cross sectional dependence}
+      \field{volume}{92}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 45}
+      \range{pages}{45}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0304-4076(98)00084-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \keyw{Cross-sectional dependence,Non-parametric covariance matrix estimation,Random fields,Generalized method of moments}
+    \endentry
+    \entry{DAVIS2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=94f5f72d656726e3ddb509d29066bc77}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Lucas\bibnamedelima W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=969aee82c82eebd5b4fbb877c2ae4d93}{%
+           family={McRae},
+           familyi={M\bibinitperiod},
+           given={Shaun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=abd8467b87378ae42836519d0483e7ae}{%
+           family={Seira},
+           familyi={S\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b2f438be3648bcc7507d2687c17e0fb}
+      \strng{fullhash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{fullhashraw}{7417e365499afb5ca59e2172da7f757f}
+      \strng{bibnamehash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{authorbibnamehash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{authornamehash}{3b2f438be3648bcc7507d2687c17e0fb}
+      \strng{authorfullhash}{7417e365499afb5ca59e2172da7f757f}
+      \strng{authorfullhashraw}{7417e365499afb5ca59e2172da7f757f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ABSTRACT We use panel data on the location, prices, and quality of the universe of gas stations in Mexico to study the competitive effects of entry on incumbent firms. Using more than 1000 entry events and defining local markets based on the road network, we find that the entry of a new station within 3 min driving time decreases regular gasoline prices by 6\% of the retail price spread. Competitive effects decline with travel time and are largest in markets that previously had only one station. Entry of stations with the same owner as the incumbent has near-zero effects. The effect of competition on quality is less clear, with suggestive evidence of improved service quality in some specifications.}
+      \field{journaltitle}{The Journal of Industrial Economics}
+      \field{number}{4}
+      \field{title}{Competitive Effects of Entry in Gasoline Markets}
+      \field{volume}{73}
+      \field{year}{2025}
+      \field{pages}{589\bibrangedash 607}
+      \range{pages}{19}
+      \verb{doi}
+      \verb https://doi.org/10.1111/joie.12418
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/joie.12418
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joie.12418
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joie.12418
+      \endverb
+    \endentry
+    \entry{DECHAISEMARTIN2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e476426fa9151355cd09327277745a1c}{%
+           family={Chaisemartin},
+           familyi={C\bibinitperiod},
+           given={Clément},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=411f64c7f01ee0e2a0fdc31e20535454}{%
+           family={D'Haultfœuille},
+           familyi={D\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48bc62d3b1de71e129248df511640093}
+      \strng{fullhash}{48bc62d3b1de71e129248df511640093}
+      \strng{fullhashraw}{48bc62d3b1de71e129248df511640093}
+      \strng{bibnamehash}{48bc62d3b1de71e129248df511640093}
+      \strng{authorbibnamehash}{48bc62d3b1de71e129248df511640093}
+      \strng{authornamehash}{48bc62d3b1de71e129248df511640093}
+      \strng{authorfullhash}{48bc62d3b1de71e129248df511640093}
+      \strng{authorfullhashraw}{48bc62d3b1de71e129248df511640093}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects}
+      \field{volume}{110}
+      \field{year}{2020}
+      \field{pages}{2964\bibrangedash 96}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1257/aer.20181169
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.20181169
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.20181169
+      \endverb
+    \endentry
+    \entry{ECKERT2013}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ad8f4d81bbbe91cd372d690a1ce1dbc}{%
+           family={Eckert},
+           familyi={E\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{fullhash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{fullhashraw}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{bibnamehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authorbibnamehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authornamehash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authorfullhash}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \strng{authorfullhashraw}{5ad8f4d81bbbe91cd372d690a1ce1dbc}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{No abstract is available for this item.}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Empirical Studies Of Gasoline Retailing: A Guide To The Literature}
+      \field{volume}{27}
+      \field{year}{2013}
+      \field{pages}{140\bibrangedash 166}
+      \range{pages}{27}
+      \verb{doi}
+      \verb j.1467-6419.2011.00698.x
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/bla/jecsur/v27y2013i1p140-166.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/bla/jecsur/v27y2013i1p140-166.html
+      \endverb
+    \endentry
+    \entry{FNE2021informe}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4b1fd7e10d4bdd1573138f987384ee0}{%
+           family={{Fiscalía Nacional Económica}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Fiscalía Nacional Económica}%
+      }
+      \strng{namehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{bibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorbibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authornamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{12}
+      \field{title}{Informe de Archivo. Investigación Rol N°2615-20}
+      \field{type}{Informe}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
+    \entry{FNE2025informe}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b4b1fd7e10d4bdd1573138f987384ee0}{%
+           family={{Fiscalía Nacional Económica}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Fiscalía Nacional Económica}%
+      }
+      \strng{namehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{fullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{bibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorbibnamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authornamehash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhash}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \strng{authorfullhashraw}{b4b1fd7e10d4bdd1573138f987384ee0}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{1}
+      \field{title}{Informe de Archivo. Investigación Rol N°2538-19}
+      \field{type}{Informe}
+      \field{year}{2025}
+      \field{dateera}{ce}
+    \endentry
+    \entry{FISCHER2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=00495fd279d93dfc503d0cc61a8b5c49}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7e5470ce3f84533810682aefac44021}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73b8106cf33a20c33cfeb2a1b1f06174}{%
+           family={Schmidt-Dengler},
+           familyi={S\bibinithyphendelim D\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b45fc6a4b28f0acb1668ebad158a8a6f}
+      \strng{fullhash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{fullhashraw}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{bibnamehash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{authorbibnamehash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{authornamehash}{b45fc6a4b28f0acb1668ebad158a8a6f}
+      \strng{authorfullhash}{87fbb95a272a1e2d29cfee5047256e0b}
+      \strng{authorfullhashraw}{87fbb95a272a1e2d29cfee5047256e0b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the effect of entry on the price distribution in the German retail gasoline market. Exploiting several hundred entries over five years in an event study design, we find that entry causes a persistent first-order stochastic shift in the price distribution for at least three years after entry. Prices at the top of the distribution change moderately or not at all, but prices at the left tail decrease by up to 13\% (9\%) of stations’ gross margins after entry within a 1 km (2 km) radius. The value of information (VOI) increases by 29\% (15\%) in 1 km (2 km) markets, suggesting larger savings for consumers with easy access to information.}
+      \field{issn}{1542-4766}
+      \field{journaltitle}{Journal of the European Economic Association}
+      \field{month}{12}
+      \field{title}{The Heterogeneous Effects of Entry on Prices}
+      \field{year}{2025}
+      \field{pages}{jvaf061}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/jeea/jvaf061
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/jeea/advance-article-pdf/doi/10.1093/jeea/jvaf061/66132123/jvaf061.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/jeea/jvaf061
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/jeea/jvaf061
+      \endverb
+    \endentry
+    \entry{GAILGREEN1976}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a3e030bc69209ef983524432e6dfc916}{%
+           family={Gail},
+           familyi={G\bibinitperiod},
+           given={Mitchell\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68fd2344040f056b23cff3a389245260}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Sylvan\bibnamedelima B.},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{fullhash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{fullhashraw}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{bibnamehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authorbibnamehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authornamehash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authorfullhash}{a85bdbd32c7431b971677b4b6d481331}
+      \strng{authorfullhashraw}{a85bdbd32c7431b971677b4b6d481331}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a new recursion for counting the number of paths which ever attain a given height. Using this recursion, we calculate exact critical values for the one-sided two-sample Kolmogorov-Smirnov statistic for n and m = 3(1)30 and for significance levels α = 0.10, 0.05 and 0.01.}
+      \field{issn}{01621459, 1537274X}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{355}
+      \field{title}{Critical Values for the One-Sided Two-Sample Kolmogorov-Smirnov Statistic}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{71}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{757\bibrangedash 760}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2285616
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2285616
+      \endverb
+    \endentry
+    \entry{GARDNER2024}{unpublished}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=91208309c506b8d2252f8c9828f1f742}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ab41e9307ea2c4eec805089805da2711}{%
+           family={Thakral},
+           familyi={T\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b2df71e1aa508073bf15ad3f842b5d2}{%
+           family={Tô},
+           familyi={T\bibinitperiod},
+           given={Linh\bibnamedelima T.},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10d32096dd928ae3979775b6e9c74eb8}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Luther},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bd1379739e8504a0cfb0b816bee4aed0}
+      \strng{fullhash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{fullhashraw}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{bibnamehash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{authorbibnamehash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{authornamehash}{bd1379739e8504a0cfb0b816bee4aed0}
+      \strng{authorfullhash}{c5558098c87a13bcb74a44c5fb67f150}
+      \strng{authorfullhashraw}{c5558098c87a13bcb74a44c5fb67f150}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Documento de trabajo}
+      \field{title}{Two-Stage Difference-in-Differences}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
+    \entry{GENAKOS2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=996d1de70762ca914de2c5069212d812}{%
+           family={Genakos},
+           familyi={G\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eed475bbc23cb9a7321cee72794d28e4}{%
+           family={Pagliero},
+           familyi={P\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{fullhash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{fullhashraw}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{bibnamehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authorbibnamehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authornamehash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authorfullhash}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \strng{authorfullhashraw}{6d573eebd1db8bd7c4ce1c02954e6313}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Journal: Applied Economics}
+      \field{number}{4}
+      \field{title}{Competition and Pass-Through: Evidence from Isolated Markets}
+      \field{volume}{14}
+      \field{year}{2022}
+      \field{pages}{35\bibrangedash 57}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1257/app.20200863
+      \endverb
+    \endentry
+    \entry{HAUCAP2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=79e9982f4623ebcfaf6e0086d1562dc5}{%
+           family={Haucap},
+           familyi={H\bibinitperiod},
+           given={Justus},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f84b23a5e3ca5b21f409192213b1f8c}{%
+           family={Heimeshoff},
+           familyi={H\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c33d46802f7ed23589ca2b5604cae986}{%
+           family={Siekmann},
+           familyi={S\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {International Association for Energy Economics}%
+      }
+      \strng{namehash}{f43c738999c544d8209e070e992a4529}
+      \strng{fullhash}{8aa0bf2933e82a8867de131696178620}
+      \strng{fullhashraw}{8aa0bf2933e82a8867de131696178620}
+      \strng{bibnamehash}{8aa0bf2933e82a8867de131696178620}
+      \strng{authorbibnamehash}{8aa0bf2933e82a8867de131696178620}
+      \strng{authornamehash}{f43c738999c544d8209e070e992a4529}
+      \strng{authorfullhash}{8aa0bf2933e82a8867de131696178620}
+      \strng{authorfullhashraw}{8aa0bf2933e82a8867de131696178620}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We empirically investigate how and why price levels differ across gasoline stations, using the first full year from a novel panel data set including price quotes from virtually all gas stations in Germany. Our analysis specifically explores the role of station heterogeneity in explaining price differences across gasoline stations. Key determinants of price levels are found to be ex-refinery prices as key input costs, a station’s location on roads or highway service areas, and brand recognition. A lower number of station-specific services implies lower fuel price levels, as does a more heterogeneous local competitive environment.}
+      \field{issn}{01956574, 19449089}
+      \field{journaltitle}{The Energy Journal}
+      \field{number}{6}
+      \field{title}{Fuel Prices and Station Heterogeneity on Retail Gasoline Markets}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{38}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 104}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/26534391
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/26534391
+      \endverb
+    \endentry
+    \entry{HOTELLING1929}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=628a6bd9bb208bfcbeb8394b69088107}{%
+           family={Hotelling},
+           familyi={H\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Royal Economic Society, Wiley]}%
+      }
+      \strng{namehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{fullhash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{fullhashraw}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{bibnamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorbibnamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authornamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorfullhash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorfullhashraw}{628a6bd9bb208bfcbeb8394b69088107}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00130133, 14680297}
+      \field{journaltitle}{The Economic Journal}
+      \field{number}{153}
+      \field{title}{Stability in Competition}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{39}
+      \field{year}{1929}
+      \field{urldateera}{ce}
+      \field{pages}{41\bibrangedash 57}
+      \range{pages}{17}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2224214
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2224214
+      \endverb
+    \endentry
+    \entry{HOUDE2005}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ccad26f5b739beef9fc2f8f421e22a6e}{%
+           family={Houde},
+           familyi={H\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{bibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorbibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authornamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Documento de trabajo, Queen's University}
+      \field{title}{Entry and Exit in a Price Regulated Industry: Gasoline Retailing in Québec}
+      \field{year}{2005}
+    \endentry
+    \entry{HOUDE2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ccad26f5b739beef9fc2f8f421e22a6e}{%
+           family={Houde},
+           familyi={H\bibinitperiod},
+           given={Jean-François},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{fullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{bibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorbibnamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authornamehash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhash}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \strng{authorfullhashraw}{ccad26f5b739beef9fc2f8f421e22a6e}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{8}
+      \field{number}{5}
+      \field{title}{Spatial Differentiation and Vertical Mergers in Retail Markets for Gasoline}
+      \field{volume}{102}
+      \field{year}{2012}
+      \field{pages}{2147\bibrangedash 82}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1257/aer.102.5.2147
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.102.5.2147
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/aer.102.5.2147
+      \endverb
+    \endentry
+    \entry{KIHM2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d1785f4b962273b340b9e46de59681c5}{%
+           family={Kihm},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32d08da9ccd92b1d9fa07bfa4a240d3a}{%
+           family={Ritter},
+           familyi={R\bibinitperiod},
+           given={Nolan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=50bea9e05a91650d364afe7e107d0833}{%
+           family={Vance},
+           familyi={V\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Board of Regents of the University of Wisconsin System, University of Wisconsin Press]}%
+      }
+      \strng{namehash}{50492264213a6c12e5d666a826868fc4}
+      \strng{fullhash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{fullhashraw}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{bibnamehash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{authorbibnamehash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{authornamehash}{50492264213a6c12e5d666a826868fc4}
+      \strng{authorfullhash}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \strng{authorfullhashraw}{dfacdb7ca754ee13490b7ee5e6160bcc}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We explore whether noncompetitive pricing prevails in Germany's retail gasoline market by examining the influence of the crude oil price on the retail gasoline price, focusing specifically on how this influence varies according to the brand and to the degree of competition in the vicinity of the station. Our analysis identifies several factors other than cost—including the absence of nearby competitors and regional market concentration—that play a statistically significant role in mediating the influence of the oil price on the retail gas price, suggesting moderate price-setting power among stations.}
+      \field{issn}{00237639}
+      \field{journaltitle}{Land Economics}
+      \field{number}{4}
+      \field{title}{Is the German Retail Gasoline Market Competitive? A Spatial-Temporal Analysis Using Quantile Regression}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{92}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{718\bibrangedash 736}
+      \range{pages}{19}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/24773570
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/24773570
+      \endverb
+    \endentry
+    \entry{KOH2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e21002e6fd3a8e386d52fd68f15d67fc}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Kanghyok},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b71e357ffef5c4c57272ecdb49f3da52}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Sungho},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ba41d910cff5f2417435f020e345d96}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jinhyuk},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b445690adc222dd91cef2cc50f718d6d}
+      \strng{fullhash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{fullhashraw}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{bibnamehash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{authorbibnamehash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{authornamehash}{b445690adc222dd91cef2cc50f718d6d}
+      \strng{authorfullhash}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \strng{authorfullhashraw}{4bfc5d4a98af2ea7a4d920b29786ad99}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the effects of price competition induced by entries of thrifty gas stations on incumbent gas stations' operational probabilities and gasoline prices. Using administrative panel data of the entire population of retail gas stations in South Korea, we document that entries of thrifty gas stations decreased incumbent gas stations' operational probability but marginally reduced gasoline prices. Our heterogeneity analysis indicates that the operational probability impacts were greater when the market competition was already intense or when the pre-entry profit margins were low. The previous studies mainly focused only on price impacts of market competition. This study provides novel evidence that price competition might not always decrease market prices if incumbent firms stop operating their business. The results imply that a more complete understanding of the effects of price competition can be possible by jointly estimating its impacts on incumbent firms' operational probabilities and product prices.}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{title}{The effects of price competition on firms' operations and market price: Evidence from a retail gasoline market}
+      \field{volume}{108}
+      \field{year}{2022}
+      \field{pages}{105889}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.eneco.2022.105889
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988322000718
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140988322000718
+      \endverb
+      \keyw{Price competition,Entry effect,Thrifty gas station policy,Operational probability,Gasoline price,Retail gasoline market}
+    \endentry
+    \entry{LEWIS2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16fc23958650f1e0f6d1d445282b0385}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{fullhash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{fullhashraw}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{bibnamehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authorbibnamehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authornamehash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authorfullhash}{16fc23958650f1e0f6d1d445282b0385}
+      \strng{authorfullhashraw}{16fc23958650f1e0f6d1d445282b0385}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I measure price dispersion among differentiated retail gasoline sellers and study the relationship between dispersion and the local competitive environment. Significant price dispersion exists even after controlling for differences in station characteristics, and price differences between sellers change frequently. The extent of price dispersion is related to the density of local competition, but this relationship varies significantly depending on the type of seller and the composition of its competitors. These findings are consistent with interactions between seller and consumer heterogeneity that are not well understood in the existing price dispersion literature.}
+      \field{issn}{00221821, 14676451}
+      \field{journaltitle}{The Journal of Industrial Economics}
+      \field{number}{3}
+      \field{title}{Price Dispersion and Competition with Differentiated Sellers}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{56}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{654\bibrangedash 678}
+      \range{pages}{25}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/25483428
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/25483428
+      \endverb
+    \endentry
+    \entry{LUCO2019}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=312d8c784b3c14fd11cd6b12c400f3ff}{%
+           family={Luco},
+           familyi={L\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{fullhash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{fullhashraw}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{bibnamehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authorbibnamehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authornamehash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authorfullhash}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \strng{authorfullhashraw}{312d8c784b3c14fd11cd6b12c400f3ff}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Journal: Microeconomics}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Who Benefits from Information Disclosure? The Case of Retail Gasoline}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{277\bibrangedash 305}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1257/mic.20170110
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/mic.20170110
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/mic.20170110
+      \endverb
+    \endentry
+    \entry{LEY20765}{legislation}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
+           family={{Ministerio de Hacienda}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chile}%
+      }
+      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{7}
+      \field{title}{Ley N°20.765. Crea mecanismo de estabilización de precios de los combustibles que indica}
+      \field{type}{Ley}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bcn.cl/3mf3h
+      \endverb
+      \verb{url}
+      \verb https://bcn.cl/3mf3h
+      \endverb
+    \endentry
+    \entry{LEY21537}{legislation}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
+           family={{Ministerio de Hacienda}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chile}%
+      }
+      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
+      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{1}
+      \field{title}{Ley N°21.537. Modifica el mecanismo de estabilización de precios de los combustibles para evitar fluctuaciones semanales, y extiende el beneficio de reintegro parcial del impuesto específico a los combustibles para transportistas de carga}
+      \field{type}{Ley}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bcn.cl/3l26v
+      \endverb
+      \verb{url}
+      \verb https://bcn.cl/3l26v
+      \endverb
+    \endentry
+    \entry{SALOP1979}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=77e1a5c39e8caa3441c6f868095bd022}{%
+           family={Salop},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[RAND Corporation, Wiley]}%
+      }
+      \strng{namehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{fullhash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{fullhashraw}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{bibnamehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authorbibnamehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authornamehash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authorfullhash}{77e1a5c39e8caa3441c6f868095bd022}
+      \strng{authorfullhashraw}{77e1a5c39e8caa3441c6f868095bd022}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Chamberlinian monopolistically competitive equilibrium has been explored and extended in a number of recent papers. These analyses have paid only cursory attention to the existence of an industry outside the Chamberlinian group. In this article I analyze a model of spatial competition in which a second commodity is explicitly treated. In this two-industry economy, a zero-profit equilibrium with symmetrically located firms may exhibit rather strange properties. First, demand curves are kinked, although firms make "Nash" conjectures. If equilibrium lies at the kink, the effects of parameter changes are perverse. In the short run, prices are rigid in the face of small cost changes. In the long run, increases in costs lower equilibrium prices. Increases in market size raise prices. The welfare properties are also perverse at a kinked equilibrium.}
+      \field{issn}{0361915X, 23263032}
+      \field{journaltitle}{The Bell Journal of Economics}
+      \field{number}{1}
+      \field{title}{Monopolistic Competition with Outside Goods}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{10}
+      \field{year}{1979}
+      \field{urldateera}{ce}
+      \field{pages}{141\bibrangedash 156}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/3003323
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/3003323
+      \endverb
+    \endentry
+    \entry{SEN2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b41e9f927a99f7ff9f869b0e058ef6b7}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Anindya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{fullhash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{fullhashraw}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{bibnamehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authorbibnamehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authornamehash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authorfullhash}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \strng{authorfullhashraw}{b41e9f927a99f7ff9f869b0e058ef6b7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is little consensus on whether higher retail gasoline prices in Canada are the result of international crude oil price fluctuations or local market power exercised by large vertically-integrated firms. I find that although both increasing local market concentration and higher average monthly wholesale prices are positively and significantly associated with higher retail prices, wholesale prices are more important than local market concentration. Similarly, crude oil prices are more important than the number of local wholesalers in determining wholesale prices. These results suggest that movements in gasoline prices are largely the result of input price fluctuations rather than local market structure.}
+      \field{issn}{0140-9883}
+      \field{journaltitle}{Energy Economics}
+      \field{number}{3}
+      \field{title}{Higher prices at Canadian gas pumps: international crude oil prices or local market concentration? An empirical investigation}
+      \field{volume}{25}
+      \field{year}{2003}
+      \field{pages}{269\bibrangedash 288}
+      \range{pages}{20}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0140-9883(02)00097-X
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S014098830200097X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S014098830200097X
+      \endverb
+      \keyw{Gasoline prices,Market structure,Competition}
+    \endentry
+    \entry{SOLIS2025}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d856697204e98d23d7ede31e2ebb7fb1}{%
+           family={Solís},
+           familyi={S\bibinitperiod},
+           given={Camila},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidad de Chile}%
+      }
+      \strng{namehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{fullhash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{fullhashraw}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{bibnamehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authorbibnamehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authornamehash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authorfullhash}{d856697204e98d23d7ede31e2ebb7fb1}
+      \strng{authorfullhashraw}{d856697204e98d23d7ede31e2ebb7fb1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dispersión de precios en el mercado minorista de gasolina en Chile: una primera aproximación enfocada en los costos de búsqueda}
+      \field{type}{Tesis de Magíster en Análisis Económico}
+      \field{year}{2025}
+    \endentry
+    \entry{STIGLER1961}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e27ef99bf72db975408034556b655be}{%
+           family={Stigler},
+           familyi={S\bibinitperiod},
+           given={George\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{3e27ef99bf72db975408034556b655be}
+      \strng{fullhash}{3e27ef99bf72db975408034556b655be}
+      \strng{fullhashraw}{3e27ef99bf72db975408034556b655be}
+      \strng{bibnamehash}{3e27ef99bf72db975408034556b655be}
+      \strng{authorbibnamehash}{3e27ef99bf72db975408034556b655be}
+      \strng{authornamehash}{3e27ef99bf72db975408034556b655be}
+      \strng{authorfullhash}{3e27ef99bf72db975408034556b655be}
+      \strng{authorfullhashraw}{3e27ef99bf72db975408034556b655be}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00223808, 1537534X}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{3}
+      \field{title}{The Economics of Information}
+      \field{urlday}{12}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{69}
+      \field{year}{1961}
+      \field{urldateera}{ce}
+      \field{pages}{213\bibrangedash 225}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1829263
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1829263
+      \endverb
+    \endentry
+    \entry{SUNABRAHAM2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3011926b49b3aa7b3e8913ca855e42fc}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Liyang},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1bfe7aacc440efc360e6a6e3eaa7a2d3}{%
+           family={Abraham},
+           familyi={A\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{fullhash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{fullhashraw}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{bibnamehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authorbibnamehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authornamehash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authorfullhash}{c7a84aba4076f349fbfad5258d37c1a1}
+      \strng{authorfullhashraw}{c7a84aba4076f349fbfad5258d37c1a1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{2}
+      \field{title}{Estimating dynamic treatment effects in event studies with heterogeneous treatment effects}
+      \field{volume}{225}
+      \field{year}{2021}
+      \field{pages}{175\bibrangedash 199}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2020.09.006
+      \endverb
+    \endentry
+    \entry{TAYLORMUEHLEGGER2026}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1dd2aad3d728a0790b0f16dfe2cbcceb}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Reid\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4ab220a2a45eba34da0cdabc71643b6}{%
+           family={Muehlegger},
+           familyi={M\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Economic Research}%
+      }
+      \strng{namehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{fullhash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{fullhashraw}{b5e538d36f80bb49606aee31c0969410}
+      \strng{bibnamehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authorbibnamehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authornamehash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authorfullhash}{b5e538d36f80bb49606aee31c0969410}
+      \strng{authorfullhashraw}{b5e538d36f80bb49606aee31c0969410}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{Versión revisada de marzo de 2025}
+      \field{number}{33569}
+      \field{title}{The Effects of Competition in the Retail Gasoline Industry}
+      \field{type}{Working Paper}
+      \field{year}{2026}
+      \verb{doi}
+      \verb 10.3386/w33569
+      \endverb
+      \verb{urlraw}
+      \verb http://www.nber.org/papers/w33569
+      \endverb
+      \verb{url}
+      \verb http://www.nber.org/papers/w33569
+      \endverb
+    \endentry
+    \entry{VANMEERBEECK2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d26a6a40af35cdfc4f3b2e2cd9a6155f}{%
+           family={Van\bibnamedelima Meerbeeck},
+           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{fullhash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{fullhashraw}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{bibnamehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authorbibnamehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authornamehash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authorfullhash}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \strng{authorfullhashraw}{d26a6a40af35cdfc4f3b2e2cd9a6155f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Belgian retail gasoline network is one of the densest in the world and is characterised by a maximum price agreement between the government and the oil industry. Using price data covering almost 500 points of sale located all over Belgium, the price competition among Belgian gas stations is analysed. We observe that stations located along a highway always charge the maximum price. On local markets that are sufficiently competitive, prices are below the maximum price. The analysis further suggests that the number of local competitors does not have a large impact on retail gasoline prices. However, competition is fiercer in the presence of independent gasoline retailers.}
+      \field{journaltitle}{De Economist}
+      \field{number}{4}
+      \field{title}{Competition and Local Market Conditions on the Belgian Retail Gasoline Market}
+      \field{volume}{151}
+      \field{year}{2003}
+      \field{pages}{369\bibrangedash 388}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1023/B:ECOT.0000006590.66223.9a
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1023/B:ECOT.0000006590.66223.9a
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1023/B:ECOT.0000006590.66223.9a
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -597,6 +597,65 @@
       \verb http://www.jstor.org/stable/23208728
       \endverb
     \endentry
+    \entry{CHERNOZHUKOV2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00018206993be186898211545ed16048}{%
+           family={Fernández-Val},
+           familyi={F\bibinithyphendelim V\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62d4e62464feaf6360fb3259cc2be2d8}{%
+           family={Melly},
+           familyi={M\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{fullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{fullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \strng{bibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorbibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{authorfullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorfullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Counterfactual distributions are important ingredients for policy analysis and decomposition analysis in empirical economics. In this article, we develop modeling and inference tools for counterfactual distributions based on regression methods. The counterfactual scenarios that we consider consist of ceteris paribus changes in either the distribution of covariates related to the outcome of interest or the conditional distribution of the outcome given covariates. For either of these scenarios, we derive joint functional central limit theorems and bootstrap validity results for regression-based estimators of the status quo and counterfactual outcome distributions. These results allow us to construct simultaneous confidence sets for function-valued effects of the counterfactual changes, including the effects on the entire distribution and quantile functions of the outcome as well as on related functionals. These confidence sets can be used to test functional hypotheses such as no-effect, positive effect, or stochastic dominance. Our theory applies to general counterfactual changes and covers the main regression methods including classical, quantile, duration, and distribution regressions. We illustrate the results with an empirical application to wage decompositions using data for the United States. As a part of developing the main results, we introduce distribution regression as a comprehensive and flexible tool for modeling and estimating the entire conditional distribution. We show that distribution regression encompasses the Cox duration regression and represents a useful alternative to quantile regression. We establish functional central limit theorems and bootstrap validity results for the empirical distribution regression process and various related functionals.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{INFERENCE ON COUNTERFACTUAL DISTRIBUTIONS}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{81}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{2205\bibrangedash 2268}
+      \range{pages}{64}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+    \endentry
     \entry{CLEMENZGUGLER2006}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=47c10cddb0a1d88950327df385b24791}{%
@@ -648,6 +707,49 @@
       \verb{url}
       \verb https://doi.org/10.1007/s00181-005-0016-7
       \endverb
+    \endentry
+    \entry{CONLEY1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df4c65309421035207cd58005c79ed3f}{%
+           family={Conley},
+           familyi={C\bibinitperiod},
+           given={T.G.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \strng{bibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorbibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authornamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{1}
+      \field{title}{GMM estimation with cross sectional dependence}
+      \field{volume}{92}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 45}
+      \range{pages}{45}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0304-4076(98)00084-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \keyw{Cross-sectional dependence,Non-parametric covariance matrix estimation,Random fields,Generalized method of moments}
     \endentry
     \entry{DAVIS2025}{article}{}{}
       \name{author}{3}{}{%
@@ -1389,80 +1491,57 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/mic.20170110
       \endverb
     \endentry
-    \entry{LEY20765}{legislation}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
-           family={{Ministerio de Hacienda}},
-           familyi={M\bibinitperiod}}}%
+    \entry{RAMBACHAN2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=85edb53244c29c17ce57830271014b46}{%
+           family={Rambachan},
+           familyi={R\bibinitperiod},
+           given={Ashesh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73c1da3266b3c7728f6b1f38a73c7671}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
-      \list{location}{1}{%
-        {Chile}%
-      }
-      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{fullhash}{c7db070288680264f6dfa86410e8586f}
+      \strng{fullhashraw}{c7db070288680264f6dfa86410e8586f}
+      \strng{bibnamehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authorbibnamehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authornamehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authorfullhash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authorfullhashraw}{c7db070288680264f6dfa86410e8586f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{9}
-      \field{month}{7}
-      \field{title}{Ley N°20.765. Crea mecanismo de estabilización de precios de los combustibles que indica}
-      \field{type}{Ley}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://bcn.cl/3mf3h
-      \endverb
-      \verb{url}
-      \verb https://bcn.cl/3mf3h
-      \endverb
-    \endentry
-    \entry{LEY21537}{legislation}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
-           family={{Ministerio de Hacienda}},
-           familyi={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Chile}%
-      }
-      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{24}
-      \field{month}{1}
-      \field{title}{Ley N°21.537. Modifica el mecanismo de estabilización de precios de los combustibles para evitar fluctuaciones semanales, y extiende el beneficio de reintegro parcial del impuesto específico a los combustibles para transportistas de carga}
-      \field{type}{Ley}
+      \field{abstract}{This paper proposes tools for robust inference in difference-in-differences and event-study designs where the parallel trends assumption may be violated. Instead of requiring that parallel trends holds exactly, we impose restrictions on how different the post-treatment violations of parallel trends can be from the pre-treatment differences in trends (“pre-trends”). The causal parameter of interest is partially identified under these restrictions. We introduce two approaches that guarantee uniformly valid inference under the imposed restrictions, and we derive novel results showing that they have desirable power properties in our context. We illustrate how economic knowledge can inform the restrictions on the possible violations of parallel trends in two economic applications. We also highlight how our approach can be used to conduct sensitivity analyses showing what causal conclusions can be drawn under various restrictions on the possible violations of the parallel trends assumption.}
+      \field{issn}{0034-6527}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{A More Credible Approach to Parallel Trends}
+      \field{volume}{90}
       \field{year}{2023}
-      \field{dateera}{ce}
+      \field{pages}{2555\bibrangedash 2591}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1093/restud/rdad018
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/restud/article-pdf/90/5/2555/51356029/rdad018.pdf
+      \endverb
       \verb{urlraw}
-      \verb https://bcn.cl/3l26v
+      \verb https://doi.org/10.1093/restud/rdad018
       \endverb
       \verb{url}
-      \verb https://bcn.cl/3l26v
+      \verb https://doi.org/10.1093/restud/rdad018
       \endverb
     \endentry
     \entry{SALOP1979}{article}{}{}
@@ -1722,6 +1801,37 @@
       \verb{url}
       \verb http://www.nber.org/papers/w33569
       \endverb
+    \endentry
+    \entry{TDLC2012}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c63ecb68fc9cb2102d87ca39ee89cb6}{%
+           family={{Tribunal de Defensa de la Libre Competencia}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Tribunal de Defensa de la Libre Competencia}%
+      }
+      \strng{namehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{fullhash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{fullhashraw}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{bibnamehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authorbibnamehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authornamehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authorfullhash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authorfullhashraw}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{4}
+      \field{title}{Resolución N°39/2012. Consulta de Organización Terpel Chile S.A. y Quiñenco S.A. relativa a la adquisición de los activos de Petróleos Transandinos S.A. y Operaciones y Servicios Terpel Limitada, Rol NC N°399-11}
+      \field{type}{Resolución}
+      \field{year}{2012}
+      \field{dateera}{ce}
     \endentry
     \entry{VANMEERBEECK2003}{article}{}{}
       \name{author}{1}{}{%
@@ -2345,6 +2455,65 @@
       \verb http://www.jstor.org/stable/23208728
       \endverb
     \endentry
+    \entry{CHERNOZHUKOV2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c75cbe2cefd1e532f636a50892605d06}{%
+           family={Chernozhukov},
+           familyi={C\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00018206993be186898211545ed16048}{%
+           family={Fernández-Val},
+           familyi={F\bibinithyphendelim V\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62d4e62464feaf6360fb3259cc2be2d8}{%
+           family={Melly},
+           familyi={M\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{fullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{fullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \strng{bibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorbibnamehash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authornamehash}{e8ad45c8076487daa445bfbeb4e02a04}
+      \strng{authorfullhash}{961b880136c28bf23bcccc33ebe42856}
+      \strng{authorfullhashraw}{961b880136c28bf23bcccc33ebe42856}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Counterfactual distributions are important ingredients for policy analysis and decomposition analysis in empirical economics. In this article, we develop modeling and inference tools for counterfactual distributions based on regression methods. The counterfactual scenarios that we consider consist of ceteris paribus changes in either the distribution of covariates related to the outcome of interest or the conditional distribution of the outcome given covariates. For either of these scenarios, we derive joint functional central limit theorems and bootstrap validity results for regression-based estimators of the status quo and counterfactual outcome distributions. These results allow us to construct simultaneous confidence sets for function-valued effects of the counterfactual changes, including the effects on the entire distribution and quantile functions of the outcome as well as on related functionals. These confidence sets can be used to test functional hypotheses such as no-effect, positive effect, or stochastic dominance. Our theory applies to general counterfactual changes and covers the main regression methods including classical, quantile, duration, and distribution regressions. We illustrate the results with an empirical application to wage decompositions using data for the United States. As a part of developing the main results, we introduce distribution regression as a comprehensive and flexible tool for modeling and estimating the entire conditional distribution. We show that distribution regression encompasses the Cox duration regression and represents a useful alternative to quantile regression. We establish functional central limit theorems and bootstrap validity results for the empirical distribution regression process and various related functionals.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{INFERENCE ON COUNTERFACTUAL DISTRIBUTIONS}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{81}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{2205\bibrangedash 2268}
+      \range{pages}{64}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/23524318
+      \endverb
+    \endentry
     \entry{CLEMENZGUGLER2006}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=47c10cddb0a1d88950327df385b24791}{%
@@ -2396,6 +2565,49 @@
       \verb{url}
       \verb https://doi.org/10.1007/s00181-005-0016-7
       \endverb
+    \endentry
+    \entry{CONLEY1991}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df4c65309421035207cd58005c79ed3f}{%
+           family={Conley},
+           familyi={C\bibinitperiod},
+           given={T.G.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{fullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \strng{bibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorbibnamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authornamehash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhash}{df4c65309421035207cd58005c79ed3f}
+      \strng{authorfullhashraw}{df4c65309421035207cd58005c79ed3f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-4076}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{1}
+      \field{title}{GMM estimation with cross sectional dependence}
+      \field{volume}{92}
+      \field{year}{1999}
+      \field{pages}{1\bibrangedash 45}
+      \range{pages}{45}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0304-4076(98)00084-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304407698000840
+      \endverb
+      \keyw{Cross-sectional dependence,Non-parametric covariance matrix estimation,Random fields,Generalized method of moments}
     \endentry
     \entry{DAVIS2025}{article}{}{}
       \name{author}{3}{}{%
@@ -3137,80 +3349,57 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/mic.20170110
       \endverb
     \endentry
-    \entry{LEY20765}{legislation}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
-           family={{Ministerio de Hacienda}},
-           familyi={M\bibinitperiod}}}%
+    \entry{RAMBACHAN2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=85edb53244c29c17ce57830271014b46}{%
+           family={Rambachan},
+           familyi={R\bibinitperiod},
+           given={Ashesh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73c1da3266b3c7728f6b1f38a73c7671}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
-      \list{location}{1}{%
-        {Chile}%
-      }
-      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{fullhash}{c7db070288680264f6dfa86410e8586f}
+      \strng{fullhashraw}{c7db070288680264f6dfa86410e8586f}
+      \strng{bibnamehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authorbibnamehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authornamehash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authorfullhash}{c7db070288680264f6dfa86410e8586f}
+      \strng{authorfullhashraw}{c7db070288680264f6dfa86410e8586f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{9}
-      \field{month}{7}
-      \field{title}{Ley N°20.765. Crea mecanismo de estabilización de precios de los combustibles que indica}
-      \field{type}{Ley}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://bcn.cl/3mf3h
-      \endverb
-      \verb{url}
-      \verb https://bcn.cl/3mf3h
-      \endverb
-    \endentry
-    \entry{LEY21537}{legislation}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cebe14c45771db4bb892353f5a668fc5}{%
-           family={{Ministerio de Hacienda}},
-           familyi={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Chile}%
-      }
-      \strng{namehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{fullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{bibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorbibnamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authornamehash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhash}{cebe14c45771db4bb892353f5a668fc5}
-      \strng{authorfullhashraw}{cebe14c45771db4bb892353f5a668fc5}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{24}
-      \field{month}{1}
-      \field{title}{Ley N°21.537. Modifica el mecanismo de estabilización de precios de los combustibles para evitar fluctuaciones semanales, y extiende el beneficio de reintegro parcial del impuesto específico a los combustibles para transportistas de carga}
-      \field{type}{Ley}
+      \field{abstract}{This paper proposes tools for robust inference in difference-in-differences and event-study designs where the parallel trends assumption may be violated. Instead of requiring that parallel trends holds exactly, we impose restrictions on how different the post-treatment violations of parallel trends can be from the pre-treatment differences in trends (“pre-trends”). The causal parameter of interest is partially identified under these restrictions. We introduce two approaches that guarantee uniformly valid inference under the imposed restrictions, and we derive novel results showing that they have desirable power properties in our context. We illustrate how economic knowledge can inform the restrictions on the possible violations of parallel trends in two economic applications. We also highlight how our approach can be used to conduct sensitivity analyses showing what causal conclusions can be drawn under various restrictions on the possible violations of the parallel trends assumption.}
+      \field{issn}{0034-6527}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{A More Credible Approach to Parallel Trends}
+      \field{volume}{90}
       \field{year}{2023}
-      \field{dateera}{ce}
+      \field{pages}{2555\bibrangedash 2591}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1093/restud/rdad018
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/restud/article-pdf/90/5/2555/51356029/rdad018.pdf
+      \endverb
       \verb{urlraw}
-      \verb https://bcn.cl/3l26v
+      \verb https://doi.org/10.1093/restud/rdad018
       \endverb
       \verb{url}
-      \verb https://bcn.cl/3l26v
+      \verb https://doi.org/10.1093/restud/rdad018
       \endverb
     \endentry
     \entry{SALOP1979}{article}{}{}
@@ -3470,6 +3659,37 @@
       \verb{url}
       \verb http://www.nber.org/papers/w33569
       \endverb
+    \endentry
+    \entry{TDLC2012}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1c63ecb68fc9cb2102d87ca39ee89cb6}{%
+           family={{Tribunal de Defensa de la Libre Competencia}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Tribunal de Defensa de la Libre Competencia}%
+      }
+      \strng{namehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{fullhash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{fullhashraw}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{bibnamehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authorbibnamehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authornamehash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authorfullhash}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \strng{authorfullhashraw}{1c63ecb68fc9cb2102d87ca39ee89cb6}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{4}
+      \field{title}{Resolución N°39/2012. Consulta de Organización Terpel Chile S.A. y Quiñenco S.A. relativa a la adquisición de los activos de Petróleos Transandinos S.A. y Operaciones y Servicios Terpel Limitada, Rol NC N°399-11}
+      \field{type}{Resolución}
+      \field{year}{2012}
+      \field{dateera}{ce}
     \endentry
     \entry{VANMEERBEECK2003}{article}{}{}
       \name{author}{1}{}{%

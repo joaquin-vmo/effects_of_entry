@@ -38,9 +38,10 @@ pl[, `:=`(comp = factor(COMP[as.character(comp)], levels = COMP),
           combustible = factor(combustible, levels = HOJAS))]
 pl <- pl[comp %in% pl[pct != 0, comp]]   # fuera los componentes que no aplican
 
-# reverse: refineria abajo y leyenda en el mismo orden que la barra
+# reverse: refineria abajo en la barra y primera en la leyenda
 fig <- ggplot(pl, aes(combustible, pct, fill = comp)) +
-  geom_col(position = position_stack(reverse = TRUE)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  labs(x = NULL, y = "Porcentaje del precio a público", fill = NULL)
-ggsave(here("output", "graficos", "estructura_precios.pdf"), fig, width = 7, height = 5)
+  geom_col(position = position_stack(reverse = TRUE), width = 0.6) +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  labs(x = NULL, y = "Porcentaje del precio a público", fill = NULL) +
+  theme(legend.position = "bottom")
+ggsave(here("output", "graficos", "estructura_precios.pdf"), fig, width = 6, height = 4.5)

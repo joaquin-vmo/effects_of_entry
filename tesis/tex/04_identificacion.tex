@@ -1,0 +1,33 @@
+\section{Estrategia de identificación} \label{sec:identificacion}
+
+La estrategia sigue de cerca la metodología de \textcite{FISCHER2025}.\footnote{\textcite{FISCHER2025} usan precios diarios, bins de 26 semanas, efectos fijos de estado por día y cohortes trimestrales en \textcite{SUNABRAHAM2021}, este trabajo usa un panel mensual, bins de seis meses, efecto fijo de mes y cohortes mensuales, y agrega efectos fijos de región por año y de marca por año. La Figura \ref{fig:fischer_semanal} replica su diseño en un panel semanal, con semana de la entrada, bins de 26 semanas y cohortes trimestrales. Los coeficientes difieren en 0,04 puntos o menos de los originales de esta investigación, se elige el diseño mensual pues es más liviano de estimar.} El supuesto de identificación es que el timing de la entrada es exógeno a las incumbentes al controlar por efectos fijos. Es el supuesto presentado por \textcite{ARCIDIACONO2020}. No se exige que la ubicación sea exógena pues está claro que no lo es. Se exige que, dado que una entrada ocurre la fecha precisa en que abre una estación no responde a la evolución de los precios de las incumbentes. Este supuesto se respalda en las regulaciones que conlleva abrir una nueva estación y se justifica empíricamente más adelante. El grupo de control preferido es el estricto, los resultados se mantienen usando el grupo de control amplio.\footnote{Las Tablas \ref{tab:controles_p93} a \ref{tab:controles_pdi} muestran que ambos grupos entregan efectos casi iguales, con diferencias de 0,03 puntos o menos en el primer año.}
+
+La especificación principal es un estudio de eventos sobre el panel mensual de estaciones, 
+\begin{equation}
+    p_{it} = \alpha_i + \lambda_t + \gamma_{r(i)a(t)} + \delta_{m(i)a(t)}
+             + \sum_{\substack{\tau=-4 \\ \tau \neq -1}}^{4}
+               \beta_\tau \, D^{\tau}_{it} + \varepsilon_{it},
+    \label{eq:es}
+\end{equation}
+donde $p_{it}$ es el logaritmo del precio multiplicado por 100 de la estación $i$ en el mes $t$, $\alpha_i$ y $\lambda_t$ son efectos fijos de estación y tiempo, $\gamma_{r(i)a(t)}$ y $\delta_{m(i)a(t)}$ son efectos fijos de región por año y distribuidor por año. El tiempo desde la entrada se agrupa en bins de seis meses con referencia en $\tau = -1$, y los bins $\tau\leq -4$ y $\tau \geq 4$ acumulan todo lo ocurrido más allá de la ventana. Con \eqref{eq:es} se puede testear la hipótesis 1. 
+
+Los errores son clusterizados a nivel comuna pues el tratamiento afecta a grupos de estaciones, en la gran mayoría de las veces dentro de una misma comuna. Clusterizar por comuna captura factores como demanda local, flujo vehicular, poder adquisitivo del entorno y condiciones de suelo y del plan regulador que afectan a un grupo de estaciones por igual. Los errores agrupados por comuna tratan como independientes a estaciones cercanas ubicadas en comunas distintas. Los errores de \textcite{CONLEY1991} permiten correlación entre todas las observaciones a menos de una distancia de corte, sin importar la comuna, y se estiman con cortes de 2 y 5 kilómetros. La Figura \ref{fig:conley} muestra que con 2 kilómetros los intervalos son prácticamente iguales a los agrupados por comuna, y con 5 kilómetros entre 5\% y 25\% más amplios. Ninguna conclusión cambia.
+
+El efecto promedio se obtiene de la versión estática de \eqref{eq:es}, 
+\begin{equation}
+    p_{it} = \alpha_i + \lambda_t + \gamma_{r(i)a(t)} + \delta_{m(i)a(t)} + \beta \text{Post}_{it} + \varepsilon_{it}, 
+    \label{eq:es_est}
+\end{equation}
+donde $\text{Post}_{it}$ toma valor 1 para una estación tratada desde el mes de la entrada en adelante. Lo que hace es comparar el precio promedio después de la entrada con el promedio antes de la entrada, respecto del mismo cambio en las estaciones de control. Con \eqref{eq:es_est} podemos testear la hipótesis dos respecto a la atenuación por distancia cambiando el tratamiento por anillos de distancia a la primera entrada a 5 kilómetros o menos, de 0 a 1 kilómetro, 1 a 2, 2 a 3, 3 a 4 y 4 a 5, usando para las tratadas solo los seis meses antes y después de la entrada.
+
+Ambas \eqref{eq:es} y \eqref{eq:es_est} se estiman por efectos bidireccionales sobre un diseño de adopción escalonada, situación en la que el estimador es un promedio ponderado de comparación entre cohortes que puede recibir ponderaciones negativas cuando el efecto es heterogéneo entre cohortes \parencite{BORUSYAK2024,CALLAWAYSANTANNA2021,SUNABRAHAM2021}. Por lo que se presenta también el estimador de \textcite{SUNABRAHAM2021} para \eqref{eq:es} para corregir estos posibles sesgos. De todas formas, con un número grande de unidades nunca tratadas el método se vuelve más parecido a un diseño no escalonado y los pesos negativos de la especificación desaparecen \parencite{BORUSYAK2024}.
+
+Para testear la hipótesis respecto al efecto sobre la dispersión de precios se estima \eqref{eq:es_est} para el percentil 90, la mediana y el percentil 10 de los precios del mercado local, con y sin la estación entrante. Para cada estación de la muestra, tratada o de control, el mercado local son ella y las estaciones con precio a 2 kilómetros o menos en el mes, y se sigue el cambio en la dispersión de precios.
+
+Adicionalmente se estudia los efectos en la distribución de precios. En la línea de \textcite{FISCHER2025} se estima la regresión de distribución de \textcite{CHERNOZHUKOV2013}. Para cada umbral $c$ de una grilla de 41 umbrales, los cuantiles 2 a 98 del resultado, se estima
+\begin{equation}
+    \mathbf{1}[\tilde{p}_{it}\leq c] = \beta(c) \text{Post}_{it} + \alpha_i + \lambda_t + \gamma_{r(i)a(t)} + \delta_{m(i)a(t)} + \varepsilon_{it},
+\end{equation}
+donde $\tilde{p}_{it}$ es el precio en pesos por litro menos su media nacional del mes, de modo que $\beta(c)$ es el cambio que la entrada provoca en la función de distribución acumulada evaluada en $c$. Un $\beta(c)$ positivo se lee como que la entrada aumentó la masa por debajo de $c$. Restando $\beta(c)$ de la acumulada observada se recupera un contrafactual, la distribución que habrían tenido las estaciones tratadas después de la entrada si esta no hubiera ocurrido \parencite{FISCHER2025}.\footnote{\textcite{FISCHER2025} aplican el ejercicio al precio en nivel, para Chile se tiene que desviar el precio por su media nacional en el mes, lo que elimina la variación del precio producto de alzas o bajas en el precio del petróleo internacional.}
+
+

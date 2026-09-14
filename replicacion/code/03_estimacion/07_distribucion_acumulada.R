@@ -2,7 +2,8 @@
 #
 # regresion de distribucion (Chernozhukov, Fernandez-Val y Melly 2013) sobre el precio
 # menos su media nacional del mes, con test de dominancia de primer orden.
-# panel_mensual.csv -> output/tablas/distribucion_acumulada.tex, output/graficos/distribucion_acumulada.pdf
+# panel_mensual.csv -> output/tablas/distribucion_acumulada.tex, output/graficos/distribucion_acumulada.pdf,
+# output/graficos/distribucion_beta.pdf
 
 library(fixest)
 library(ggplot2)
@@ -83,3 +84,14 @@ fig <- ggplot(cl, aes(c, F, colour = serie, linetype = serie)) +
        colour = NULL, linetype = NULL) +
   theme(legend.position = "bottom")
 ggsave(here("output", "graficos", "distribucion_acumulada.pdf"), fig, width = 9, height = 6)
+
+# perfil de beta(c) sobre la grilla: desplazamiento de la distribucion por la entrada
+cdf[, combustible := factor(PRECIOS[outcome], levels = PRECIOS)]
+fig <- ggplot(cdf, aes(100 * k, est)) +
+  geom_hline(yintercept = 0) +
+  geom_ribbon(aes(ymin = est - 1.96 * se, ymax = est + 1.96 * se), alpha = 0.2) +
+  geom_line() +
+  facet_wrap(~combustible) +
+  labs(x = "Cuantil de la distribución del precio menos su media nacional del mes",
+       y = expression(beta(c)))
+ggsave(here("output", "graficos", "distribucion_beta.pdf"), fig, width = 9, height = 6)

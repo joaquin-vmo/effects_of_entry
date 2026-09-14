@@ -44,7 +44,7 @@ NBIN  <- 4L   # bins a cada lado; los extremos se agrupan
 
 FE_PRINCIPAL <- "station_key + ym + region^year + distribuidor^year"
 
-# agregados del mercado local (06_mercado_min_media_max.R y 08_honestdid.R)
+# agregados del mercado local (06_mercado_min_media_max.R y 04_robustez/02_honest_did.R)
 MIN_COMP  <- 1L   # competidoras minimas, ademas de la focal, en promedio antes de la entrada
 CUANTILES <- c(p90 = 0.90, p50 = 0.50, p10 = 0.10)
 SERIES    <- c(p90 = "Percentil 90", p50 = "Mediana", p10 = "Percentil 10")

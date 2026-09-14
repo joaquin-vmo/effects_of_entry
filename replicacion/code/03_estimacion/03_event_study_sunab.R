@@ -1,7 +1,8 @@
 # 03_event_study_sunab.R
 #
-# TWFE frente a Sun y Abraham (2021), misma muestra, efectos fijos y bins que 01, por
-# ventana. panel_mensual.csv -> output/graficos/sunab_<ventana>.pdf
+# TWFE frente a Sun y Abraham (2021), misma muestra, efectos fijos y bins que 01, ventana
+# principal (las cortas estan en 04_robustez/08_ventanas_cortas.R).
+# panel_mensual.csv -> output/graficos/sunab_2012_2026.pdf
 
 library(fixest)
 library(ggplot2)
@@ -22,7 +23,7 @@ estimar <- function(d, fv) {
         tidy_es(f("sunab(cohorte, per)"), "per")[, estimador := "Sun y Abraham"])[, outcome := fv]
 }
 
-for (nombre in names(PANELES)) {
+for (nombre in "2012_2026") {
   p <- PANELES[[nombre]]
   d <- muestra_estacion(leer_panel(p), CTRL_ESTRICTO, p$focal)
   res <- rbindlist(lapply(names(PRECIOS), estimar, d = d))
