@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber tesis"] 1789339752.20833 "tesis.bcf" "tesis.bbl" "tesis" 1789339952.34212 0
+["biber tesis"] 1789340977.61817 "tesis.bcf" "tesis.bbl" "tesis" 1789341037.39157 0
   "bibliografia.bib" 1789338797.69717 44318 efa3576763588c924e1fe29d3e952ec9 ""
-  "tesis.bcf" 1789339952.20188 140451 cc3bed14488f1730bbf688d5711a2f86 "pdflatex"
+  "tesis.bcf" 1789341037.25243 140037 cf193db34024e84f907bf21032d7e33d "pdflatex"
   (generated)
   "tesis.bbl"
   "tesis.blg"
   (rewritten before read)
-["pdflatex"] 1789339950.51998 "/Users/joaquin/Desktop/effects_of_entry/tesis/tesis.tex" "tesis.pdf" "tesis" 1789339952.34244 0
-  "/Users/joaquin/Desktop/effects_of_entry/tesis/tesis.tex" 1789339946.43663 2381 83c1f4f1c17737dff24e9e5a827fe2b2 ""
+["pdflatex"] 1789341035.56371 "/Users/joaquin/Desktop/effects_of_entry/tesis/tesis.tex" "tesis.pdf" "tesis" 1789341037.39189 0
+  "/Users/joaquin/Desktop/effects_of_entry/tesis/tesis.tex" 1789340267.93054 2381 83c1f4f1c17737dff24e9e5a827fe2b2 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -226,14 +226,14 @@
   "output/graficos/serie_precios.pdf" 1789332923.89203 21217 e31ee2377ffc56021ce801c1f31b15b4 ""
   "output/tablas/composicion_muestra.tex" 1789336733.41557 633 e2ab92e1a14b6411ba594814f9e8bf75 ""
   "output/tablas/dispersion_p93.tex" 1789331885.80223 1391 687f08fb75700b15e53b97d4b489de61 ""
-  "tesis.aux" 1789339952.1948 17375 deaea88950510566df6721617043c6de "pdflatex"
-  "tesis.bbl" 1789339754.29704 169768 eebc8d29ae0b51512c5da8e6dc879bee "biber tesis"
-  "tesis.out" 1789339952.20083 896 53bdf4a880e9759fa37234648fcedb69 "pdflatex"
-  "tesis.run.xml" 1789339952.20324 2368 af8643fa711d951294af5a65e16b3cf3 "pdflatex"
-  "tesis.tex" 1789339946.43663 2381 83c1f4f1c17737dff24e9e5a827fe2b2 ""
+  "tesis.aux" 1789341037.24578 16780 8f14d4d71311ba3c351d1538b614e1c7 "pdflatex"
+  "tesis.bbl" 1789340979.75546 169768 eebc8d29ae0b51512c5da8e6dc879bee "biber tesis"
+  "tesis.out" 1789341037.25144 884 22ef961142ae5c5b9f5e0685319a0785 "pdflatex"
+  "tesis.run.xml" 1789341037.25315 2368 af8643fa711d951294af5a65e16b3cf3 "pdflatex"
+  "tesis.tex" 1789340267.93054 2381 83c1f4f1c17737dff24e9e5a827fe2b2 ""
   "tex/01_introduccion.tex" 1789339601.02471 24 6ecc0162fcda78ed0176c752146fd9b9 ""
   "tex/02_literatura.tex" 1789338772.15379 3209 aed4f22d0936fe085b1e0523817671b0 ""
-  "tex/03_mercado.tex" 1789339896.42286 20831 c7b6ac44907efc2d5811f30d806b0af0 ""
+  "tex/03_mercado.tex" 1789341035.35417 20695 ad2ad03f5dc3e6fb3ddcc515c1aff928 ""
   (generated)
   "tesis.aux"
   "tesis.bcf"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 SEP 2026 19:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 SEP 2026 20:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1015,24 +1015,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 53BDF4A880E9759FA37234648FCEDB69;896.
+(rerunfilecheck)             Checksum: 22EF961142AE5C5B9F5E0685319A0785;884.
 Package logreq Info: Writing requests to 'tesis.run.xml'.
 \openout1 = `tesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36283 strings out of 467525
- 697613 string characters out of 5418982
- 1645266 words of memory out of 5000000
- 64406 multiletter control sequences out of 15000+600000
- 654197 words of font info for 201 fonts, out of 8000000 for 9000
+ 36278 strings out of 467525
+ 697554 string characters out of 5418982
+ 1646251 words of memory out of 5000000
+ 64403 multiletter control sequences out of 15000+600000
+ 654138 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,94p,1716b,2811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesis.pdf (14 pages, 441081 bytes).
+Output written on tesis.pdf (14 pages, 441136 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 361 compressed objects within 4 object streams
+ 436 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
  74 named destinations out of 1000 (max. 500000)
  53836 words of extra memory for PDF output out of 61914 (max. 10000000)
 
